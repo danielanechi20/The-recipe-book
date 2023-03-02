@@ -5,4 +5,9 @@
     <string name="title">The recipe book</string>
     <string name="subtitle">Caietul tau digital de retete.</string>
     <string name="buton">Sa incepem!</string>
+
+    //categorii
+    <string name="intrebare">De ce iti este pofta azi?</string>
+    <string name="item_title">Title</string>
+    <string name="item_des">Description</string>
 </resources>
