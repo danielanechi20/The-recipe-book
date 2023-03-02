@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Licenta incercarea1</string>
+
+    //ecranul principal
+    <string name="title">The recipe book</string>
+    <string name="subtitle">Caietul tau digital de retete.</string>
+    <string name="buton">Sa incepem!</string>
 </resources>
