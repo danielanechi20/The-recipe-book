@@ -1,36 +1,52 @@
 package com.example.licentaincercarea1
 
+import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.licentaincercarea1.data.category
 import com.example.licentaincercarea1.databinding.CategoryItemBinding
-import kotlinx.android.synthetic.main.category_item.view.*
 
-class CategoriesAdapter(val categories: List<category>) : RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>() {
+class CategoriesAdapter(context:Context,val categories : ArrayList<String>,
+                        val desc : ArrayList<String>,
+                        val image: ArrayList<String>) :
+    RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>() {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesViewHolder {
 
-        return CategoriesViewHolder(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.category_item,
-                parent, false
-            )
-        )
-    }
-
-    override fun getItemCount(): Int {
-        return 10
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
+            CategoriesViewHolder {
+        val binding = CategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return CategoriesViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: CategoriesViewHolder, position: Int) {
+        holder.bind()
+    }
 
-        holder.itemView.title.text = categories.get(position).name
-        holder.itemView.description.text = categories.get(position).description
+    override fun getItemCount(): Int {
+        return categories.size
+    }
+
+    inner class CategoriesViewHolder(private val binding: CategoryItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind() {
+            val  category = categories[adapterPosition]
+            val desc=desc[adapterPosition]
+            val img=image[adapterPosition]
+            binding.description.text = desc
+            binding.name.text=category
+
+            Glide.with(binding.root.context).load(img).fitCenter().into(binding.profile)
+
+        }
+
 
     }
-    inner class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view)
+
+    interface FavArtistClickListener {
+        fun onArtistImageClicked(category: category)
+        fun onArtistDetailsClicked(category: category)
+    }
 }

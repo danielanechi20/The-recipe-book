@@ -9,9 +9,9 @@ data class category (
     @SerializedName(value="id")
     var id:String="",
     @SerializedName(value="name")
-    var name:String="",
+    var Name:String="",
     @SerializedName(value="image")
-    var image:String="",
+    var Thumb:String="",
     @SerializedName(value="desc")
-    var description:String="",
+    var Description:String="",
 ):Parcelable

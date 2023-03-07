@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:background="#0C0C0C"
     android:backgroundTint="#090909"
-    tools:context=".FirstActivity">
+    tools:context=".CategoriesActivity">
 
     <TextView
         android:id="@+id/intrb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:background="#60FAF9F9"
+        android:background="#AD090808"
         android:gravity="center"
         android:text="@string/intrebare"
         android:textColor="@color/white"
