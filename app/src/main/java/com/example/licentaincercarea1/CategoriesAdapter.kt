@@ -2,6 +2,7 @@ package com.example.licentaincercarea1
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -12,9 +13,11 @@ class CategoriesAdapter(context:Context,val categories : ArrayList<String>,
                         val desc : ArrayList<String>,
                         val image: ArrayList<String>) :
     RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>() {
+    var listener: CategoryClickListener? = null
 
-
-
+    fun setCategoryClickListener(categoryListener: CategoryClickListener) {
+        listener = categoryListener
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
             CategoriesViewHolder {
         val binding = CategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -39,14 +42,16 @@ class CategoriesAdapter(context:Context,val categories : ArrayList<String>,
             binding.name.text=category
 
             Glide.with(binding.root.context).load(img).fitCenter().into(binding.profile)
-
+            setOnItemClickListener()
         }
-
-
+        private fun setOnItemClickListener(){
+            binding.root.setOnClickListener{
+                listener?.onCategoryClick(categories[adapterPosition])
+            }
+        }
+    }
+    interface CategoryClickListener{
+        fun onCategoryClick(category: String)
     }
 
-    interface FavArtistClickListener {
-        fun onArtistImageClicked(category: category)
-        fun onArtistDetailsClicked(category: category)
-    }
 }

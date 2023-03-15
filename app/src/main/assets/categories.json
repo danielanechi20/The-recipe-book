@@ -56,33 +56,15 @@
       },
       {
          "id": "10",
-         "Name": "Starter",
-         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/starter.png",
-         "Description": "An entrée in modern French table service and that of much of the English-speaking world (apart from the United States and parts of Canada) is a dish served before the main course of a meal."
+         "Name": "Vegetarian + Vegan",
+         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/vegetarian.png",
+         "Description": "Vegetarianism is the practice of abstaining from the consumption of meat.Veganism is both the practice of abstaining from the use of animal products."
       },
       {
          "id": "11",
-         "Name": "Vegan",
-         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/vegan.png",
-         "Description": "Veganism is both the practice of abstaining from the use of animal products, particularly in diet, and an associated philosophy that rejects the commodity status of animals."
-      },
-      {
-         "id": "12",
-         "Name": "Vegetarian",
-         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/vegetarian.png",
-         "Description": "Vegetarianism is the practice of abstaining from the consumption of meat (red meat, poultry, seafood, and the flesh of any other animal), and may also include abstention from by-products of animal slaughter."
-      },
-      {
-         "id": "13",
          "Name": "Breakfast",
          "Thumb": "https:\/\/www.themealdb.com\/images\/category\/breakfast.png",
          "Description": "Breakfast is the first meal of a day. The word in English refers to breaking the fasting period of the previous night. "
-      },
-      {
-         "id": "14",
-         "Name": "Goat",
-         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/goat.png",
-         "Description": "The goat is a member of the animal family Bovidae and the subfamily Caprinae, meaning it is closely related to the sheep. "
       }
    ]
 }

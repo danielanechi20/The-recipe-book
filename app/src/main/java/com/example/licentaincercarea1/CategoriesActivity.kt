@@ -1,23 +1,20 @@
 package com.example.licentaincercarea1
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.licentaincercarea1.data.category
 import com.example.licentaincercarea1.databinding.CategoriesScreenBinding
 import org.json.JSONArray
-import org.json.JSONException
 import org.json.JSONObject
-import java.io.IOException
 import java.io.InputStream
 
 
 class CategoriesActivity : AppCompatActivity() {
+
     private lateinit var binding: CategoriesScreenBinding
 
-    private var json: String = ""
-    private val dataList = generateData()
     var categories = ArrayList<String>()
     var desc = ArrayList<String>()
     var image = ArrayList<String>()
@@ -28,8 +25,10 @@ class CategoriesActivity : AppCompatActivity() {
         binding = CategoriesScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupRv()
+        transform()
 
-        try {
+    }
+    private fun transform(){
             // get JSONObject from JSON file
             val obj = JSONObject(loadJSONFromAsset(MY_JSON))
             // fetch JSONArray named colors
@@ -43,24 +42,19 @@ class CategoriesActivity : AppCompatActivity() {
                 desc.add(userDetail.getString("Description"))
                 image.add(userDetail.getString("Thumb"))
             }
-        } catch (e: JSONException) {
-            e.printStackTrace()
-        }
     }
 
     private fun loadJSONFromAsset(fileName: String): String {
         var fileText = ""
-        try {
             val inputStream: InputStream = assets.open(fileName)
             val size: Int = inputStream.available()
             val buffer = ByteArray(size)
             inputStream.read(buffer)
             fileText = String(buffer)
-        } catch (error: IOException) {
-            error.printStackTrace()
-        }
+
         return fileText
     }
+
 
     private fun setupRv() {
 
@@ -69,25 +63,16 @@ class CategoriesActivity : AppCompatActivity() {
             adapter = categoriesAdapter
         }
 
+        categoriesAdapter.setCategoryClickListener(object:CategoriesAdapter.CategoryClickListener{
+            override fun onCategoryClick(category: String) {
+                when(category){
+                "Beef" -> startActivity(Intent(this@CategoriesActivity,manifesting::class.java))
+                else -> startActivity(Intent(this@CategoriesActivity,manifesting2::class.java))}
+            }
+        })
 
     }
 
-
-
-    private fun generateData(): List<category> {
-
-        val categoriesList = arrayListOf<category>()
-        for (i in 1..50) {
-            categoriesList.add(
-                category(
-                    Name="name",
-                    Description="bla",
-                    Thumb="cv")
-            )
-        }
-
-        return categoriesList
-    }
 
     companion object {
         const val MY_JSON = "categories.json"

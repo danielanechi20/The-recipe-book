@@ -28,6 +28,12 @@
         <activity
             android:name=".CategoriesActivity"
             android:exported="true" />
+        <activity
+            android:name=".manifesting"
+            android:exported="true" />
+        <activity
+            android:name=".manifesting2"
+            android:exported="true" />
     </application>
 
 </manifest>
