@@ -29,6 +29,7 @@ class CategoriesFragment : Fragment() {
         val view = binding.root
         setupRv()
         transform()
+
         return view
     }
     private fun transform(){
