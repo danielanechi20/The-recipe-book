@@ -26,7 +26,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CategoriesActivity"
+            android:name=".CategoriesFragment"
             android:exported="true" />
         <activity
             android:name=".manifesting"

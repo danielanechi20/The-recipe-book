@@ -2,31 +2,34 @@ package com.example.licentaincercarea1
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.licentaincercarea1.databinding.CategoriesScreenBinding
+import com.example.licentaincercarea1.databinding.CategoriesFragmentBinding
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.InputStream
 
 
-class CategoriesActivity : AppCompatActivity() {
+class CategoriesFragment : Fragment() {
 
-    private lateinit var binding: CategoriesScreenBinding
+    private var _binding: CategoriesFragmentBinding?=null
+    private val binding get()=_binding!!
 
     var categories = ArrayList<String>()
     var desc = ArrayList<String>()
     var image = ArrayList<String>()
-    private val categoriesAdapter = CategoriesAdapter(this,categories,desc,image)
+    private val categoriesAdapter = CategoriesAdapter(categories,desc,image)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = CategoriesScreenBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                          savedInstanceState: Bundle?): View? {
+        _binding = CategoriesFragmentBinding.inflate(inflater,container,false)
+        val view = binding.root
         setupRv()
         transform()
-
+        return view
     }
     private fun transform(){
             // get JSONObject from JSON file
@@ -45,8 +48,9 @@ class CategoriesActivity : AppCompatActivity() {
     }
 
     private fun loadJSONFromAsset(fileName: String): String {
-        var fileText = ""
-            val inputStream: InputStream = assets.open(fileName)
+        var fileText =""
+        val am = requireActivity().assets
+            val inputStream: InputStream = am.open(fileName)
             val size: Int = inputStream.available()
             val buffer = ByteArray(size)
             inputStream.read(buffer)
@@ -59,15 +63,15 @@ class CategoriesActivity : AppCompatActivity() {
     private fun setupRv() {
 
         binding.rvCategories.apply {
-            layoutManager = LinearLayoutManager(this@CategoriesActivity, LinearLayoutManager.VERTICAL, false)
+            layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.VERTICAL, false)
             adapter = categoriesAdapter
         }
 
         categoriesAdapter.setCategoryClickListener(object:CategoriesAdapter.CategoryClickListener{
             override fun onCategoryClick(category: String) {
                 when(category){
-                "Beef" -> startActivity(Intent(this@CategoriesActivity,manifesting::class.java))
-                else -> startActivity(Intent(this@CategoriesActivity,manifesting2::class.java))}
+                "Beef" -> startActivity(Intent(requireActivity(),manifesting::class.java))
+                else -> startActivity(Intent(requireActivity(),manifesting2::class.java))}
             }
         })
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#0C0C0C"
     android:backgroundTint="#090909"
-    tools:context=".CategoriesActivity">
+    tools:context=".CategoriesFragment">
 
     <TextView
         android:id="@+id/intrb"

@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.licentaincercarea1.data.category
 import com.example.licentaincercarea1.databinding.CategoryItemBinding
 
-class CategoriesAdapter(context:Context,val categories : ArrayList<String>,
+class CategoriesAdapter(val categories : ArrayList<String>,
                         val desc : ArrayList<String>,
                         val image: ArrayList<String>) :
     RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>() {

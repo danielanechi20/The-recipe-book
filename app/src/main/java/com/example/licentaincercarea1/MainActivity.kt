@@ -4,9 +4,9 @@ package com.example.licentaincercarea1
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.licentaincercarea1.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -16,11 +16,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setListener()
+
     }
     private fun setListener() {
 
         binding.button.setOnClickListener {
-            startActivity(Intent(this, CategoriesActivity::class.java))
+            supportFragmentManager.beginTransaction().replace(R.id.container, CategoriesFragment()).commit()
+            button.visibility= View.GONE
         }
 
     }

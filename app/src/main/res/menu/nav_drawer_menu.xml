@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/primary">
+        <item
+            android:id="@id/categories_dest"
+            android:icon="@drawable/food_icon"
+            android:title="Categories" />
+        <item
+            android:id="@id/manifesting"
+            android:icon="@drawable/food_icon"
+            android:title="Toate retele" />
+
+    </group>
+
+</menu>
