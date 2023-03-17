@@ -2,16 +2,16 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/categories_dest"
-    app:startDestination="@id/categoriesFragment">
+    app:startDestination="@+id/categoriesFragment">
 
-    <activity
+    <fragment
         android:id="@+id/categoriesFragment"
         android:name="com.example.licentaincercarea1.CategoriesFragment"
-        android:label="categories_fragment"
+        android:label="categoriesFragment"
         tools:layout="@layout/categories_fragment" />
-    <activity
+    <fragment
         android:id="@+id/manifesting"
         android:name="com.example.licentaincercarea1.manifesting"
-        android:label="manifesting" />
+        android:label="manifesting"
+        tools:layout="@layout/manifesting"/>
 </navigation>

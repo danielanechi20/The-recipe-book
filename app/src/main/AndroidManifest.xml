@@ -17,7 +17,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
@@ -25,12 +25,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".CategoriesFragment"
-            android:exported="true" />
-        <activity
-            android:name=".manifesting"
-            android:exported="true" />
         <activity
             android:name=".manifesting2"
             android:exported="true" />

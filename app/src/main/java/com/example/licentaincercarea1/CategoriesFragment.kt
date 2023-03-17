@@ -70,9 +70,7 @@ class CategoriesFragment : Fragment() {
 
         categoriesAdapter.setCategoryClickListener(object:CategoriesAdapter.CategoryClickListener{
             override fun onCategoryClick(category: String) {
-                when(category){
-                "Beef" -> startActivity(Intent(requireActivity(),manifesting::class.java))
-                else -> startActivity(Intent(requireActivity(),manifesting2::class.java))}
+                startActivity(Intent(requireActivity(),manifesting2::class.java))
             }
         })
 

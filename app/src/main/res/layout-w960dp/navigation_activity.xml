@@ -7,7 +7,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.licentaincercarea1.CategoriesFragment">
+    tools:context="com.example.licentaincercarea1.MainActivity">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@id/nav_view"
-        android:background="@color/black"
+        android:background="@color/white"
         android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
     <fragment
