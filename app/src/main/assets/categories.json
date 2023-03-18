@@ -1,0 +1,70 @@
+{
+   "categories":[
+      {
+         "id":"1",
+         "Name":"Beef",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/beef.png",
+         "Description":"Beef is the culinary name for meat from cattle, particularly skeletal muscle.  Beef is a source of high-quality protein and essential nutrients."
+      },
+      {
+         "id":"2",
+         "Name":"Chicken",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/chicken.png",
+         "Description":"Chicken is a type of domesticated fowl, a subspecies of the red junglefowl. "
+      },
+      {
+         "id":"3",
+         "Name":"Dessert",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/dessert.png",
+         "Description":" The term dessert can apply to many confections, such as biscuits, cakes, cookies, custards, gelatins, ice creams, pastries, pies, puddings, and sweet soups, and tarts."
+      },
+      {
+         "id":"4",
+         "Name":"Lamb",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/lamb.png",
+         "Description":"Lamb, hogget, and mutton are the meat of domestic sheep at different ages. "
+      },
+      {
+         "id":"5",
+         "Name":"Miscellaneous",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/miscellaneous.png",
+         "Description":"General foods that don't fit into another category"
+      },
+      {
+         "id":"6",
+         "Name":"Pasta",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/pasta.png",
+         "Description":"Pasta is a staple food of traditional Italian cuisine. "
+      },
+      {
+         "id":"7",
+         "Name":"Pork",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/pork.png",
+         "Description":"Pork is the culinary name for meat from a domestic pig. It is the most commonly consumed meat worldwide."
+      },
+      {
+         "id": "8",
+         "Name": "Seafood",
+         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/seafood.png",
+         "Description": "Seafood is any form of sea life regarded as food by humans. "
+      },
+      {
+         "id":"9",
+         "Name":"Side",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/side.png",
+         "Description":"A side dish, sometimes referred to as a side order, side item, or simply a side, is a food item that accompanies the entrée or main course at a meal."
+      },
+      {
+         "id": "10",
+         "Name": "Vegetarian + Vegan",
+         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/vegetarian.png",
+         "Description": "Vegetarianism is the practice of abstaining from the consumption of meat.Veganism is both the practice of abstaining from the use of animal products."
+      },
+      {
+         "id": "11",
+         "Name": "Breakfast",
+         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/breakfast.png",
+         "Description": "Breakfast is the first meal of a day. The word in English refers to breaking the fasting period of the previous night. "
+      }
+   ]
+}
