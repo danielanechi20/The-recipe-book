@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.licentaincercarea1.databinding.CategoriesFragmentBinding
 import org.json.JSONArray
@@ -29,7 +30,6 @@ class CategoriesFragment : Fragment() {
         val view = binding.root
         setupRv()
         transform()
-
         return view
     }
     private fun transform(){
@@ -70,7 +70,13 @@ class CategoriesFragment : Fragment() {
 
         categoriesAdapter.setCategoryClickListener(object:CategoriesAdapter.CategoryClickListener{
             override fun onCategoryClick(category: String) {
-                startActivity(Intent(requireActivity(),manifesting2::class.java))
+                when (category) {
+                    "Beef" -> findNavController().navigate(R.id.action_categoriesFragment_to_beefFragment)
+
+                    // add more cases as needed
+                    else -> null
+                }
+
             }
         })
 
