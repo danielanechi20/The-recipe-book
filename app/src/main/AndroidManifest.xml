@@ -26,6 +26,9 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".FragmentBase"
+            android:exported="true" />
+        <activity
             android:name=".manifesting2"
             android:exported="true" />
     </application>

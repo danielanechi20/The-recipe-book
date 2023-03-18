@@ -3,11 +3,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@id/categoriesFragment"
-        android:icon="@drawable/food_icon"
-        android:title="@string/item_title"/>
+        android:icon="@drawable/categorii"
+        android:title="@string/categorii"/>
     <item
         android:id="@id/manifesting"
-        android:icon="@drawable/food_icon"
-        android:title="@string/item_des"
+        android:icon="@drawable/retete"
+        android:title="@string/retete"
          />
+    <item
+        android:id="@id/manifesting2"
+        android:icon="@drawable/fav"
+        android:title="@string/favorie"
+        />
 </menu>

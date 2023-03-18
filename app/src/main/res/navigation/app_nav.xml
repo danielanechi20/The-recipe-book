@@ -14,4 +14,9 @@
         android:name="com.example.licentaincercarea1.manifesting"
         android:label="manifesting"
         tools:layout="@layout/manifesting"/>
+    <fragment
+        android:id="@+id/manifesting2"
+        android:name="com.example.licentaincercarea1.manifesting2"
+        android:label="manifesting2"
+        tools:layout="@layout/manifesting2" />
 </navigation>
