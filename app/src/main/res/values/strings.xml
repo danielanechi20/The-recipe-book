@@ -11,4 +11,9 @@
     <string name="item_title">Title</string>
     <string name="item_des">Description</string>
     <string name="random">Nu stiu!</string>
+
+    //navigation bottom menu
+    <string name="categorii">Categorii</string>
+    <string name="retete">Toate retele</string>
+    <string name="favorie">Reetele mele</string>
 </resources>

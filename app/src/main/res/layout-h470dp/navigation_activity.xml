@@ -10,12 +10,6 @@
     android:orientation="vertical"
     tools:context="com.example.licentaincercarea1.MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
     <fragment
         android:id="@+id/my_nav_host_fragment"
@@ -30,5 +24,8 @@
         android:id="@+id/bottom_nav_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
         app:menu="@menu/bottom_nav_menu" />
 </LinearLayout>
