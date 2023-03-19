@@ -15,9 +15,6 @@ class CategoriesAdapter(val categories : ArrayList<String>,
     RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>() {
     var listener: CategoryClickListener? = null
 
-    fun setCategoryClickListener(categoryListener: CategoryClickListener) {
-        listener = categoryListener
-    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
             CategoriesViewHolder {
         val binding = CategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)

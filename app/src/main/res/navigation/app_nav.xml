@@ -8,11 +8,7 @@
         android:id="@+id/categoriesFragment"
         android:name="com.example.licentaincercarea1.CategoriesFragment"
         android:label="categoriesFragment"
-        tools:layout="@layout/categories_fragment" >
-        <action
-            android:id="@+id/action_categoriesFragment_to_beefFragment"
-            app:destination="@id/beefFragment" />
-    </fragment>
+        tools:layout="@layout/categories_fragment" />
     <fragment
         android:id="@+id/manifesting"
         android:name="com.example.licentaincercarea1.manifesting"
@@ -23,8 +19,4 @@
         android:name="com.example.licentaincercarea1.manifesting2"
         android:label="manifesting2"
         tools:layout="@layout/manifesting2" />
-    <fragment
-        android:id="@+id/beefFragment"
-        android:name="com.example.licentaincercarea1.BeefFragment"
-        android:label="BeefFragment" />
 </navigation>
