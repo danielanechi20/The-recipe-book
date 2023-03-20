@@ -2,69 +2,64 @@
    "categories":[
       {
          "id":"1",
-         "Name":"Beef",
+         "Name":"Vita",
          "Thumb":"https:\/\/www.themealdb.com\/images\/category\/beef.png",
-         "Description":"Beef is the culinary name for meat from cattle, particularly skeletal muscle.  Beef is a source of high-quality protein and essential nutrients."
+         "Description":"Carnea de vită este o sursă de proteine \u200B\u200Bde înaltă calitate și nutrienți esențiali."
       },
       {
          "id":"2",
-         "Name":"Chicken",
+         "Name":"Pui",
          "Thumb":"https:\/\/www.themealdb.com\/images\/category\/chicken.png",
-         "Description":"Chicken is a type of domesticated fowl, a subspecies of the red junglefowl. "
+         "Description":"Puiul este la graniţa dintre legume şi celelalte tipuri de carne, pentru că vine cu multe proteine „împachetate” în puţine calorii. "
       },
       {
          "id":"3",
-         "Name":"Dessert",
+         "Name":"Desert",
          "Thumb":"https:\/\/www.themealdb.com\/images\/category\/dessert.png",
-         "Description":" The term dessert can apply to many confections, such as biscuits, cakes, cookies, custards, gelatins, ice creams, pastries, pies, puddings, and sweet soups, and tarts."
+         "Description":" Termenul de desert se poate aplica multor dulciuri, cum ar fi biscuiți, prăjituri, înghețate, produse de patiserie, plăcinte, budinci, supe dulci și tarte."
       },
       {
          "id":"4",
-         "Name":"Lamb",
+         "Name":"Oaie",
          "Thumb":"https:\/\/www.themealdb.com\/images\/category\/lamb.png",
-         "Description":"Lamb, hogget, and mutton are the meat of domestic sheep at different ages. "
+         "Description":"Carnea de oaie este o sursă excelentă de proteine și are un conținut scăzut de grăsimi și colesterol.  "
       },
       {
          "id":"5",
-         "Name":"Miscellaneous",
-         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/miscellaneous.png",
-         "Description":"General foods that don't fit into another category"
+         "Name": "Mic dejun",
+         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/breakfast.png",
+         "Description": "Micul dejun este considerat masa cea mai importanta a zilei, pentru ca trebuie sa iti asigure energia necesara pentru intreaga zi."
+
       },
       {
          "id":"6",
-         "Name":"Pasta",
+         "Name":"Paste",
          "Thumb":"https:\/\/www.themealdb.com\/images\/category\/pasta.png",
-         "Description":"Pasta is a staple food of traditional Italian cuisine. "
+         "Description":"Pastele sunt un aliment de bază din bucătăria tradițională italiană."
       },
       {
          "id":"7",
-         "Name":"Pork",
+         "Name":"Porc",
          "Thumb":"https:\/\/www.themealdb.com\/images\/category\/pork.png",
-         "Description":"Pork is the culinary name for meat from a domestic pig. It is the most commonly consumed meat worldwide."
+         "Description":"Carnea de porc este cea mai bogată în proteine, cu efecte benefice asupra pielii, ochilor, oaselor, sistemului nervos și a performanțelor mentale."
       },
       {
          "id": "8",
-         "Name": "Seafood",
+         "Name": "Fructe de mare",
          "Thumb": "https:\/\/www.themealdb.com\/images\/category\/seafood.png",
-         "Description": "Seafood is any form of sea life regarded as food by humans. "
+         "Description": "Fructele de mare sunt orice formă de viață de mare considerată hrană de oameni. "
       },
       {
-         "id":"9",
-         "Name":"Side",
-         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/side.png",
-         "Description":"A side dish, sometimes referred to as a side order, side item, or simply a side, is a food item that accompanies the entrée or main course at a meal."
+         "id": "9",
+         "Name": "Vegetariene + Vegane",
+         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/vegetarian.png",
+         "Description": "Vegetarianismul este practica de a se abține de la consumul de carne. Veganismul este practica de abținere de la utilizarea produselor de origine animală."
       },
       {
          "id": "10",
-         "Name": "Vegetarian + Vegan",
-         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/vegetarian.png",
-         "Description": "Vegetarianism is the practice of abstaining from the consumption of meat.Veganism is both the practice of abstaining from the use of animal products."
-      },
-      {
-         "id": "11",
-         "Name": "Breakfast",
-         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/breakfast.png",
-         "Description": "Breakfast is the first meal of a day. The word in English refers to breaking the fasting period of the previous night. "
-      }
+         "Name":"Diverse",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/miscellaneous.png",
+         "Description":"Alimente generale care nu se încadrează în altă categorie"
+        }
    ]
 }
