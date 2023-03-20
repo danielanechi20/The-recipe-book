@@ -1,0 +1,34 @@
+{
+	"vita":[
+		{
+			"id":"1",
+			"Nume":"Kebab de vitel",
+			"Thumb":"https://www.e-retete.ro/files/recipes/kebab-de-vitel.jpg",
+			"In1":"500 gr carne de vitel (cotlet sau muschiulet) \n 150 gr iaurt grecesc (optional) \n patrunjel",
+			"In2":"Marinata \n\n 1 lingura rasa oregano uscat \n 1 lingurita rasa fulgi de chili \n 1 lingurita rasa chimion macinat \n 75 ml ulei masline",
+			"In3":"1 ceapa rosie mica \n 2 linguri suc de lamaie \n 1 lingura ulei masline \n 1/4 lingurita sumac",
+			"P1":"Carnea se taie cuburi de 3 cm. Se presara cu sare, chimion, chili si se sfarma oregano deasupra. Se amesteca bine, apoi se adauga uleiul si se amesteca iar. Se lasa la marinat la frigider, minim 4 ore.",
+			"P2":"Se scoate carnea si se insira pe frigarui (aprox 6 bucati / frigaruie; mi-au iesit 6 frigarui). Se lasa sa revina la temperatura camerei, cam jumatate de ora.",
+			"P3":"In acest timp taiati ceapa solzisori. Desfaceti inelele si presarati sare. Lasati sa stea 10 minute, ceapa se va inmuia si va lasa suc. Adaugati sucul de lamaie si lasati 15 minute sa se macereze. Adaugati uleiul si sumacul si amestecati.",
+			"P4":"Incingeti la maxim o tigaie grill (fara adaos de grasime). Asezati frigaruile in ea, fara sa le inghesuitit, daca e cazul le faceti in ture. Prajiti carnea cate 3 minute pe parte, apoi intoarceti frigaruile si pe laterale si mai lasati cate 1 minut. Nu lasati carnea sa se faca mult, mai ales daca folositi cotlet de vitel, acesta se usca rapid, ca pieptul de pui. Muschiuletul e putin mai permisiv la gatit.",
+			"P5":"Intindeti  iaurtul in strat egal pe fundul farfuriei de servire. Asezati frigaruile deasupra (daca vreti, puteti scoate bucatile de pe frigaruie si asezati carnea pe iaurt). Presarati cu patrunjel tocat. Decorati cu ceapa marinata si mai presarati patrunjel.",
+			"P6":"Serviti cu lipie, tabbouleh sau orez iranian si restul de ceapa alaturi intr-un bol.",
+			"P7":""
+		},
+		{
+			"id":"2",
+			"Nume":"Chiftelute lenese cu mozzarella",
+			"Thumb":"https://www.e-retete.ro/files/recipes/chiftelute-lenese-cu-mozzarella.jpg",
+			"In1":"250 gr carne tocata de vita (sau mixta vita/porc) \n 2 fileuri ansoa in ulei \n 2 catei de usturoi \n 1 lingura pasta de rosii \n 1/4 lingurita oregano uscat \n putina coaja rasa de lamaie bio \n 100 gr mozzarella \n 2-3 frunze de busuioc sau patrunjel \n 1 lingura ulei de masline \n putin ulei picant (olio al peperoncino)",
+			"In2":"",
+			"In3":"",
+			"P1":"Se rup bucati de carne de marimea unei alune de padure cu coaja (poate usor mai mari...); se strang in pumn ca sa stea lipita. Apoi rapid rulati intre palme sa o neteziti, ca o bila.",
+			"P2":"Intr-o tigaie larga se incinge uleiul, se adauga ansoa tocate si apoi chiftelutele. Se presara cu mult piper negru rasnit. Se lasa 1 minut fara sa amestecati sa se rumeneasca pe prima parte, apoi puteti incepe sa amestecati sa se faca pe toate partile. Tineti focul mai mare, astfel incat sa auziti uleiul ca sfaraie, sa nu apuce carnea sa-si lase sucul si sa se inabuse.",
+			"P3":"Cand chiftelutele si-au schimbat culoarea peste tot (nu trebuie sa fie rumene, nu trebuie inca sa fie facute total inauntru, doar sa nu se mai vada carne cruda) trageti-le pe marginea tigaii si in centru adaugati usturoiul strivit. Amestecati rapid, 30 secunde apoi adaugati pasta de rosii. Amestecati si prajiti-o si pe ea 1 minut.",
+			"P4":"Adaugati 50 ml apa si oregano si amestecati acum totul, inclusiv chiftelele. Puneti capacul pe tigaie si fierbeti 2 minute, pana aveti un sos legat. Adaugati coaja de lamaie (cat treceti de 4-5 ori cu lamaia pe razatoarea mica) si gustati sosul de sare.",
+			"P5":"Turnati continutul tigaii intr-un vas termorezistent de aprox 18-20 cm diametru. Puneti bucati de mozzarella printre chiftelute, pe toata suprafata vasului. Presarati putin patrunjel sau busuioc tocat.",
+			"P6":"Dati vasul la cuptorul preincalzit la 200C. Mutati imediat pe programul grill (caldura sa vina de sus; 200C) si lasati doar pana branza e topita si continutul vasului bolboroseste pe margini (cca 5 minute).",
+			"P7":"Scoateti vasul din cuptor si picurati ulei picant peste chiftelute (cam 1 lingurita am pus). Serviti cu paine prajita frecata usor cu usturoi si presarata cu parmezan razuit."
+		}
+	]
+}

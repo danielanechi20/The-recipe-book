@@ -47,6 +47,7 @@ class CategoriesAdapter(val categories : ArrayList<String>,
         private fun setOnItemClickListener(){
             binding.root.setOnClickListener{
                 listener?.onCategoryClick(categories[adapterPosition])
+
             }
         }
     }
