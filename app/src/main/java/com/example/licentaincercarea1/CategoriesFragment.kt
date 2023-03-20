@@ -1,7 +1,6 @@
 package com.example.licentaincercarea1
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +12,6 @@ import com.example.licentaincercarea1.databinding.CategoriesFragmentBinding
 import kotlinx.android.synthetic.main.categories_fragment.*
 import org.json.JSONArray
 import org.json.JSONObject
-import java.io.IOException
 import java.io.InputStream
 
 
@@ -31,7 +29,7 @@ class CategoriesFragment : Fragment() {
     var ingrediente = ArrayList<String>()
     var images = ArrayList<String>()
     var pasi=ArrayList<String>()
-    private val vitaAdapter=VitaAdapter(retete,ingrediente,images,pasi)
+    private val vitaAdapter=ReteteAdapter(retete,ingrediente,images,pasi)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -72,6 +70,9 @@ class CategoriesFragment : Fragment() {
             // fetch color name and category and store it in arraylist
             retete.add(userDetail.getString("Nume"))
             images.add(userDetail.getString("Thumb"))
+            ingrediente.add(userDetail.getString("In1"))
+            ingrediente.add(userDetail.getString("In2"))
+            ingrediente.add(userDetail.getString("In3"))
         }
     }
 
@@ -98,14 +99,15 @@ class CategoriesFragment : Fragment() {
             override fun onCategoryClick(category: String) {
                 when (category) {
                     ("Vita")->{ rv_categories.isVisible=false
-                        binding.rvVita.apply {
+                        binding.rvRetete.apply {
                         layoutManager = LinearLayoutManager(
                             requireActivity(),
                             LinearLayoutManager.VERTICAL,
                             false
                         )
                         adapter = vitaAdapter
-                    }}
+                    }
+                    }
                     ("Pui")->{  binding.rvCategories.apply {
                         layoutManager = GridLayoutManager(
                             requireActivity(),

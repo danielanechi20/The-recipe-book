@@ -29,11 +29,9 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun setListener() {
-
         binding.button.setOnClickListener {
             startActivity(Intent(this@MainActivity,FragmentBase::class.java))
         }
-
     }
 
 
