@@ -1,23 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".reteta">
+    android:background="#0C0C0C"
+    android:backgroundTint="#090909"
+    tools:context="ReteteFragment">
+
+    <ImageView
+        android:id="@+id/imagine"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:src="@drawable/retete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titluing"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Ingrediente"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/Nume"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/ingrediente"
+        android:layout_width="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Ingrediente"
+        android:textColor="@color/white"
+        android:gravity="left"
+        app:layout_constraintTop_toBottomOf="@id/titluing"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Nume"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Nume reteta"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagine" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imagine"/>
     <TextView
-        android:id="@+id/ingrediente"
-        android:layout_width="wrap_content"
+        android:id="@+id/modprep"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:text="Mod de preparare:"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/Nume"
         app:layout_constraintEnd_toEndOf="parent"/>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/modprep"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/preparare"
+            android:textColor="@color/white"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
