@@ -2,21 +2,22 @@
    "categories":[
       {
          "id":"1",
+         "Name": "Mic dejun",
+         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/breakfast.png",
+         "Description": "Micul dejun este considerat masa cea mai importanta a zilei, pentru ca trebuie sa iti asigure energia necesara pentru intreaga zi."
+
+      },
+      {
+         "id":"2",
          "Name":"Vita",
          "Thumb":"https:\/\/www.themealdb.com\/images\/category\/beef.png",
          "Description":"Carnea de vită este o sursă de proteine \u200B\u200Bde înaltă calitate și nutrienți esențiali."
       },
       {
-         "id":"2",
+         "id":"3",
          "Name":"Pui",
          "Thumb":"https:\/\/www.themealdb.com\/images\/category\/chicken.png",
          "Description":"Puiul este la graniţa dintre legume şi celelalte tipuri de carne, pentru că vine cu multe proteine „împachetate” în puţine calorii. "
-      },
-      {
-         "id":"3",
-         "Name":"Desert",
-         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/dessert.png",
-         "Description":" Termenul de desert se poate aplica multor dulciuri, cum ar fi biscuiți, prăjituri, înghețate, produse de patiserie, plăcinte, budinci, supe dulci și tarte."
       },
       {
          "id":"4",
@@ -26,34 +27,33 @@
       },
       {
          "id":"5",
-         "Name": "Mic dejun",
-         "Thumb": "https:\/\/www.themealdb.com\/images\/category\/breakfast.png",
-         "Description": "Micul dejun este considerat masa cea mai importanta a zilei, pentru ca trebuie sa iti asigure energia necesara pentru intreaga zi."
-
-      },
-      {
-         "id":"6",
-         "Name":"Paste",
-         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/pasta.png",
-         "Description":"Pastele sunt un aliment de bază din bucătăria tradițională italiană."
-      },
-      {
-         "id":"7",
          "Name":"Porc",
          "Thumb":"https:\/\/www.themealdb.com\/images\/category\/pork.png",
          "Description":"Carnea de porc este cea mai bogată în proteine, cu efecte benefice asupra pielii, ochilor, oaselor, sistemului nervos și a performanțelor mentale."
       },
       {
-         "id": "8",
+         "id": "6",
          "Name": "Fructe de mare",
          "Thumb": "https:\/\/www.themealdb.com\/images\/category\/seafood.png",
          "Description": "Fructele de mare sunt orice formă de viață de mare considerată hrană de oameni. "
       },
       {
-         "id": "9",
+         "id":"7",
+         "Name":"Paste",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/pasta.png",
+         "Description":"Pastele sunt un aliment de bază din bucătăria tradițională italiană."
+      },
+      {
+         "id": "8",
          "Name": "Vegetariene + Vegane",
          "Thumb": "https:\/\/www.themealdb.com\/images\/category\/vegetarian.png",
          "Description": "Vegetarianismul este practica de a se abține de la consumul de carne. Veganismul este practica de abținere de la utilizarea produselor de origine animală."
+      },
+      {
+         "id":"9",
+         "Name":"Desert",
+         "Thumb":"https:\/\/www.themealdb.com\/images\/category\/dessert.png",
+         "Description":" Termenul de desert se poate aplica multor dulciuri, cum ar fi biscuiți, prăjituri, înghețate, produse de patiserie, plăcinte, budinci, supe dulci și tarte."
       },
       {
          "id": "10",

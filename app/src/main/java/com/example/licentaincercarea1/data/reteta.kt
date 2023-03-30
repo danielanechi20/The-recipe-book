@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class vita (
+data class reteta (
     @SerializedName(value="id")
     var id:String="",
     @SerializedName(value="Nume")

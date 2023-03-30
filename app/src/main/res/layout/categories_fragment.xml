@@ -24,7 +24,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_categories"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="80mm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,12 +34,11 @@
         app:layout_constraintVertical_bias="0.07" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_vita"
-        android:layout_width="0dp"
+        android:id="@+id/rv_retete"
+        android:layout_width="wrap_content"
         android:layout_height="80mm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/intrb"
         app:layout_constraintVertical_bias="0.07" />
@@ -48,16 +47,22 @@
         android:id="@+id/random"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/random"
+        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:insetBottom="0dp"
-        android:backgroundTint="@color/black"
         android:outlineAmbientShadowColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/rv_categories"
+        android:text="@string/random"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="621dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="600dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
