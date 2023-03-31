@@ -26,22 +26,11 @@ class ReteteFragment: Fragment() {
         val ingrediente = arguments?.getString("ingrediente")
         val pasi = arguments?.getString("pasi")
         val imagine = arguments?.getString("imagine")
-
-        /*val recyclerView = findViewById<RecyclerView>(R.id.rvtext)
-        recyclerView.adapter = TextAdapter(pasi) // generateData() is a function that returns a list of strings
-        recyclerView.layoutManager = LinearLayoutManager(this)*/
-       /* val adaptertext=TextAdapter(pasi.toString())
-        binding.rvtext.apply{
-            layoutManager = GridLayoutManager(requireActivity(),1)
-
-            adapter = adaptertext
-        }*/
-
+        
 
         binding.Nume.text = nume
-        binding.ingrediente.text=ingrediente
+        binding.scrollingrediente.ingrediente.text=ingrediente
         binding.scrollView.preparare.text=pasi
-        //preparare.movementMethod=ScrollingMovementMethod()
         Glide.with(binding.root.context).load(imagine).fitCenter().into(binding.imagine)
         val view=binding.root
 
