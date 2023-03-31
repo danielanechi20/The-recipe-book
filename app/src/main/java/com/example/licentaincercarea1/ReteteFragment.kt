@@ -26,7 +26,7 @@ class ReteteFragment: Fragment() {
         val ingrediente = arguments?.getString("ingrediente")
         val pasi = arguments?.getString("pasi")
         val imagine = arguments?.getString("imagine")
-        
+
 
         binding.Nume.text = nume
         binding.scrollingrediente.ingrediente.text=ingrediente

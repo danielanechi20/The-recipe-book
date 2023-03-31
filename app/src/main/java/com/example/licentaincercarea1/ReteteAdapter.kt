@@ -15,11 +15,12 @@ class ReteteAdapter(val retetele : ArrayList<String>,
                     val images: ArrayList<String>,
                     val pasi:ArrayList<String>) :
     RecyclerView.Adapter<ReteteAdapter.ReteteViewHolder>() {
-    var listener: reteteClickListener? = null
+    private var isFavourite: BooleanArray = BooleanArray(retetele.size)
+    //var listener: ReteteViewHolder.reteteClickListener? = null
 
-    fun setItemClickListener(reteteListener: ReteteAdapter.reteteClickListener) {
-        listener = reteteListener
-    }
+    //fun setItemClickListener(reteteListener: ReteteAdapter.reteteClickListener) {
+     //   listener = reteteListener
+   // }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
             ReteteViewHolder {
         val binding = ReteteItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -43,6 +44,9 @@ class ReteteAdapter(val retetele : ArrayList<String>,
             val gatit=pasi[adapterPosition]
             binding.name.text = retete
             Glide.with(binding.root.context).load(images).fitCenter().into(binding.imagine)
+            binding.favourite.setOnClickListener {
+                isFavourite[adapterPosition]=binding.favourite.isChecked
+            }
             setOnItemClickListener()
         }
         private fun setOnItemClickListener() {

@@ -94,13 +94,6 @@
             android:layout_height="wrap_content"/>
 
     </ScrollView>
-    <androidx.appcompat.widget.AppCompatCheckBox
-        android:id="@+id/favourite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:button="@drawable/ic_favourite_selector"
-        app:layout_constraintEnd_toEndOf="@id/Nume"
-        app:layout_constraintBottom_toBottomOf="@id/Nume"
-        app:layout_constraintTop_toTopOf="@id/Nume"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
