@@ -2,6 +2,7 @@ package com.example.licentaincercarea1
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.TextKeyListener.clear
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.licentaincercarea1.data.category
+import com.example.licentaincercarea1.data.reteta
 import com.example.licentaincercarea1.databinding.CategoriesFragmentBinding
 import kotlinx.android.synthetic.main.categories_fragment.*
 import org.json.JSONArray
@@ -26,63 +29,56 @@ class CategoriesFragment : Fragment() {
     private var _binding: CategoriesFragmentBinding?=null
     private val binding get()=_binding!!
 
-    private var categories = ArrayList<String>()
-    private var desc = ArrayList<String>()
-    private var image = ArrayList<String>()
-    private val categoriesAdapter = CategoriesAdapter(categories,desc,image)
-
-    private var retete = ArrayList<String>()
-    private var ingrediente = ArrayList<String>()
-    private var images = ArrayList<String>()
-    private var pasi=ArrayList<String>()
-
-
-
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         _binding = CategoriesFragmentBinding.inflate(inflater,container,false)
         val view = binding.root
-        setupRv()
-        transfcat()
+        val categorii=transfcat()
+        val categoriesAdapter = CategoriesAdapter(categorii)
+        /*binding.rvCategories.apply {
+            layoutManager = GridLayoutManager(requireActivity(), 2)
+            adapter = categoriesAdapter
+        }*/
+        setupRv(categoriesAdapter)
         return view
     }
 
-    private fun transfcat(){
-        // get JSONObject from JSON file
+    private fun transfcat():List<category>{
+        val categoryList=arrayListOf<category>()
         val obj = JSONObject(loadJSONFromAsset(CATEGORIES))
-        // fetch JSONArray named colors
         val userArray: JSONArray = obj.getJSONArray("categories")
-        // implement a loop to get colors list data
         for (i in 0 until userArray.length()) {
-            // create a JSONObject for fetching single color data
             val userDetail = userArray.getJSONObject(i)
-            categories.add(userDetail.getString("Name"))
-            desc.add(userDetail.getString("Description"))
-            image.add(userDetail.getString("Thumb"))
+            categoryList.add(
+                category(
+                    id = "$i",
+                    Name = userDetail.getString("Name"),
+                    Thumb = userDetail.getString("Thumb"),
+                    Description = userDetail.getString("Description")
+                )
+            )
+        }
+        return categoryList
+    }
 
-        }
-    }
-    private fun close(){
-        retete.clear()
-        images.clear()
-        ingrediente.clear()
-        pasi.clear()
-    }
-    private fun transfretete(fileName: String, name:String){
-        // get JSONObject from JSON file
+    private fun transfretete(fileName: String, name:String):List<reteta>{
+        val retete=arrayListOf<reteta>()
         val obj = JSONObject(loadJSONFromAsset(fileName))
-        // fetch JSONArray named colors
         val userArray: JSONArray = obj.getJSONArray(name)
-        // implement a loop to get colors list data
         for (i in 0 until userArray.length()) {
-            // create a JSONObject for fetching single color data
             val userDetail = userArray.getJSONObject(i)
-            retete.add(userDetail.getString("Nume"))
-            images.add(userDetail.getString("Thumb"))
-            ingrediente.add(userDetail.getString("In"))
-            pasi.add(userDetail.getString("P"))
+            retete.add(
+                reteta(
+                    id = "$i",
+                    Nume = userDetail.getString("Nume"),
+                    Thumb=userDetail.getString("Thumb"),
+                    In = userDetail.getString("In"),
+                    P = userDetail.getString("P"),
+                )
+            )
         }
+        return retete
     }
 
     private fun loadJSONFromAsset(fileName: String): String {
@@ -94,42 +90,43 @@ class CategoriesFragment : Fragment() {
         return String(buffer)
 
     }
-    private val reteteAdapter=ReteteAdapter(retete,ingrediente,images,pasi)
-    private fun setuprvRetete(){
+
+    private fun setuprvRetete(adapterr: ReteteAdapter){
         binding.rvRetete.apply {
             layoutManager = LinearLayoutManager(
                 requireActivity(),
                 LinearLayoutManager.VERTICAL,
                 false
             )
-            adapter = reteteAdapter
+            adapter = adapterr
         }
 
     }
-    private fun setupRv() {
+    private fun setupRv(adapterc: CategoriesAdapter) {
 
         binding.rvCategories.apply {
             layoutManager = GridLayoutManager(requireActivity(), 2)
-            adapter = categoriesAdapter
+            adapter = adapterc
         }
 
-        categoriesAdapter.setCategoryClickListener(object:CategoriesAdapter.CategoryClickListener{
-            override fun onCategoryClick(category: String) {
-                when (category) {
+        adapterc.setCategoryClickListener(object:CategoriesAdapter.CategoryClickListener{
+            override fun onCategoryClick(category: category) {
+                when (category.Name) {
                     ("Vita")->{ rv_categories.isVisible=false
-                        close()
-                        transfretete(VITA,"vita")
-                        setuprvRetete()
+
+                        val vitaadapter=ReteteAdapter(transfretete(VITA,"vita"))
+                        setuprvRetete(vitaadapter)
                     }
                     ("Pui")->{ rv_categories.isVisible=false
-                        close()
-                        transfretete(PUI,"pui")
-                       setuprvRetete()
+
+                        val pui=transfretete(PUI,"pui")
+                        val puiadapter=ReteteAdapter(pui)
+                       setuprvRetete(puiadapter)
                     }
                     ("Mic dejun")->{ rv_categories.isVisible=false
-                        close()
-                        transfretete(DEJUN,"dejun")
-                        setuprvRetete()
+                        val dejun=transfretete(DEJUN,"dejun")
+                        val dejunadapter=ReteteAdapter(dejun)
+                        setuprvRetete(dejunadapter)
                     }
                     else->null
                 }

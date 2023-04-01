@@ -5,11 +5,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.licentaincercarea1.data.category
 import com.example.licentaincercarea1.databinding.CategoryItemBinding
 
-class CategoriesAdapter(val categories : ArrayList<String>,
-                        val desc : ArrayList<String>,
-                        val image: ArrayList<String>) :
+class CategoriesAdapter(val categoryList : List<category>) :
     RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>() {
     var listener: CategoryClickListener? = null
 
@@ -27,30 +26,28 @@ class CategoriesAdapter(val categories : ArrayList<String>,
     }
 
     override fun getItemCount(): Int {
-        return categories.size
+        return categoryList.size
     }
 
     inner class CategoriesViewHolder(private val binding: CategoryItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind() {
-            val  category = categories[adapterPosition]
-            val desc=desc[adapterPosition]
-            val img=image[adapterPosition]
-            binding.description.text = desc
-            binding.name.text=category
+            val category=categoryList[adapterPosition]
+            binding.description.text = category.Description
+            binding.name.text= category.Name
 
-            Glide.with(binding.root.context).load(img).fitCenter().into(binding.profile)
+            Glide.with(binding.root.context).load(category.Thumb).fitCenter().into(binding.profile)
             setOnItemClickListener()
         }
         private fun setOnItemClickListener(){
             binding.root.setOnClickListener{
-                listener?.onCategoryClick(categories[adapterPosition])
+                listener?.onCategoryClick(categoryList[adapterPosition])
 
             }
         }
     }
     interface CategoryClickListener{
-        fun onCategoryClick(category: String)
+        fun onCategoryClick(category: category)
     }
 
 }
