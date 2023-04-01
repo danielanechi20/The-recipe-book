@@ -27,7 +27,6 @@ class ReteteFragment: Fragment() {
         val pasi = arguments?.getString("pasi")
         val imagine = arguments?.getString("imagine")
 
-
         binding.Nume.text = nume
         binding.scrollingrediente.ingrediente.text=ingrediente
         binding.scrollView.preparare.text=pasi
@@ -40,8 +39,6 @@ class ReteteFragment: Fragment() {
             val progress = (scrollY.toFloat() / maxScroll.toFloat() * 100).toInt()
             binding.progressBar.progress = progress
         }
-
-
         return view
     }
 }
