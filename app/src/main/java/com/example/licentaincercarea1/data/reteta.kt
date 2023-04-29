@@ -15,6 +15,8 @@ data class reteta (
     @SerializedName(value="In")
     var In:String="",
     @SerializedName(value="P")
-    var P:String=""
+    var P:String="",
+    @SerializedName(value="Favourite")
+    var Favourite:Boolean=false
         ):Parcelable
 

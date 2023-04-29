@@ -26,8 +26,9 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:gravity="center"
+            android:background="#AD090808"
+            android:fontFamily="cursive"
             android:text="@string/item_title"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -37,13 +38,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <androidx.appcompat.widget.AppCompatCheckBox
-            android:id="@+id/favourite"
-            android:layout_width="97dp"
-            android:layout_height="95dp"
-            android:button="@drawable/ic_favourite_selector"
-            app:layout_constraintEnd_toEndOf="@id/imagine"
-            app:layout_constraintTop_toTopOf="@id/imagine" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
