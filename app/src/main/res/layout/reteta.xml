@@ -28,22 +28,24 @@
         app:layout_constraintTop_toBottomOf="@id/progressBar"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollingrediente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/portii"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titluing"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintVertical_bias="0.023">
+
         <TextView
             android:id="@+id/ingrediente"
             android:layout_width="150dp"
-            android:layout_marginLeft="10dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
             android:text="Ingrediente"
-            android:textColor="@color/white"
-            android:gravity="left" />
-    </ScrollView>
+            android:textColor="@color/white" />
+    </androidx.core.widget.NestedScrollView>
 
     <TextView
         android:id="@+id/Nume"
@@ -79,7 +81,7 @@
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"/>
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollView"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -93,7 +95,40 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"/>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
+    <Button
+        android:id="@+id/decrease"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        android:onClick="decreaseInteger"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/portii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/increase"
+        app:layout_constraintEnd_toStartOf="@id/increase"
+        app:layout_constraintStart_toEndOf="@id/decrease" />
+
+    <Button
+        android:id="@+id/increase"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/portii"
+        app:layout_constraintEnd_toStartOf="@id/scrollView"
+        android:onClick="increaseInteger"
+        android:text="+"
+        android:textSize="20sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

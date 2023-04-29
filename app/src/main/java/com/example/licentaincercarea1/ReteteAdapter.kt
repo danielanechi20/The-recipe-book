@@ -32,10 +32,7 @@ class ReteteAdapter(val retete:List<reteta>) :
             val reteta=retete[adapterPosition]
             binding.name.text=reteta.Nume
             Glide.with(binding.root.context).load(reteta.Thumb).fitCenter().into(binding.imagine)
-            binding.favourite.isChecked = reteta.Favourite
-            binding.favourite.setOnClickListener {
-                retete[adapterPosition].Favourite = !reteta.Favourite
-            }
+
             setOnItemClickListener()
         }
         private fun setOnItemClickListener() {
