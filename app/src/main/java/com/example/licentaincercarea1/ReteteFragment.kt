@@ -1,5 +1,8 @@
 package com.example.licentaincercarea1
 
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
@@ -8,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.ProgressBar
 import android.widget.ScrollView
 import android.widget.Toast
+import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,6 +19,9 @@ import com.bumptech.glide.Glide
 import com.example.licentaincercarea1.databinding.RetetaBinding
 import kotlinx.android.synthetic.main.reteta.*
 import kotlinx.android.synthetic.main.reteta.view.*
+import org.json.JSONObject
+import java.io.*
+import java.nio.charset.Charset
 
 
 class ReteteFragment: Fragment() {
@@ -55,6 +62,9 @@ class ReteteFragment: Fragment() {
                 Actualizare()
             } else Toast.makeText(context, "Numarul de portii nu poate fi mai mic decat 1",Toast.LENGTH_SHORT).show()
         }
+        binding.export.setOnClickListener {
+            exportReteta()
+        }
 
         val view=binding.root
         return view
@@ -66,7 +76,7 @@ class ReteteFragment: Fragment() {
         for (ingred in ingrediente) {
             val parts = ingred.split(" ")
             if (parts.size > 1) {
-                val cantitate = parts[0].toDouble()
+                val cantitate = parts[0].toInt()
                 val unitate = parts[1]
 
                 // ajustam cantitatea
@@ -93,5 +103,42 @@ class ReteteFragment: Fragment() {
         super.onDestroyView()
         _binding = null
     }
+    private fun exportReteta() {
+        val reteta = """
+        Nume: ${arguments?.getString("nume") }
+        
+        Ingrediente:  
+        
+        ${arguments?.getString("ingrediente")}
+        
+        Mod de preparare:
+ 
+        ${arguments?.getString("pasi")}
+    """.trimIndent()
+
+        val fileName = "${arguments?.getString("nume")}.txt"
+        val file = File(requireContext().filesDir, fileName)
+        file.createNewFile()
+        val writer = PrintWriter(file, "UTF-8")
+        writer.println(reteta)
+        writer.flush()
+        writer.close()
+
+        // Deschiderea aplicatiei de email pentru a trimite fisierul text
+        val fileUri = FileProvider.getUriForFile(
+            requireContext(),
+            requireContext().applicationContext.packageName + ".provider",
+            file
+        )
+
+        val emailIntent = Intent(Intent.ACTION_SEND)
+        emailIntent.type = "text/plain"
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, arguments?.getString("nume"))
+        emailIntent.putExtra(Intent.EXTRA_STREAM, fileUri)
+        emailIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+
+        startActivity(Intent.createChooser(emailIntent, "Trimite reteta prin:"))
+    }
+
 
 }
