@@ -16,6 +16,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.licentaincercarea1.data.category
+import com.example.licentaincercarea1.data.ingredient
 import com.example.licentaincercarea1.data.reteta
 import com.example.licentaincercarea1.databinding.CategoriesFragmentBinding
 import kotlinx.android.synthetic.main.categories_fragment.*
@@ -62,24 +63,35 @@ class CategoriesFragment : Fragment() {
         return categoryList
     }
 
-    private fun transfretete(fileName: String, name:String):List<reteta>{
-        val retete=arrayListOf<reteta>()
+    private fun transfretete(fileName: String, name: String): List<reteta> {
+        val retete = arrayListOf<reteta>()
         val obj = JSONObject(loadJSONFromAsset(fileName))
         val userArray: JSONArray = obj.getJSONArray(name)
         for (i in 0 until userArray.length()) {
             val userDetail = userArray.getJSONObject(i)
+            val ingredienteArray = userDetail.getJSONArray("In")
+            val ingrediente = arrayListOf<ingredient>()
+            for (j in 0 until ingredienteArray.length()) {
+                val ingredienteDetail = ingredienteArray.getJSONObject(j)
+                val ingredient = ingredient(
+                    nume = ingredienteDetail.getString("Nume"),
+                    cantitate = ingredienteDetail.getString("Cantitate")
+                )
+                ingrediente.add(ingredient)
+            }
             retete.add(
                 reteta(
                     id = "$i",
                     Nume = userDetail.getString("Nume"),
-                    Thumb=userDetail.getString("Thumb"),
-                    In = userDetail.getString("In"),
-                    P = userDetail.getString("P"),
+                    Thumb = userDetail.getString("Thumb"),
+                    ingrediente = ingrediente,
+                    P = userDetail.getString("P")
                 )
             )
         }
         return retete
     }
+
 
     private fun loadJSONFromAsset(fileName: String): String {
         val am = requireActivity().assets

@@ -12,11 +12,9 @@ data class reteta (
     var Nume:String="",
     @SerializedName(value="Thumb")
     var Thumb:String="",
-    @SerializedName(value="In")
-    var In:String="",
+    @SerializedName(value = "Ingrediente")
+    var ingrediente: List<ingredient> = emptyList(),
     @SerializedName(value="P")
-    var P:String="",
-    @SerializedName(value="Favourite")
-    var Favourite:Boolean=false
+    var P:String=""
         ):Parcelable
 

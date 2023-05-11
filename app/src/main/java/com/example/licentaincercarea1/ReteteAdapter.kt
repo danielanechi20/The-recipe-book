@@ -39,10 +39,7 @@ class ReteteAdapter(val retete:List<reteta>) :
             val reteta=retete[adapterPosition]
             binding.root.setOnClickListener {
                 val bundle = Bundle().apply {
-                    putString("nume", reteta.Nume)
-                    putString("ingrediente",reteta.In)
-                    putString("imagine",reteta.Thumb)
-                    putString("pasi", reteta.P)
+                    putParcelable("reteta", reteta)
                 }
                 it.findNavController().navigate(R.id.action_categoriesFragment_to_reteteFragment, bundle)
             }
