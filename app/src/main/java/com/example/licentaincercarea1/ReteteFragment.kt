@@ -56,11 +56,15 @@ class ReteteFragment: Fragment() {
             if(binding.portii.text.toString().toInt()>1){
                 binding.portii.text=(binding.portii.text.toString().toInt() - 1).toString()
                 numarPortii = binding.portii.text.toString().toInt()
-               // Actualizare()
+                if (reteta != null) {
+                    Actualizare(reteta)
+                }
             } else Toast.makeText(context, "Numarul de portii nu poate fi mai mic decat 1",Toast.LENGTH_SHORT).show()
         }
         binding.export.setOnClickListener {
-           // exportReteta()
+            if (reteta != null) {
+                exportReteta(reteta)
+            }
         }
 
         val view=binding.root
@@ -70,7 +74,8 @@ class ReteteFragment: Fragment() {
 
         val ingrediente = StringBuilder()
         for (ingredient in reteta.ingrediente) {
-            val nouaCantitate = ingredient.cantitate.toInt() * numarPortii / 1.0
+            val cantitate = ingredient.cantitate.split(" ")[0].toDoubleOrNull() ?: 0.0
+            val nouaCantitate = cantitate * numarPortii
             ingrediente.append(nouaCantitate.toString())
             ingrediente.append(" ")
             ingrediente.append(ingredient.nume)
@@ -78,28 +83,32 @@ class ReteteFragment: Fragment() {
         }
         binding.scrollingrediente.ingrediente.text = ingrediente.toString()
     }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-    private fun exportReteta() {
-        val reteta = """
-        Nume: ${arguments?.getString("nume") }
+
+    private fun exportReteta(reteta: reteta) {
+        val ingrediente = StringBuilder()
+        for (ingredient in reteta.ingrediente) {
+            ingrediente.append(ingredient.cantitate)
+            ingrediente.append(" ")
+            ingrediente.append(ingredient.nume)
+            ingrediente.append("\n")
+        }
+        val text = """
+        Nume: ${reteta.Nume}
         
         Ingrediente:  
-        
-        ${arguments?.getString("ingrediente")}
+      
+        ${ingrediente}
         
         Mod de preparare:
- 
-        ${arguments?.getString("pasi")}
+
+        ${reteta.P}
     """.trimIndent()
 
-        val fileName = "${arguments?.getString("nume")}.txt"
+        val fileName = "${reteta.Nume}.txt"
         val file = File(requireContext().filesDir, fileName)
         file.createNewFile()
         val writer = PrintWriter(file, "UTF-8")
-        writer.println(reteta)
+        writer.println(text)
         writer.flush()
         writer.close()
 
@@ -112,7 +121,7 @@ class ReteteFragment: Fragment() {
 
         val emailIntent = Intent(Intent.ACTION_SEND)
         emailIntent.type = "text/plain"
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, arguments?.getString("nume"))
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, reteta.Nume)
         emailIntent.putExtra(Intent.EXTRA_STREAM, fileUri)
         emailIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
 
