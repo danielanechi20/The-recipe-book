@@ -15,9 +15,9 @@
     </fragment>
     <fragment
         android:id="@+id/manifesting"
-        android:name="com.example.licentaincercarea1.manifesting"
+        android:name="com.example.licentaincercarea1.SearchFragment"
         android:label="manifesting"
-        tools:layout="@layout/manifesting"/>
+        tools:layout="@layout/search_fragment"/>
     <fragment
         android:id="@+id/manifesting2"
         android:name="com.example.licentaincercarea1.FavouriteFragment"

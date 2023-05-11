@@ -37,10 +37,6 @@ class CategoriesFragment : Fragment() {
         val view = binding.root
         val categorii=transfcat()
         val categoriesAdapter = CategoriesAdapter(categorii)
-        /*binding.rvCategories.apply {
-            layoutManager = GridLayoutManager(requireActivity(), 2)
-            adapter = categoriesAdapter
-        }*/
         setupRv(categoriesAdapter)
         return view
     }
@@ -63,7 +59,7 @@ class CategoriesFragment : Fragment() {
         return categoryList
     }
 
-    private fun transfretete(fileName: String, name: String): List<reteta> {
+    fun transfretete(fileName: String, name: String): List<reteta> {
         val retete = arrayListOf<reteta>()
         val obj = JSONObject(loadJSONFromAsset(fileName))
         val userArray: JSONArray = obj.getJSONArray(name)
@@ -100,7 +96,6 @@ class CategoriesFragment : Fragment() {
         val buffer = ByteArray(size)
         inputStream.read(buffer)
         return String(buffer)
-
     }
 
     private fun setuprvRetete(adapterr: ReteteAdapter){
