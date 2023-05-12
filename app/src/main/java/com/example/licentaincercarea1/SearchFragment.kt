@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.licentaincercarea1.data.ingredient
@@ -34,12 +35,12 @@ class SearchFragment: Fragment() {
                 performSearch(query)
                 return false
             }
-
             override fun onQueryTextChange(newText: String): Boolean {
                 performSearch(newText)
                 return false
             }
         })
+
         return view
     }
     private fun performSearch(query: String) {
@@ -93,4 +94,5 @@ class SearchFragment: Fragment() {
         inputStream.read(buffer)
         return String(buffer)
     }
+
 }

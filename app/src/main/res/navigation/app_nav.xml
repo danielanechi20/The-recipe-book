@@ -12,12 +12,19 @@
         <action
             android:id="@+id/action_categoriesFragment_to_reteteFragment"
             app:destination="@id/reteteFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_manifesting"
+            app:destination="@id/manifesting" />
     </fragment>
     <fragment
         android:id="@+id/manifesting"
         android:name="com.example.licentaincercarea1.SearchFragment"
         android:label="manifesting"
-        tools:layout="@layout/search_fragment"/>
+        tools:layout="@layout/search_fragment">
+        <action
+            android:id="@+id/action_manifesting_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/manifesting2"
         android:name="com.example.licentaincercarea1.FavouriteFragment"
@@ -45,4 +52,16 @@
                 app:argType="string" />
         </action>
     </fragment>
+    <fragment
+        android:id="@+id/advanced"
+        android:name="com.example.licentaincercarea1.AdvancedSearchFragment"
+        android:label="advanced" >
+        <action
+            android:id="@+id/action_advanced_to_generatorFragment"
+            app:destination="@id/generatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generatorFragment"
+        android:name="com.example.licentaincercarea1.GeneratorFragment"
+        android:label="GeneratorFragment" />
 </navigation>

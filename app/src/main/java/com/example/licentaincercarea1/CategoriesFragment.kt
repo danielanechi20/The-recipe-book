@@ -38,6 +38,9 @@ class CategoriesFragment : Fragment() {
         val categorii=transfcat()
         val categoriesAdapter = CategoriesAdapter(categorii)
         setupRv(categoriesAdapter)
+        binding.toate.setOnClickListener {
+            it.findNavController().navigate(R.id.action_categoriesFragment_to_manifesting)
+        }
         return view
     }
 
@@ -120,17 +123,18 @@ class CategoriesFragment : Fragment() {
             override fun onCategoryClick(category: category) {
                 when (category.Name) {
                     ("Vita")->{ rv_categories.isVisible=false
-
+                        toate.isVisible=false
                         val vitaadapter=ReteteAdapter(transfretete(VITA,"vita"))
                         setuprvRetete(vitaadapter)
                     }
                     ("Pui")->{ rv_categories.isVisible=false
-
+                        toate.isVisible=false
                         val pui=transfretete(PUI,"pui")
                         val puiadapter=ReteteAdapter(pui)
                        setuprvRetete(puiadapter)
                     }
                     ("Mic dejun")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
                         val dejun=transfretete(DEJUN,"dejun")
                         val dejunadapter=ReteteAdapter(dejun)
                         setuprvRetete(dejunadapter)
