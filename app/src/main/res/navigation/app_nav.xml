@@ -26,11 +26,6 @@
             app:destination="@id/categoriesFragment" />
     </fragment>
     <fragment
-        android:id="@+id/manifesting2"
-        android:name="com.example.licentaincercarea1.FavouriteFragment"
-        android:label="manifesting2"
-        tools:layout="@layout/favourite_fragment" />
-    <fragment
         android:id="@+id/reteteFragment"
         android:name="com.example.licentaincercarea1.ReteteFragment"
         android:label="reteta"
@@ -62,6 +57,15 @@
     </fragment>
     <fragment
         android:id="@+id/generatorFragment"
-        android:name="com.example.licentaincercarea1.GeneratorFragment"
-        android:label="GeneratorFragment" />
+        android:name="com.example.licentaincercarea1.GeneratorFragment1"
+        android:label="GeneratorFragment" >
+        <action
+            android:id="@+id/action_generatorFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.licentaincercarea1.FavouriteFragment"
+        android:label="favourite_fragment"
+        tools:layout="@layout/favourite_fragment" />
 </navigation>

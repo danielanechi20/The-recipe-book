@@ -1,0 +1,56 @@
+{
+  "tipuri":[
+    {
+      "tip":"carne",
+      "denumiri":[
+        {
+          "Nume":"Rasol de vită"
+        },
+        {
+          "Nume":"Mușchi de vită"
+        },
+        {
+          "Nume":"Coaste de vită"
+        },
+        {
+          "Nume":"Felie vrăbioară de vită"
+        },
+        {
+          "Nume":"Vită"
+        },
+        {
+          "Nume":"Piept de pui"
+        },
+        {
+          "Nume":"Pui întreg"
+        }
+      ]
+    },
+    {
+      "tip":"lactate si oua",
+      "denumiri":[
+        {
+          "Nume":"Smântână de gătit"
+        },
+        {
+          "Nume":"Lapte"
+        },
+        {
+          "Nume":"Unt"
+        },
+        {
+          "Nume":"Mozzarella"
+        },
+        {
+          "Nume":"Ou"
+        },
+        {
+          "Nume":"Kefir"
+        },
+        {
+          "Nume":"Iaurt grecesc"
+        }
+      ]
+    }
+  ]
+}

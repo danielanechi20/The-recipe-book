@@ -28,5 +28,12 @@ Introdu cat mai multe ingrediente, pentru o acuratete cat mai mare."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/instructiuni" />
 
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pasul urmator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_ingr"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
