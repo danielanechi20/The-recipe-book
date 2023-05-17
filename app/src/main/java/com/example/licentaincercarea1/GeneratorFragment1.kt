@@ -25,15 +25,16 @@ class GeneratorFragment1: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding= GeneratorFragment1Binding.inflate(inflater, container, false)
-
+        val selectedIngredients = mutableListOf<ingredient>()
         binding.rvIngr.apply {
             layoutManager  = LinearLayoutManager(
                 requireActivity(),
                 LinearLayoutManager.VERTICAL,
                 false
             )
-            adapter = ItemAdapter(transf())
+            adapter = ItemAdapter(transf(),selectedIngredients)
         }
+        
         binding.next.setOnClickListener {
 
         }
@@ -64,33 +65,6 @@ class GeneratorFragment1: Fragment() {
         }
         return retete
     }
-   /* fun transf(): List<types> {
-        val types = mutableListOf<types>()
-        val json = JSONObject(loadJSONFromAsset())
-        val tipuriArr = json.getJSONArray("tipuri")
-        for (i in 0 until tipuriArr.length()) {
-            val tipObj = tipuriArr.getJSONObject(i)
-            val tip = tipObj.optString("tip", null)
-            if (tip != null) {
-                val denumiriArr = tipObj.optJSONArray("denumiri")
-                val items = mutableListOf<ingredient>()
-                if (denumiriArr != null) {
-                    for (j in 0 until denumiriArr.length()) {
-                        val itemObj = denumiriArr.getJSONObject(j)
-                        val item = ingredient(
-                            nume=itemObj.optString("Nume", null),
-                            cantitate="0")
-                        if (item != null) {
-                            items.add(item)
-                        }
-                    }
-                }
-                types.add(types(tip, items))
-            }
-        }
-        return types
-    }*/
-
     private fun loadJSONFromAsset(): String {
         val am = requireActivity().assets
         val inputStream: InputStream = am.open("tipuri.json")

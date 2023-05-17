@@ -23,7 +23,8 @@
         },
         {
           "Nume":"Pui întreg"
-        }
+        },
+        {"Nume": "Felii subțiri de șuncă"}
       ]
     },
     {
@@ -76,7 +77,37 @@
         {"Nume": "Hrean"},
         {"Nume": "Sfeclă"},
         {"Nume": "Țelină"},
-        {"Nume": "Păstârnac"}
-      ]}
+        {"Nume": "Păstârnac"},
+        {"Nume": "Plante aromatice proaspete"},
+        { "Nume": "Leurdă proaspătă"}
+      ]},
+    {
+      "tip":"bacanie",
+      "denumiri": [
+        {"Nume": "Faină"},
+        {"Nume": "Zahăr"},
+        {"Nume": "Praf de copt"},
+        {"Nume": "Bicarbonat de sodiu"},
+        {"Nume": "Ulei de măsline"},
+        {"Nume": "Aluat de foietaj"},
+        {"Nume": "Oțet balsamic"}
+      ]
+    },
+    {
+      "tip":"condimente",
+      "denumiri": [
+        {"Nume": "Scorțișoară"},
+        {"Nume": "Cimbru proaspăt"},
+        {"Nume": "Crenguțe de rozmarin" },
+        {"Nume": "Fulgi de chili"},
+        {"Nume": "Susan"},
+        {"Nume": "Frunze de busuioc"},
+        {"Nume": "Sos de chilli"},
+        {"Nume": "Sos teriyaki"},
+        {"Nume": "Condimente"},
+        {"Nume": "Ierburi aromatice uscate"},
+        {"Nume": "Muștar boabe"}
+      ]
+    }
   ]
 }
