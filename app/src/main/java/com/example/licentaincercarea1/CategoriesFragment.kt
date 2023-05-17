@@ -16,6 +16,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.licentaincercarea1.data.category
+import com.example.licentaincercarea1.data.ingredient
 import com.example.licentaincercarea1.data.reteta
 import com.example.licentaincercarea1.databinding.CategoriesFragmentBinding
 import kotlinx.android.synthetic.main.categories_fragment.*
@@ -36,11 +37,10 @@ class CategoriesFragment : Fragment() {
         val view = binding.root
         val categorii=transfcat()
         val categoriesAdapter = CategoriesAdapter(categorii)
-        /*binding.rvCategories.apply {
-            layoutManager = GridLayoutManager(requireActivity(), 2)
-            adapter = categoriesAdapter
-        }*/
         setupRv(categoriesAdapter)
+        binding.toate.setOnClickListener {
+            it.findNavController().navigate(R.id.action_categoriesFragment_to_manifesting)
+        }
         return view
     }
 
@@ -62,24 +62,35 @@ class CategoriesFragment : Fragment() {
         return categoryList
     }
 
-    private fun transfretete(fileName: String, name:String):List<reteta>{
-        val retete=arrayListOf<reteta>()
+    fun transfretete(fileName: String, name: String): List<reteta> {
+        val retete = arrayListOf<reteta>()
         val obj = JSONObject(loadJSONFromAsset(fileName))
         val userArray: JSONArray = obj.getJSONArray(name)
         for (i in 0 until userArray.length()) {
             val userDetail = userArray.getJSONObject(i)
+            val ingredienteArray = userDetail.getJSONArray("In")
+            val ingrediente = arrayListOf<ingredient>()
+            for (j in 0 until ingredienteArray.length()) {
+                val ingredienteDetail = ingredienteArray.getJSONObject(j)
+                val ingredient = ingredient(
+                    nume = ingredienteDetail.getString("Nume"),
+                    cantitate = ingredienteDetail.getString("Cantitate")
+                )
+                ingrediente.add(ingredient)
+            }
             retete.add(
                 reteta(
                     id = "$i",
                     Nume = userDetail.getString("Nume"),
-                    Thumb=userDetail.getString("Thumb"),
-                    In = userDetail.getString("In"),
-                    P = userDetail.getString("P"),
+                    Thumb = userDetail.getString("Thumb"),
+                    ingrediente = ingrediente,
+                    P = userDetail.getString("P")
                 )
             )
         }
         return retete
     }
+
 
     private fun loadJSONFromAsset(fileName: String): String {
         val am = requireActivity().assets
@@ -88,7 +99,6 @@ class CategoriesFragment : Fragment() {
         val buffer = ByteArray(size)
         inputStream.read(buffer)
         return String(buffer)
-
     }
 
     private fun setuprvRetete(adapterr: ReteteAdapter){
@@ -113,17 +123,18 @@ class CategoriesFragment : Fragment() {
             override fun onCategoryClick(category: category) {
                 when (category.Name) {
                     ("Vita")->{ rv_categories.isVisible=false
-
+                        toate.isVisible=false
                         val vitaadapter=ReteteAdapter(transfretete(VITA,"vita"))
                         setuprvRetete(vitaadapter)
                     }
                     ("Pui")->{ rv_categories.isVisible=false
-
+                        toate.isVisible=false
                         val pui=transfretete(PUI,"pui")
                         val puiadapter=ReteteAdapter(pui)
                        setuprvRetete(puiadapter)
                     }
                     ("Mic dejun")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
                         val dejun=transfretete(DEJUN,"dejun")
                         val dejunadapter=ReteteAdapter(dejun)
                         setuprvRetete(dejunadapter)

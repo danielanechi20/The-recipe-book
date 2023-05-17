@@ -25,20 +25,31 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_categories"
         android:layout_width="wrap_content"
-        android:layout_height="80mm"
+        android:layout_height="550dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/intrb" />
+        app:layout_constraintTop_toBottomOf="@id/intrb"
+        app:layout_constraintVertical_bias="0.108" />
+    <Button
+        android:id="@+id/toate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rv_categories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Toate retetele"
+        android:textColor="@color/white"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_retete"
         android:layout_width="wrap_content"
-        android:layout_height="80mm"
+        android:layout_height="668dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/intrb" />
+        app:layout_constraintTop_toBottomOf="@id/intrb"  />
 
 
 

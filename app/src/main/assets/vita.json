@@ -4,36 +4,251 @@
 			"id": "1",
 			"Nume": "Rasol de vita cu mamaliga cremoasa",
 			"Thumb": "https://adihadean.ro/wp-content/uploads/2022/04/Poza-coperta_rasol-de-vita-1536x1152.jpeg",
-			"In": "550 g rasol de vită (2 bucăți) \n350 ml supă de pui \n30 g unt \n3 legături de ceapă verde \n60 g păstârnac (1 bucată) \n150g morcov (1 bucată) \n100 g țelină \n4 căței de usturoi \n20 g făină \nPuțin ulei pentru prăjit \nSare \nPiper \nCrenguțe de rozmarin și cimbru proaspăt \n ",
-			"P": "Pentru început am scos carnea de la frigider înainte cu 40 de minute, să fie la temperatura camerei pentru a nu șoca carnea cu temperatura mare din tigaie. Am spălat bine carnea am tapetat-o cu un prosop de bucătărie ca să aibă o suprafață uscată. \nAm pus o tigaie la foc mediu spre ridicat cu puțin ulei și am dat carnea prin făină, am legat-o cu ață ca să rămână compactă, am prăjit-o pe ambele părți până a avut o culoare maronie-roșiatică frumoasă, după care am pus rapid untul, cățeii de usturoi și crenguțele de ierburi aromate și le-am lăsat puțin să se „cunoască” pentru un minut. \nAm preîncălzit rapid cuptorul la 170℃ . Într-un recipient termo-rezistent si nu foarte mare, am pus carnea din tigaie împreună cu următoarele: supa de pui, ceapa verde, păstârnacul, morcovul, țelina, plus sarea și piperul. Am mai adăugat și niște apă ca să treacă puțin peste carne. Am lăsat carnea la cuptor acoperita cu o folie de aluminiu deasupra, timp de 2 ore.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+			"In": [
+				{
+					"Nume": "Rasol de vită",
+					"Cantitate": "550 g "
+				},
+				{
+					"Nume": "Supă de pui",
+					"Cantitate": "350 ml"
+				},
+				{
+					"Nume": "Unt",
+					"Cantitate": "30 g"
+				},
+				{
+					"Nume": "Ceapă verde",
+					"Cantitate": "3 legături"
+				},
+				{
+					"Nume": "Păstârnac",
+					"Cantitate": "60 g "
+				},
+				{
+					"Nume": "Morcov",
+					"Cantitate": "150 g "
+				},
+				{
+					"Nume": "Țelină",
+					"Cantitate": "100 g"
+				},
+				{
+					"Nume": "Usturoi",
+					"Cantitate": "4 căței"
+				},
+				{
+					"Nume": "Făină",
+					"Cantitate": "20 g"
+				},
+				{
+					"Nume": "Ulei",
+					"Cantitate": "2 linguri"
+				},
+				{
+					"Nume": "Sare",
+					"Cantitate": "5 gr"
+				},
+				{
+					"Nume": "Piper",
+					"Cantitate": "5 gr"
+				},
+				{
+					"Nume": "Crenguțe de rozmarin" ,
+					"Cantitate": "5"
+				},
+				{"Nume":"cimbru proaspăt",
+				"Cantitate": "5"}
+			],"P": "Pentru început am scos carnea de la frigider înainte cu 40 de minute, să fie la temperatura camerei pentru a nu șoca carnea cu temperatura mare din tigaie. Am spălat bine carnea am tapetat-o cu un prosop de bucătărie ca să aibă o suprafață uscată. \nAm pus o tigaie la foc mediu spre ridicat cu puțin ulei și am dat carnea prin făină, am legat-o cu ață ca să rămână compactă, am prăjit-o pe ambele părți până a avut o culoare maronie-roșiatică frumoasă, după care am pus rapid untul, cățeii de usturoi și crenguțele de ierburi aromate și le-am lăsat puțin să se „cunoască” pentru un minut. \nAm preîncălzit rapid cuptorul la 170℃ . Într-un recipient termo-rezistent si nu foarte mare, am pus carnea din tigaie împreună cu următoarele: supa de pui, ceapa verde, păstârnacul, morcovul, țelina, plus sarea și piperul. Am mai adăugat și niște apă ca să treacă puțin peste carne. Am lăsat carnea la cuptor acoperita cu o folie de aluminiu deasupra, timp de 2 ore.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 		},
 		{
 			"id":"2",
 			"Nume":"Beef Wellington",
 			"Thumb":"https://adihadean.ro/wp-content/uploads/2022/04/1.-Wellington-coperta-1536x1027.jpg",
-			"In":"Un mușchi de vită\nUlei de măsline\nO legătură de cimbru proaspăt\nMuștar\n500 g ciuperci champignon\nO ceapă roșie\n200 g felii subțiri de șuncă\nSare, piper\n200 g aluat de foietaj\nUn ou",
+			"In": [
+				{
+					"Nume": "Mușchi de vită",
+					"Cantitate": "1 bucăță"
+				},
+				{
+					"Nume": "Ulei de măsline",
+					"Cantitate": "2 linguri"
+				},
+				{
+					"Nume": "Cimbru proaspăt",
+					"Cantitate": "1 legătură"
+				},
+				{
+					"Nume": "Muștar",
+					"Cantitate": "10 g"
+				},
+				{
+					"Nume": "Ciuperci",
+					"Cantitate": "500 g"
+				},
+				{
+					"Nume": "Ceapă roșie",
+					"Cantitate": "1 "
+				},
+				{
+					"Nume": "Felii subțiri de șuncă",
+					"Cantitate": "200 g"
+				},
+				{
+					"Nume": "Sare",
+					"Cantitate": "5 gr"
+				},
+				{
+					"Nume": "Piper",
+					"Cantitate": "5 gr"
+				},
+				{
+					"Nume": "Aluat de foietaj",
+					"Cantitate": "200 g"
+				},
+				{
+					"Nume": "Ou",
+					"Cantitate": "1 "
+				}
+			],
 			"P":"Din mușchiul de vită, am ales partea centrală, cea mai uniformă. Optând pentru aceasta, m-am asigurat că bucata mea de carne va fi gătită perfect, păstrând aceeași temperatură pe toată lungimea ei. Am prăjit la temperatură mare mușchiul de vită, condimentat cu sare și piper proaspăt râșnit. Această sigiliare prin prăjire va ajuta la păstrarea sucurilor din carne, în interior, și o carne fragedă, nu uscată. Am pus cam 10 minute în cuptorul încălzit la 170 de grade. Temperatura măsurată în centrul bucății de carne trebuie să ajungă la 50 de grade. Imediat după ce l-am prăjit pe toate părțile, am pictat frumos mușchiul cu un strat de muștar de dijon, cât timp era fierbinte încă. L-am învelit în folie, strâns, pentru a-și păstra forma, și l-am lăsat în frigider 15 minute. \n\npregatire beef wellington\npregătirea beef wellington\nÎntre timp, a fost momentul potrivit să mă ocup de ciupercile champignons. Le-am curățat și am preferat să le toc mărunt folosind un cuțit în loc de robotul de bucătărie, pentru a avea un strat textural, în loc de o pastă prea fină în interiorul preparatului meu. Le-am călit în ulei de măsline, împreună cu ceapa tocată în același fel și condimentate cu sare și piper. Am lăsat ciupercile la răcit. \n\npregătirea ciupercilor din umplutura\nCum am montat Beef Wellington?\nPe blatul de lucru am întins folie alimentară, peste care am creat, din feliile subțiri, cu marginile ușor suprapuse, o foaie de șuncă. Păstrând 2 cm de la fiecare margine, am adăugat într-un strat subțire și uniform, fără goluri, ciupercile și câteva frunzulițe de cimbru proaspăt. M-am asigurat că foaia de șuncă și ciuperci e suficient de mare pentru a putea înveli complet bucata de carne. Am poziționat mușchiul la o treime față de bază, și am rulat strâns în folie, un cilindru perfect, pe care l-am lăsat din nou la frigider, 15 minute.\n\nmontare fanii sunca\nstratul de ciuperci\nasamblare beef wellington\nmontare și răcire mușchi de vită\nAm întins foietajul într-o foaie subțire, cu o folie alimentară dedesubt. Am poziționat carnea învelită la o treime față de bază, și am uns cu ou bătut partea superioară a foii de aluat, cam trei centimetri, pentru o sigilare foarte bună. Am rulat din nou foarte strâns, cu ajutorul foliei și, acum știți deja, am pus ultima dată file-ul la frigider, jumătate de oră.\n\ninvelire în aluat foietaj\npregătire pentru copt\nAm încălzit cuptorul la 200 de grade. Între timp am uns cu ou bătut foietajul. Apoi am crestat un model pe toată suprafața aluatului. Am copt cam o oră, până când crusta a devenit aurie, crocantă, iar carnea a ajuns la 65 de grade în centru. Am lăsat carnea să se odihnească 15 minute.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 				},
 		{
 			"Id":"3",
 			"Nume":"Coaste de vită în vin roșu",
 			"Thumb":"https://adihadean.ro/wp-content/uploads/2022/03/1.-Preparat-final-coperta-1536x1027.jpg",
-			"In":"Coaste de vită (400 g pentru fiecare persoană)\nUlei de măsline\nO sticlă de vin roșu, fetească neagră\nSupă de vită\nO măciulie de usturoi \nPlante aromatice proaspete (cimbru, rozmarin, oregano, salvie)\nSare, piper\n2 rădăcini de țelină\n500 ml lapte\n250 g unt\n1kg morcovi tineri\nSfeclă (200 g pentru fiecare persoană)\nHrean",
-			"P":"Fiind elementul care are nevoie de cel mai mult timp, am început cu pregătirea coastelor, pe care le-am condimentat, și le-am prăjit rapid, în ulei de măsline, la foc mare, pe toate părțile. Când s-au rumenit și au primit o culoare aurie, foarte apetisantă, le-am transferat într-o tavă, le-am acoperit cu vin roșu, și le-am lăsat în cuptorul preîncălzit la 200 de grade, cam 4 ore, împreună cu măciuliile de usturoi, tăiate în jumătate. La fiecare oră am verificat cantitatea de lichid din tavă, și am adăugat, cam la jumătatea perioadei de coacere, supă de vită. Brezarea este tehnica pentru care sunt foarte importante și carnea și lichidul în care ea se gătește, pentru că el va infuza carnea și o va aroma, așa că am ales un vin foarte bun, din soiul fetească neagră. \n\nCoaste de vită în vin roșu\nLegumele\nCu vreo o oră înainte să fie gata carnea, m-am ocupat de legume. Am curățat morcovii, apoi i-am fiert 10 minute, întregi. Am pregătit o tavă pentru cuptor și am glazurat morcovii cu un amestec de ulei de măsline, unt și miere, ierburi aromatice proaspete, i-am condimentat cu sare și piper, pentru a sta la cuptor o jumătate de oră, să se rumenească.  Deși au fost moi, și-au păstrat forma, și au rămas întregi și frumoși. \n\nlegume coapte\nAm curățat și am tăiat în cubulețe rădăcinile de țelină și le-am fiert în apă cu sare până când au devenit foarte moi. Le-am pasat împreună cu unt moale și lapte fierbinte, până când legumele s-au transformat într-un piure cremos. Am condimentat cu sare și piper proaspăt râșnit. \n\npure de telina\nAm fiert sfecla tăiată felii cu mandolina si am murat-o 10 minute într-un lichid fierbinte, din apă, oțet și condimente. Am scurs-o și am adăugat hrean proaspăt răzuit și sare, pentru o iuțeală plăcută lângă coastele și piureul dulce.\n\nsfecla murata\nAm servit carnea, după ce s-a odihnit în lichidul din tavă pentru a nu-și pierde hidratarea, peste piure-ul cremos, cu morcovii glazurați alături. Sfecla picantă cu hrean a adus o notă picantă și acrișoară, contrastantă. Un pahar de fetească neagră a completat perfect coastele brezate.\n\ncoaste de vită în vin roșu\nChiar dacă gătirea cărnii a durat ceva, de asta am și ales-o pentru o zi în care nu mă grăbeam nicăieri. Rețeta este ușoară și se prepară relaxat, așa cum ar trebui să fie toate weekend-urile noastre. Sper să vă bucurați și voi de acest deliciu cât mai curând. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+			"In": [
+				{
+					"Nume": "Coaste de vită",
+					"Cantitate": "400 gr"
+				},
+				{
+					"Nume": "Ulei de măsline",
+					"Cantitate": "2-3 linguri"
+				},
+				{
+					"Nume": "Vin roșu",
+					"Cantitate": "1 sticlă"
+				},
+				{
+					"Nume": "Supă de vită",
+					"Cantitate": "300 ml"
+				},
+				{
+					"Nume": "Usturoi",
+					"Cantitate": "1 măciuliță"
+				},
+				{
+					"Nume": "Plante aromatice proaspete",
+					"Cantitate": " 15 gr"
+				},
+				{
+					"Nume": "Sare",
+					"Cantitate": "5 gr"
+				},
+				{
+					"Nume": "Piper",
+					"Cantitate": " 5 gr"
+				},
+				{
+					"Nume": "Țelină",
+					"Cantitate": "2 rădăcini"
+				},
+				{
+					"Nume": "Lapte",
+					"Cantitate": "500 ml"
+				},
+				{
+					"Nume": "Unt",
+					"Cantitate": "250 g"
+				},
+				{
+					"Nume": "Morcov",
+					"Cantitate": "1 kg"
+				},
+				{
+					"Nume": "Sfeclă",
+					"Cantitate": "200 gr"
+				},
+				{
+					"Nume": "Hrean",
+					"Cantitate": "20 gr"
+				}
+			],"P":"Fiind elementul care are nevoie de cel mai mult timp, am început cu pregătirea coastelor, pe care le-am condimentat, și le-am prăjit rapid, în ulei de măsline, la foc mare, pe toate părțile. Când s-au rumenit și au primit o culoare aurie, foarte apetisantă, le-am transferat într-o tavă, le-am acoperit cu vin roșu, și le-am lăsat în cuptorul preîncălzit la 200 de grade, cam 4 ore, împreună cu măciuliile de usturoi, tăiate în jumătate. La fiecare oră am verificat cantitatea de lichid din tavă, și am adăugat, cam la jumătatea perioadei de coacere, supă de vită. Brezarea este tehnica pentru care sunt foarte importante și carnea și lichidul în care ea se gătește, pentru că el va infuza carnea și o va aroma, așa că am ales un vin foarte bun, din soiul fetească neagră. \n\nCoaste de vită în vin roșu\nLegumele\nCu vreo o oră înainte să fie gata carnea, m-am ocupat de legume. Am curățat morcovii, apoi i-am fiert 10 minute, întregi. Am pregătit o tavă pentru cuptor și am glazurat morcovii cu un amestec de ulei de măsline, unt și miere, ierburi aromatice proaspete, i-am condimentat cu sare și piper, pentru a sta la cuptor o jumătate de oră, să se rumenească.  Deși au fost moi, și-au păstrat forma, și au rămas întregi și frumoși. \n\nlegume coapte\nAm curățat și am tăiat în cubulețe rădăcinile de țelină și le-am fiert în apă cu sare până când au devenit foarte moi. Le-am pasat împreună cu unt moale și lapte fierbinte, până când legumele s-au transformat într-un piure cremos. Am condimentat cu sare și piper proaspăt râșnit. \n\npure de telina\nAm fiert sfecla tăiată felii cu mandolina si am murat-o 10 minute într-un lichid fierbinte, din apă, oțet și condimente. Am scurs-o și am adăugat hrean proaspăt răzuit și sare, pentru o iuțeală plăcută lângă coastele și piureul dulce.\n\nsfecla murata\nAm servit carnea, după ce s-a odihnit în lichidul din tavă pentru a nu-și pierde hidratarea, peste piure-ul cremos, cu morcovii glazurați alături. Sfecla picantă cu hrean a adus o notă picantă și acrișoară, contrastantă. Un pahar de fetească neagră a completat perfect coastele brezate.\n\ncoaste de vită în vin roșu\nChiar dacă gătirea cărnii a durat ceva, de asta am și ales-o pentru o zi în care nu mă grăbeam nicăieri. Rețeta este ușoară și se prepară relaxat, așa cum ar trebui să fie toate weekend-urile noastre. Sper să vă bucurați și voi de acest deliciu cât mai curând. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 		},
 		{
 			"Id": "4",
 			"Nume": "Vrăbioară cu legume blanșate",
 			"Thumb": "https://adihadean.ro/wp-content/uploads/2022/05/Vrabioara_cu_legume_blansate_07-1536x1306.jpeg",
-			"In":"Ingrediente pentru rețeta de vrăbioară cu legume blanșate:\nfelie vrăbioară de vită\nUn vârf de lingurița de sare\nPuțin piper\n50 g Unt \nIngrediente pentru garnitura de legume blanșate:\n150 g conopidă\n150 g broccoli\n1 morcov\n50 g unt\n",
-			"P": "Cum am preparat rețeta de vrăbioară cu legume blanșate:\n  În primul rând am lăsat carnea să ajungă la temperatura camerei, aproximativ 25 – 30 de minute.\n\nCum am pregătit legumele pentru blanșat:\nMai departe m-am ocupat de legume, le-am spălat bine, am curățat morcovul și l-am tăiat rondele, am tăiat apoi și conopida împreună cu broccoli-ul și le-am pregătit pentru fiert.\n\nLegume pentru blanșat\nAm pus apă la fiert într-o oală suficient de încăpătoare pentru toate legumele și am adăugat puțină sare, peste.\n\nCând apa a început să clocotească, am pus legumele la fiert timp de 2 minute și apoi am strecurat apa. \n\npregătire legume\nAm pus repede o tigaie pe foc, am adăugat cubul de unt, iar când acesta s-a topit și tigaia s-a încins, am pus legumele și le-am lăsat și aici 5 minute, pâna au prins o culoare arămie și un miros îmbietor.\n\nvrăbioara cu legume blanșate\nAm dat legumele deoparte și am trecut la lucruri puțin mai serioase;\n\nPrepararea vrăbioarei:\nAm pus pe foc o tigaie grill, am pus și aici cubulețul de unt și am așteptat să se încingă tigaia – felia de vrăbioara am condimentat-o cu sare și piper pe ambele părți, am pus vrăbioara în tigaie și am lasat-o să se rumenească  frumos câte 5 minute pe fiecare parte.\n\nvrăbioară la tigaie cu legume branșate\nvrăbioară la tigaie cu legume blanșate\nRețeta mea de vrăbiaoară la tigaie arată cam așa și a fost servită cu un pahar de Feteasca Neagră, un vin bun și o cină pe măsură.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+			"In": [
+				{
+					"Nume": "Felie vrăbioară de vită",
+					"Cantitate": "1 bucată"
+				},
+				{
+					"Nume": "Sare",
+					"Cantitate": "5 gr"
+				},
+				{
+					"Nume": "Piper",
+					"Cantitate": "5 gr"
+				},
+				{
+					"Nume": "Unt",
+					"Cantitate": "50 g"
+				},
+				{
+					"Nume": "Conopidă",
+					"Cantitate": "150 g"
+				},
+				{
+					"Nume": "Broccoli",
+					"Cantitate": "150 g"
+				},
+				{
+					"Nume": "Morcov",
+					"Cantitate": "1 bucățică"
+				}
+			],"P": "Cum am preparat rețeta de vrăbioară cu legume blanșate:\n  În primul rând am lăsat carnea să ajungă la temperatura camerei, aproximativ 25 – 30 de minute.\n\nCum am pregătit legumele pentru blanșat:\nMai departe m-am ocupat de legume, le-am spălat bine, am curățat morcovul și l-am tăiat rondele, am tăiat apoi și conopida împreună cu broccoli-ul și le-am pregătit pentru fiert.\n\nLegume pentru blanșat\nAm pus apă la fiert într-o oală suficient de încăpătoare pentru toate legumele și am adăugat puțină sare, peste.\n\nCând apa a început să clocotească, am pus legumele la fiert timp de 2 minute și apoi am strecurat apa. \n\npregătire legume\nAm pus repede o tigaie pe foc, am adăugat cubul de unt, iar când acesta s-a topit și tigaia s-a încins, am pus legumele și le-am lăsat și aici 5 minute, pâna au prins o culoare arămie și un miros îmbietor.\n\nvrăbioara cu legume blanșate\nAm dat legumele deoparte și am trecut la lucruri puțin mai serioase;\n\nPrepararea vrăbioarei:\nAm pus pe foc o tigaie grill, am pus și aici cubulețul de unt și am așteptat să se încingă tigaia – felia de vrăbioara am condimentat-o cu sare și piper pe ambele părți, am pus vrăbioara în tigaie și am lasat-o să se rumenească  frumos câte 5 minute pe fiecare parte.\n\nvrăbioară la tigaie cu legume branșate\nvrăbioară la tigaie cu legume blanșate\nRețeta mea de vrăbiaoară la tigaie arată cam așa și a fost servită cu un pahar de Feteasca Neagră, un vin bun și o cină pe măsură.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 		},
 		{
 			"Id": "5",
 			"Nume": "Vită cu sos de scorțișoară",
 			"Thumb": "https://adihadean.ro/wp-content/uploads/2021/05/20210509_210448-01-1536x1152.jpeg",
-			"In":"1 kg de vită – eu am folosit antricot fără os, cam 250 g pentru fiecare persoană\n200 ml de vin roșu sec\n3 – 4 batoane de scorțișoară\n200 ml fond de vită (sau supă de vită sau pui)\n30 g de unt\no linguriță de făină\nsare și piper\n",
-			"P":"Am început cu piureul – dintre toate, prepararea acestuia durează cel mai mult. Am curățat cartofii și i-am tăiat în cuburi mici. I-am pus într-o cratiță potrivită și peste ei am turnat laptele. Atât cât să îi acopere, nu mai mult. Am pus 2 – 3 prafuri generoase de sare, batonul de scorțișoară, și i-am lasat să fiarbă încet vreo 15 minute. M-am întors la ei din când în când, și-am mai amestecat ușor, să nu se lipească.\n\nPoza 3\n\n\nNouă ne place tare mult aroma ei, dar dacă e prea puternică, puteți scoate batonul de scorțișoară dupa câteva clocote.\n\nCând cartofii au fost fierți, am oprit focul, am pus 2 linguri de unt (cam 50 g – 70 g) și i-am pasat într-un piure fin. \n\nSparanghelul proaspăt l-am ținut la aburi pentru 4 – 5 minute, apoi alte câteva minute intr-o tigaie încinsă, împreună cu o lingură de unt și sare. \n\n\nPoza 4\n\nAm tăiat vita în felii de 2 – 3 cm grosime, am sărat-o generos, și am pus-o in tigaia încinsă bine. 2 minute și jumătate pe fiecare parte. Am scos-o deoparte să se odihnească puțin.\n\n\nPoza 5\n\nÎn aceeași tigaie am pus vinul. Am ales un cupaj, Merlot și Cabernet Sauvignon, un vin suficient de robust cât să susțină aroma puternică de scorțișoară. După ce a preluat toate aromele cărnii fripte și s-a evaporat din alcool, am pus batoanele de scorțișoară și fondul de vită. L-am lăsat să fiarbă la foc mic pentru câteva minute. Am scos scorțișoara și am adăugat untul cu făina, amestecate în prealabil. Cum e un sos fără legume sau ou, recurg la acest artificiu: 30 g de unt moale amestecat cu o linguriță rasă de făină. Crema obținută se încorporează ușor în orice sos are nevoie de puțin ”corp”. Înca două, trei clocote, potrivit de sare, și gata.\n\nAm servit vita cu sos de scorțișoară alături de un pahar de vin și de familie.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+			"In": [
+				{
+					"Nume": "Vită",
+					"Cantitate": "1 kg "
+				},
+				{
+					"Nume": "Vin roșu sec",
+					"Cantitate": "200 ml"
+				},
+				{
+					"Nume": "Scorțișoară",
+					"Cantitate": "4 batoane"
+				},
+				{
+					"Nume": "Fond de vită",
+					"Cantitate": "200 ml"
+				},
+				{
+					"Nume": "Unt",
+					"Cantitate": "30 g"
+				},
+				{
+					"Nume": "Făină",
+					"Cantitate": "1 linguriță"
+				},
+				{
+					"Nume": "Sare",
+					"Cantitate": "5 gr"
+				},
+				{
+					"Nume": "Piper",
+					"Cantitate": "5 gr"
+				}
+			],"P":"Am început cu piureul – dintre toate, prepararea acestuia durează cel mai mult. Am curățat cartofii și i-am tăiat în cuburi mici. I-am pus într-o cratiță potrivită și peste ei am turnat laptele. Atât cât să îi acopere, nu mai mult. Am pus 2 – 3 prafuri generoase de sare, batonul de scorțișoară, și i-am lasat să fiarbă încet vreo 15 minute. M-am întors la ei din când în când, și-am mai amestecat ușor, să nu se lipească.\n\nPoza 3\n\n\nNouă ne place tare mult aroma ei, dar dacă e prea puternică, puteți scoate batonul de scorțișoară dupa câteva clocote.\n\nCând cartofii au fost fierți, am oprit focul, am pus 2 linguri de unt (cam 50 g – 70 g) și i-am pasat într-un piure fin. \n\nSparanghelul proaspăt l-am ținut la aburi pentru 4 – 5 minute, apoi alte câteva minute intr-o tigaie încinsă, împreună cu o lingură de unt și sare. \n\n\nPoza 4\n\nAm tăiat vita în felii de 2 – 3 cm grosime, am sărat-o generos, și am pus-o in tigaia încinsă bine. 2 minute și jumătate pe fiecare parte. Am scos-o deoparte să se odihnească puțin.\n\n\nPoza 5\n\nÎn aceeași tigaie am pus vinul. Am ales un cupaj, Merlot și Cabernet Sauvignon, un vin suficient de robust cât să susțină aroma puternică de scorțișoară. După ce a preluat toate aromele cărnii fripte și s-a evaporat din alcool, am pus batoanele de scorțișoară și fondul de vită. L-am lăsat să fiarbă la foc mic pentru câteva minute. Am scos scorțișoara și am adăugat untul cu făina, amestecate în prealabil. Cum e un sos fără legume sau ou, recurg la acest artificiu: 30 g de unt moale amestecat cu o linguriță rasă de făină. Crema obținută se încorporează ușor în orice sos are nevoie de puțin ”corp”. Înca două, trei clocote, potrivit de sare, și gata.\n\nAm servit vita cu sos de scorțișoară alături de un pahar de vin și de familie.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 		}
 
 

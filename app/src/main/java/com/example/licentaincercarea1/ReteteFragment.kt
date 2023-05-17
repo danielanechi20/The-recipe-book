@@ -1,47 +1,42 @@
 package com.example.licentaincercarea1
 
-import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ProgressBar
-import android.widget.ScrollView
 import android.widget.Toast
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.example.licentaincercarea1.data.reteta
 import com.example.licentaincercarea1.databinding.RetetaBinding
 import kotlinx.android.synthetic.main.reteta.*
 import kotlinx.android.synthetic.main.reteta.view.*
 import org.json.JSONObject
 import java.io.*
-import java.nio.charset.Charset
-
 
 class ReteteFragment: Fragment() {
     private var _binding: RetetaBinding?=null
     private val binding get()=_binding!!
     private var numarPortii = 1
-    private var ingrediente = ""
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = RetetaBinding.inflate(inflater, container, false)
-        val nume = arguments?.getString("nume")
-        ingrediente = arguments?.getString("ingrediente") ?: ""
-        val pasi = arguments?.getString("pasi")
-        val imagine = arguments?.getString("imagine")
-
-        binding.Nume.text = nume
-        binding.scrollingrediente.ingrediente.text=ingrediente
-        binding.scrollView.preparare.text=pasi
-        Glide.with(binding.root.context).load(imagine).fitCenter().into(binding.imagine)
-
+        @Suppress("DEPRECATION") val reteta = arguments?.getParcelable<reteta>("reteta")
+        if (reteta != null) {
+            val ingrediente = StringBuilder()
+            for (ingredient in reteta.ingrediente) {
+                ingrediente.append(ingredient.cantitate)
+                ingrediente.append(" ")
+                ingrediente.append(ingredient.nume)
+                ingrediente.append("\n")
+            }
+            binding.Nume.text = reteta.Nume
+            binding.scrollingrediente.ingrediente.text = ingrediente
+            binding.scrollView.preparare.text = reteta.P
+            Glide.with(binding.root.context).load(reteta.Thumb).fitCenter().into(binding.imagine)
+        }
         binding.portii.text = numarPortii.toString()
 
         binding.scrollView.viewTreeObserver.addOnScrollChangedListener {
@@ -53,74 +48,67 @@ class ReteteFragment: Fragment() {
         binding.increase.setOnClickListener{
             binding.portii.text=(binding.portii.text.toString().toInt() + 1).toString()
             numarPortii = binding.portii.text.toString().toInt()
-            Actualizare()
+            if (reteta != null) {
+                Actualizare(reteta)
+            }
         }
         binding.decrease.setOnClickListener{
             if(binding.portii.text.toString().toInt()>1){
                 binding.portii.text=(binding.portii.text.toString().toInt() - 1).toString()
                 numarPortii = binding.portii.text.toString().toInt()
-                Actualizare()
+                if (reteta != null) {
+                    Actualizare(reteta)
+                }
             } else Toast.makeText(context, "Numarul de portii nu poate fi mai mic decat 1",Toast.LENGTH_SHORT).show()
         }
         binding.export.setOnClickListener {
-            exportReteta()
+            if (reteta != null) {
+                exportReteta(reteta)
+            }
         }
 
         val view=binding.root
         return view
     }
-    private fun Actualizare() {
-        val ingrediente = ingrediente.split("\n")
-        val sb = StringBuilder()
+    private fun Actualizare(reteta: reteta) {
 
-        for (ingred in ingrediente) {
-            val parts = ingred.split(" ")
-            if (parts.size > 1) {
-                val cantitate = parts[0].toInt()
-                val unitate = parts[1]
-
-                // ajustam cantitatea
-                val nouaCantitate = cantitate * numarPortii / 1.0
-                sb.append(nouaCantitate.toString())
-                sb.append(" ")
-                sb.append(unitate)
-                sb.append(" ")
-                // adaugam restul stringului
-                for (i in 2 until parts.size) {
-                    sb.append(parts[i])
-                    sb.append(" ")
-                }
-                sb.append("\n")
-            } else {
-                sb.append(ingred)
-                sb.append("\n")
-            }
+        val ingrediente = StringBuilder()
+        for (ingredient in reteta.ingrediente) {
+            val cantitate = ingredient.cantitate.split(" ")[0].toDoubleOrNull() ?: 0.0
+            val nouaCantitate = cantitate * numarPortii
+            ingrediente.append(nouaCantitate.toString())
+            ingrediente.append(" ")
+            ingrediente.append(ingredient.nume)
+            ingrediente.append("\n")
         }
+        binding.scrollingrediente.ingrediente.text = ingrediente.toString()
+    }
 
-        binding.scrollingrediente.ingrediente.text = sb.toString()
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-    private fun exportReteta() {
-        val reteta = """
-        Nume: ${arguments?.getString("nume") }
+    private fun exportReteta(reteta: reteta) {
+        val ingrediente = StringBuilder()
+        for (ingredient in reteta.ingrediente) {
+            ingrediente.append(ingredient.cantitate)
+            ingrediente.append(" ")
+            ingrediente.append(ingredient.nume)
+            ingrediente.append("\n")
+        }
+        val text = """
+        Nume: ${reteta.Nume}
         
         Ingrediente:  
-        
-        ${arguments?.getString("ingrediente")}
+      
+        ${ingrediente}
         
         Mod de preparare:
- 
-        ${arguments?.getString("pasi")}
+
+        ${reteta.P}
     """.trimIndent()
 
-        val fileName = "${arguments?.getString("nume")}.txt"
+        val fileName = "${reteta.Nume}.txt"
         val file = File(requireContext().filesDir, fileName)
         file.createNewFile()
         val writer = PrintWriter(file, "UTF-8")
-        writer.println(reteta)
+        writer.println(text)
         writer.flush()
         writer.close()
 
@@ -133,12 +121,11 @@ class ReteteFragment: Fragment() {
 
         val emailIntent = Intent(Intent.ACTION_SEND)
         emailIntent.type = "text/plain"
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, arguments?.getString("nume"))
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, reteta.Nume)
         emailIntent.putExtra(Intent.EXTRA_STREAM, fileUri)
         emailIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
 
         startActivity(Intent.createChooser(emailIntent, "Trimite reteta prin:"))
     }
-
 
 }

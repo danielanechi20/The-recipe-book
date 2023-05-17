@@ -1,0 +1,113 @@
+{
+  "tipuri":[
+    {
+      "tip":"carne",
+      "denumiri":[
+        {
+          "Nume":"Rasol de vită"
+        },
+        {
+          "Nume":"Mușchi de vită"
+        },
+        {
+          "Nume":"Coaste de vită"
+        },
+        {
+          "Nume":"Felie vrăbioară de vită"
+        },
+        {
+          "Nume":"Vită"
+        },
+        {
+          "Nume":"Piept de pui"
+        },
+        {
+          "Nume":"Pui întreg"
+        },
+        {"Nume": "Felii subțiri de șuncă"}
+      ]
+    },
+    {
+      "tip":"lactate si oua",
+      "denumiri":[
+        {
+          "Nume":"Smântână de gătit"
+        },
+        {
+          "Nume":"Lapte"
+        },
+        {
+          "Nume":"Unt"
+        },
+        {
+          "Nume":"Mozzarella"
+        },
+        {
+          "Nume":"Ou"
+        },
+        {
+          "Nume":"Kefir"
+        },
+        {
+          "Nume":"Iaurt grecesc"
+        }
+      ]
+    },
+    {
+      "tip": "fructe si legume",
+      "denumiri": [
+        {"Nume": "Coaja de portocala"},
+        {"Nume": "Kiwi"},
+        {"Nume": "Pepene galben"},
+        {"Nume": "Ciuperci"},
+        {"Nume": "Ceapă roșie"},
+        {"Nume": "Usturoi"},
+        {"Nume": "Cartofi albi"},
+        {"Nume": "Cartofi roșii"},
+        {"Nume": "Ghimbir"},
+        {"Nume": "Lămâie"},
+        {"Nume": "Lime"},
+        { "Nume": "Roșii"},
+        {"Nume": "Ceapă verde"},
+        {"Nume": "Ridiche"},
+        {"Nume": "Spanac baby"},
+        {"Nume": "Morcov"},
+        {"Nume": "Broccoli"},
+        {"Nume": "Conopidă"},
+        {"Nume": "Hrean"},
+        {"Nume": "Sfeclă"},
+        {"Nume": "Țelină"},
+        {"Nume": "Păstârnac"},
+        {"Nume": "Plante aromatice proaspete"},
+        { "Nume": "Leurdă proaspătă"}
+      ]},
+    {
+      "tip":"bacanie",
+      "denumiri": [
+        {"Nume": "Faină"},
+        {"Nume": "Zahăr"},
+        {"Nume": "Praf de copt"},
+        {"Nume": "Bicarbonat de sodiu"},
+        {"Nume": "Ulei de măsline"},
+        {"Nume": "Aluat de foietaj"},
+        {"Nume": "Oțet balsamic"}
+      ]
+    },
+    {
+      "tip":"condimente",
+      "denumiri": [
+        {"Nume": "Scorțișoară"},
+        {"Nume": "Cimbru proaspăt"},
+        {"Nume": "Crenguțe de rozmarin" },
+        {"Nume": "Fulgi de chili"},
+        {"Nume": "Susan"},
+        {"Nume": "Frunze de busuioc"},
+        {"Nume": "Sos de chilli"},
+        {"Nume": "Sos teriyaki"},
+        {"Nume": "Condimente"},
+        {"Nume": "Ierburi aromatice uscate"},
+        {"Nume": "Muștar boabe"}
+      ]
+    }
+  ]
+}

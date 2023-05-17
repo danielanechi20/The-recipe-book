@@ -7,12 +7,12 @@
             android:icon="@drawable/categorii"
             android:title="@string/categorii"/>
         <item
-            android:id="@id/manifesting"
+            android:id="@+id/advanced"
             android:icon="@drawable/retete"
-            android:title="@string/retete"
+            android:title="Genereaza reteta"
             />
         <item
-            android:id="@id/manifesting2"
+            android:id="@id/favouriteFragment"
             android:icon="@drawable/fav"
             android:title="@string/favorie"
             />
