@@ -9,15 +9,19 @@
         android:id="@+id/instructiuni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Te rugam sa introduci ingredientele pe care le ai prin casa si cantitatile. \n
-Presupunem ca ai sare, piper si apa. \n
-Introdu cat mai multe ingrediente, pentru o acuratete cat mai mare."
+        android:text="Bifeaza ingredientele pe care le ai in casa sau cauta-le folosind bara de cautare"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A8A5A9"
+        app:layout_constraintTop_toBottomOf="@id/instructiuni"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_ingr"

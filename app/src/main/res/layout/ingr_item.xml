@@ -22,13 +22,7 @@
         android:text="Numele ingredientului:"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
-        <TextView
-            android:id="@+id/test"
-            android:text="test"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+
 
         <LinearLayout
             android:id="@+id/denumiriGroup"

@@ -60,12 +60,11 @@
         android:name="com.example.licentaincercarea1.GeneratorFragment1"
         android:label="GeneratorFragment" >
         <action
-            android:id="@+id/action_generatorFragment_to_favouriteFragment"
-            app:destination="@id/favouriteFragment" />
+            android:id="@+id/action_generatorFragment_to_generatorFragment2"
+            app:destination="@id/generatorFragment2" />
     </fragment>
     <fragment
-        android:id="@+id/favouriteFragment"
-        android:name="com.example.licentaincercarea1.FavouriteFragment"
-        android:label="favourite_fragment"
-        tools:layout="@layout/favourite_fragment" />
+        android:id="@+id/generatorFragment2"
+        android:name="com.example.licentaincercarea1.GeneratorFragment2"
+        android:label="GeneratorFragment2" />
 </navigation>

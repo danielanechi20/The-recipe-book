@@ -11,7 +11,7 @@
         android:title="Genereaza retete"
          />
     <item
-        android:id="@id/favouriteFragment"
+        android:id="@id/generatorFragment2"
         android:icon="@drawable/fav"
         android:title="@string/favorie"
         />
