@@ -140,6 +140,24 @@ class CategoriesFragment : Fragment() {
                         val dejunadapter=ReteteAdapter(dejun)
                         setuprvRetete(dejunadapter)
                     }
+                    ("Oaie")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
+                        val oaie=transfretete(OAIE,"oaie")
+                        val oaieadapter=ReteteAdapter(oaie)
+                        setuprvRetete(oaieadapter)
+                    }
+                    ("Porc")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
+                        val porc=transfretete(PORC,"porc")
+                        val porcadapter=ReteteAdapter(porc)
+                        setuprvRetete(porcadapter)
+                    }
+                    ("Fructe de mare")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
+                        val mare=transfretete(MARE,"Fructe de mare")
+                        val mareadapter=ReteteAdapter(mare)
+                        setuprvRetete(mareadapter)
+                    }
                     else->null
                 }
             }
@@ -153,5 +171,8 @@ class CategoriesFragment : Fragment() {
         const val VITA="vita.json"
         const val PUI="pui.json"
         const val DEJUN="dejun.json"
+        const val OAIE="oaie.json"
+        const val PORC="porc.json"
+        const val MARE="mare.json"
     }
 }

@@ -13,12 +13,12 @@
   {
     "Nume": "Morcovi",
     "Cantitate": "2",
-    "Masura": ""
+    "Masura": "buc"
   },
   {
     "Nume": "Ceapă",
     "Cantitate": "1",
-    "Masura": ""
+    "Masura": "buc"
   },
   {
     "Nume": "Piper boabe",
@@ -33,17 +33,17 @@
   {
     "Nume": "Batoane de scorțișoară",
     "Cantitate": "2",
-    "Masura": ""
+    "Masura": "buc"
   },
   {
     "Nume": "Frunze de dafin",
     "Cantitate": "2",
-    "Masura": ""
+    "Masura": "buc"
   },
   {
     "Nume": "Cuișoare",
-    "Cantitate": "",
-    "Masura": "O mână"
+    "Cantitate": "1",
+    "Masura": "mână"
   },
   {
     "Nume": "Zahăr brun",
@@ -76,7 +76,7 @@
           {
             "Nume": "Piept de porc fără os",
             "Cantitate": "1500",
-            "Masura": "g (aproximativ)"
+            "Masura": "g "
           },
           {
             "Nume": "Bere neagră",
@@ -85,28 +85,28 @@
           },
           {
             "Nume": "Morcovi",
-            "Cantitate": "3-4",
-            "Masura": ""
+            "Cantitate": "3",
+            "Masura": "buc"
           },
           {
             "Nume": "Păstârnac",
-            "Cantitate": "2-3",
-            "Masura": "bucăți"
+            "Cantitate": "3",
+            "Masura": "buc"
           },
           {
             "Nume": "Rădăcină de pătrunjel",
-            "Cantitate": "2-3",
-            "Masura": "bucăți"
+            "Cantitate": "3",
+            "Masura": "buc"
           },
           {
             "Nume": "Ceapă",
             "Cantitate": "5",
-            "Masura": "potrivite"
+            "Masura": "buc"
           },
           {
             "Nume": "Foi de dafin",
-            "Cantitate": "",
-            "Masura": ""
+            "Cantitate": "4",
+            "Masura": "buc"
           },
           {
             "Nume": "Boabe de piper",
@@ -115,18 +115,18 @@
           },
           {
             "Nume": "Ardei iute",
-            "Cantitate": "",
-            "Masura": "opțional"
+            "Cantitate": "1",
+            "Masura": "buc"
           },
           {
             "Nume": "Sare",
-            "Cantitate": "",
-            "Masura": ""
+            "Cantitate": "5 ",
+            "Masura":"gr"
           },
           {
             "Nume": "Frunze de cimbru proaspăt",
-            "Cantitate": "câteva",
-            "Masura": ""
+            "Cantitate": "4",
+            "Masura": "buc"
           }
         ],
       "P": "Carnea de porc iubește berea. Mai ales dacă bucata de carne a stat pe sare, la rece, toată noaptea dinainte. De ce fac asta? Sarea deshidratează și frăgezește, pregătind astfel carnea pentru festinul ce urmează.\n\nAșa că am curățat excesul de sare de pe bucata de piept de porc și am așezat-o într-o cratiță încăpătoare, peste legumele curățate și tăiate în bucăți mari.\n\nPat de legume \nAm turnat berea deasupra. Cei 600 ml ar trebui să fie suficienți să acopere toate legumele, dar nu si carnea. Am pus foile de dafin și boabele de piper. Am pus capacul (musai, altfel berea se evaporă și carnea se usucă) și am dat totul la cuptor, la 150 de grade, vreme de 4 ore și jumătate. Acum, pot fi 4 ore, pot fi 5, depinde cât de mare este pieptul de porc. Am urmărit să obțin o carne atât de fragedă, încât să se poată desface doar cu furculița.\n\nPiept de porc la cuptor\nCând s-a copt suficient, am scos-o pe un grătar pe o tavă de copt. Am crescut temperatura la 220 de grade, și am lăsat-o 10 – 15 minute, cât să prindă o crustă aurie. În timpul acesta m-am ocupat de sosul de bere neagră.\n\nPiept de porc copt\nPreparare sos de bere neagră\nAm strecurat zeama din cratiță într-o ulcică și am pus-o la foc mediu. Am scos cu o lingură grăsimea ridicată la suprafață. Am pasat bine bucățile de morcov, pătrunjel și păstârnac cu un blender și apoi le-am trecut printr-o sită direct peste zeamă. Am lăsat să scadă cam jumătate, vreo 15 minute, și apoi am potrivit de sare. Am stins focul și am presărat cimbrul tocat pe deasupra.\n\nPentru garnitură, am fiert cartofi tăiați sferturi, pe care mai apoi i-am rumenit puțin în tigaie, alături de câteva păstăi de fasole și unt din belșug.\n\nȘi atât. Piept de porc cu o crustă aurie, fraged și aromat, cu sos de bere neagră."
@@ -143,23 +143,18 @@
           },
           {
             "Nume": "Boia de ardei",
-            "Cantitate": "",
-            "Masura": ""
+            "Cantitate": "5",
+            "Masura": "gr"
           },
           {
             "Nume": "Sare",
-            "Cantitate": "",
-            "Masura": ""
-          },
-          {
-            "Nume": "Piper cu lămâie",
-            "Cantitate": "",
-            "Masura": ""
+            "Cantitate": "5",
+            "Masura": "gr"
           },
           {
             "Nume": "Ceapă roşie",
             "Cantitate": "1",
-            "Masura": ""
+            "Masura": "buc"
           },
           {
             "Nume": "Usturoi",
@@ -169,12 +164,12 @@
           {
             "Nume": "Cartof dulce",
             "Cantitate": "1",
-            "Masura": ""
+            "Masura": "buc"
           },
           {
             "Nume": "Cartofi violeţi",
             "Cantitate": "2",
-            "Masura": ""
+            "Masura": "buc"
           },
           {
             "Nume": "Unt",
@@ -183,28 +178,28 @@
           },
           {
             "Nume": "Ulei de măsline",
-            "Cantitate": "50",
-            "Masura": "ml"
+            "Cantitate": "3",
+            "Masura": "linguri"
           },
           {
-            "Nume": "Piper lung",
-            "Cantitate": "",
-            "Masura": ""
+            "Nume": "Piper",
+            "Cantitate": "5",
+            "Masura": "gr"
           },
           {
             "Nume": "Ierburi a la Provence",
-            "Cantitate": "",
-            "Masura": ""
+            "Cantitate": "1",
+            "Masura": "mana"
           },
           {
             "Nume": "Mărar",
-            "Cantitate": "",
-            "Masura": ""
+            "Cantitate": "1",
+            "Masura": "legatura"
           },
           {
             "Nume": "Pătrunjel",
-            "Cantitate": "",
-            "Masura": ""
+            "Cantitate": "1",
+            "Masura": "legatura"
           },
           {
             "Nume": "Cimbru",
@@ -309,7 +304,7 @@
             "Cantitate": "100",
             "Masura": "g"
           }
-        ]
+        ],
         "P": "Pentru început m-am ocupat de marinarea cărnii, astfel, am condimentat carnea cu sare, piper, boia, am asezonat-o cu ceapă, usturoi, leuștean, rozmarin și am pus-o la frigider timp de 2 ore.\n\nDupă ce timpul s-a scurs, am pus carnea într-o tigaie de 28 de cm și am prăjit-o câte 2 minute pe fiecare parte. Într-o tavă adâncă pentru cuptor, am pus hârtia de copt, apoi rădăcinoasele, ingredientele care au marinat carnea, împreună cu vinul și apa. Deasupra acestora am așezat carnea și am introdus tava acoperită foarte bine cu folie de aluminiu la cuptorul preîncălzit la 160℃, timp de 5 ore. \n\ngătire carne de porc\nLa final carnea este extrem fragedă, efectiv ți se topește în gură iar mirosul nu mai spun, ți se face poftă și dacă ești sătul. \n\ncarne de porc gătită\nPiure\nPentru piure, am curățat cartofii roșii, i-am spălat și tăiat în bucăți mai mici și i-am pus la fiert. După ce cartofii au fiert, am strecurat apa și am păstrat foarte puțină din aceasta. Am zdrobit cartofii, am adăugat smântâna, sarea iar la final pentru cremozitate, am adăugat untul rece.\n\nCiupercile\nAm prăjit ghebele cu un cățel de usturoi într-o tigaie, am adăugat vinul rose, sare și piper după gust iar la final untul și le-am mai lăsat 2 minute la foc mic.\n\ngătire ciuperci\nDovleacul\nAm tăiat o parte din dovleac în formă de semicerc iar restul dovleacului în alte forme. Pentru preparat am avut nevoie de cel în formă de semicerc și l-am lăsat la cuptor timp de 20 de minute la 200℃ într-o tavă pe care am acoperit-o cu folie de aluminiu. După ce dovleacul s-a copt, i-am dat o față pe grătar.\n\npregătire dovleac\ndovleac copt\nCum am servit această carne de porc gătită domol?\nPentru servire, am așezat piureul pe o farfurie plată iar în mijloc, am burdușit carnea fâșiuțe cu puțin sos împreună cu ciupercuțele iar alături am pus dovleacul.\n\nservire carne de porc gătită domol\nSper să vă placă rețeta și să o încercați, veți avea parte de arome deosebite care o să vă încânte papilele gustative."
       }
       ]
