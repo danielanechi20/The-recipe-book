@@ -22,22 +22,19 @@ class GeneratorFragment2: Fragment() {
         val binding= GeneratorFragment2Binding.inflate(inflater, container, false)
         val bundle = arguments
         @Suppress("DEPRECATION") val selectedIngredients = bundle?.getParcelableArrayList<ingredient>("ingred")
-        if(selectedIngredients.isNullOrEmpty())
-            binding.test.text="problee"
+        binding.test.text=selectedIngredients!!.size.toString()
         val recipes = mutableListOf<reteta>()
         recipes.addAll(transfretete("dejun.json", "dejun"))
         recipes.addAll(transfretete("pui.json", "pui"))
-        if (generateMatchingRecipes(selectedIngredients,recipes).isEmpty())
-        { binding.test.text="problee"}
-        else{
+        val adaptlist=generateMatchingRecipes(selectedIngredients,recipes)
         binding.rvRetete.apply {
             layoutManager = LinearLayoutManager(
                 requireActivity(),
                 LinearLayoutManager.VERTICAL,
                 false
             )
-            adapter = ReteteAdapter(generateMatchingRecipes(selectedIngredients,recipes))
-        }}
+            adapter = ReteteAdapter(adaptlist)
+        }
         return binding.root
     }
     fun generateMatchingRecipes(ingredientList: ArrayList<ingredient>?, recipeList: MutableList<reteta>): List<reteta> {
@@ -47,24 +44,24 @@ class GeneratorFragment2: Fragment() {
             val matchingIngredients = recipe.ingrediente.filter { recipeIngredient ->
                 ingredientList!!.any { ingredient ->
                     ingredient.nume == recipeIngredient.nume &&
-                            ingredient.cantitate.toIntOrNull() != null &&
-                            recipeIngredient.cantitate.toIntOrNull() != null &&
-                            ingredient.cantitate.toInt() in (recipeIngredient.cantitate.toInt() - (recipeIngredient.cantitate.toInt() / 2))..(recipeIngredient.cantitate.toInt() + (recipeIngredient.cantitate.toInt() / 2))
+                            ingredient.cantitate != null &&
+                            recipeIngredient.cantitate != null &&
+                            ingredient.cantitate.toInt() >= (recipeIngredient.cantitate.toInt() - (recipeIngredient.cantitate.toInt() / 2))
                 }
             }
-            if(matchingIngredients.isNotEmpty()) {
-                Log.d("tagg", "s u gasit ingrediente care se potrivesc")
-            }
-            matchingRecipes.add(recipe)
-            // Verificăm dacă numărul de ingrediente potrivite găsite în rețetă
-            // este mai mare sau egal cu 3/4 din numărul total de ingrediente din rețetă
-            /*if (matchingIngredients.size >= (recipe.ingrediente.size * 3 / 4) && matchingIngredients.size > 0) {
+            if(matchingIngredients.isNotEmpty())
+                Log.d("tag","Avem ${matchingIngredients.size} potriviri")
+
+            if (matchingIngredients.size > 0) {
                 matchingRecipes.add(recipe)
-            }*/
+            }
         }
+        if(matchingRecipes.isEmpty())
+            Log.d("tag","NU S A GASIT RETETA!!")
 
         return matchingRecipes
     }
+
 
     fun transfretete(fileName: String, name: String): List<reteta> {
         val retete = arrayListOf<reteta>()
@@ -78,7 +75,8 @@ class GeneratorFragment2: Fragment() {
                 val ingredienteDetail = ingredienteArray.getJSONObject(j)
                 val ingredient = ingredient(
                     nume = ingredienteDetail.getString("Nume"),
-                    cantitate = ingredienteDetail.getString("Cantitate")
+                    cantitate = 0,
+                    masura = ingredienteDetail.getString("Masura")
                 )
                 ingrediente.add(ingredient)
             }

@@ -55,12 +55,6 @@ class GeneratorFragment1: Fragment() {
         })
 
         _binding?.next?.setOnClickListener {
-            if(selectedIngredients.isNullOrEmpty()){
-                Log.d("Tag", "Acesta este un mesaj de debug")
-                Log.i("Tag", "Acesta este un mesaj de informare")
-                Log.w("Tag", "Acesta este un mesaj de avertisment")
-                Log.e("Tag", "Acesta este un mesaj de eroare")
-            }
             val bundle = Bundle().apply {
                 putParcelableArrayList("ingred", selectedIngredients)
             }
@@ -105,7 +99,8 @@ class GeneratorFragment1: Fragment() {
                 val ingredient = ingredient(
                     isChecked = false,
                     nume = ingredienteDetail.getString("Nume"),
-                    cantitate = "0"
+                    cantitate = 0,
+                    masura=""
                 )
                 ingrediente.add(ingredient)
             }

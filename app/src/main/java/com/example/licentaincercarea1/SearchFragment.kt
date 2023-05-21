@@ -70,7 +70,8 @@ class SearchFragment: Fragment() {
                 val ingredienteDetail = ingredienteArray.getJSONObject(j)
                 val ingredient = ingredient(
                     nume = ingredienteDetail.getString("Nume"),
-                    cantitate = ingredienteDetail.getString("Cantitate")
+                    cantitate = 0,
+                    masura = ingredienteDetail.getString("Masura")
                 )
                 ingrediente.add(ingredient)
             }

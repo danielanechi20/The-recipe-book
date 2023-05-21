@@ -90,7 +90,7 @@ class ItemAdapter(var types:List<types>,
                             val quantity = s.toString().toIntOrNull()
                             if (checkbox.isChecked && quantity != null) {
                                 selectedIngredients.remove(ingredient)
-                                selectedIngredients.add(ingredient.copy(cantitate = quantity.toString()))
+                                selectedIngredients.add(ingredient.copy(cantitate = quantity.toInt()))
                             }
                         }
                     })

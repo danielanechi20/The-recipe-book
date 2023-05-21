@@ -7,111 +7,66 @@
       "In": [
         {
           "Nume": "Faină",
-          "Cantitate": "200 gr"
+          "Cantitate": "200",
+          "Masura":"gr"
         },
         {
           "Nume": "Zahăr",
-          "Cantitate": "2 linguri"
+          "Cantitate": "2 ",
+          "Masura":"linguri"
         },
         {
           "Nume": "Ou",
-          "Cantitate": "1"
+          "Cantitate": "1",
+          "Masura":"buc"
         },
         {
           "Nume": "Kefir",
-          "Cantitate": "200 ml"
+          "Cantitate": "200",
+          "Masura":"ml"
         },
         {
           "Nume": "Praf de copt",
-          "Cantitate": "5 gr"
+          "Cantitate": "5 ",
+          "Masura":"gr"
         },
         {
           "Nume": "Bicarbonat de sodiu",
-          "Cantitate": "5 gr"
+          "Cantitate": "5 ",
+          "Masura":"gr"
         },
         {
           "Nume": "Coaja de portocala",
-          "Cantitate": "1"
+          "Cantitate": "1",
+          "Masura":"buc"
         },
         {
           "Nume": "Unt",
-          "Cantitate": "50 gr"
+          "Cantitate": 50,
+          "Masura":"gr"
         },
         {
           "Nume": "Kiwi",
-          "Cantitate": "1"
+          "Cantitate": "1",
+          "Masura":"buc"
         },
         {
           "Nume": "Pepene galben",
-          "Cantitate": "1"
+          "Cantitate": "1",
+          "Masura":"buc"
         },
         {
           "Nume": "Gem de zmeură",
-          "Cantitate": "30 gr"
+          "Cantitate": "30 ",
+          "Masura":"gr"
         },
         {
           "Nume": "Iaurt grecesc",
-          "Cantitate": "2 linguri"
-        }
-      ],
-      "P": "Am pus într-un bol făina, zahărul, praful de copt, bicarbonatul de sodiu și coaja rasa de portocala și le-am amestecat.\nÎntr-un bol separat am amestecat oul cu kefirul.\nÎn ultima etapa am combinat amestecurile de mai sus, rezultând un aluat moale și aerat.\n\nAm pregătit o tigaie, am aruncat în ea untul și l-am lăsat să se topească, apoi cu o linguriță am pus gogoloaie din aluat.\n\nCând au început să facă bule pe partea superioară, le-am întors, cu o spatulă. Am continuat procesul, până am terminat tot aluatul.\n\nAcestea sunt mini pancakes cu fructe și iaurt! Noi le-am mâncat cu kiwi, pepene galben, iaurt si gem de zmeură, însă se potrivesc minunat cu orice fruct, cu sirop de arțar, caramel sau topping de ciocolata etc. Variantele sunt nelimitate. Abia aștept să le fac data viitoare!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-    },
-    {
-      "id": "1",
-      "Nume": "Mini pancakes pentru mic dejun cu fructe",
-      "Thumb": "https://adihadean.ro/wp-content/uploads/2021/07/cover-foto-2.jpg",
-      "In": [
-        {
-          "Nume": "Faină",
-          "Cantitate": "200 gr"
-        },
-        {
-          "Nume": "Zahăr",
-          "Cantitate": "2 linguri"
-        },
-        {
-          "Nume": "Ou",
-          "Cantitate": "1"
-        },
-        {
-          "Nume": "Kefir",
-          "Cantitate": "200 ml"
-        },
-        {
-          "Nume": "Praf de copt",
-          "Cantitate": "5 gr"
-        },
-        {
-          "Nume": "Bicarbonat de sodiu",
-          "Cantitate": "5 gr"
-        },
-        {
-          "Nume": "Coaja de portocala",
-          "Cantitate": "1"
-        },
-        {
-          "Nume": "Unt",
-          "Cantitate": "50 gr"
-        },
-        {
-          "Nume": "Kiwi",
-          "Cantitate": "1"
-        },
-        {
-          "Nume": "Pepene galben",
-          "Cantitate": "1"
-        },
-        {
-          "Nume": "Gem de zmeură",
-          "Cantitate": "30 gr"
-        },
-        {
-          "Nume": "Iaurt grecesc",
-          "Cantitate": "2 linguri"
+          "Cantitate": "2 ",
+          "Masura":"linguri"
         }
       ],
       "P": "Am pus într-un bol făina, zahărul, praful de copt, bicarbonatul de sodiu și coaja rasa de portocala și le-am amestecat.\nÎntr-un bol separat am amestecat oul cu kefirul.\nÎn ultima etapa am combinat amestecurile de mai sus, rezultând un aluat moale și aerat.\n\nAm pregătit o tigaie, am aruncat în ea untul și l-am lăsat să se topească, apoi cu o linguriță am pus gogoloaie din aluat.\n\nCând au început să facă bule pe partea superioară, le-am întors, cu o spatulă. Am continuat procesul, până am terminat tot aluatul.\n\nAcestea sunt mini pancakes cu fructe și iaurt! Noi le-am mâncat cu kiwi, pepene galben, iaurt si gem de zmeură, însă se potrivesc minunat cu orice fruct, cu sirop de arțar, caramel sau topping de ciocolata etc. Variantele sunt nelimitate. Abia aștept să le fac data viitoare!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
     }
-
   ]
 }

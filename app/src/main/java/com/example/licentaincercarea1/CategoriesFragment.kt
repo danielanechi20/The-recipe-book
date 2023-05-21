@@ -74,7 +74,8 @@ class CategoriesFragment : Fragment() {
                 val ingredienteDetail = ingredienteArray.getJSONObject(j)
                 val ingredient = ingredient(
                     nume = ingredienteDetail.getString("Nume"),
-                    cantitate = ingredienteDetail.getString("Cantitate")
+                    cantitate = ingredienteDetail.getInt("Cantitate"),
+                    masura=ingredienteDetail.getString("Masura")
                 )
                 ingrediente.add(ingredient)
             }
