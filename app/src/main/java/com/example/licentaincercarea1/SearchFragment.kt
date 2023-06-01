@@ -47,6 +47,7 @@ class SearchFragment: Fragment() {
         val recipes = mutableListOf<reteta>()
         recipes.addAll(transfretete("dejun.json", "dejun"))
         recipes.addAll(transfretete("pui.json", "pui"))
+        recipes.addAll(transfretete("porc.json", "porc"))
         val filteredRecipes = recipes.filter { it.Nume.contains(query, true) }
 
         binding.rvSearch.apply {

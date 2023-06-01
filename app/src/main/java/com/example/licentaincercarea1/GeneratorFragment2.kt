@@ -45,22 +45,29 @@ class GeneratorFragment2: Fragment() {
                 ingredientList!!.any { ingredient ->
                     ingredient.nume == recipeIngredient.nume &&
                             ingredient.cantitate != null &&
-                            recipeIngredient.cantitate != null &&
                             ingredient.cantitate.toInt() >= (recipeIngredient.cantitate.toInt() - (recipeIngredient.cantitate.toInt() / 2))
                 }
             }
-            if(matchingIngredients.isNotEmpty())
-                Log.d("tag","Avem ${matchingIngredients.size} potriviri")
 
-            if (matchingIngredients.size > 0) {
+            if (matchingIngredients.size >= recipe.ingrediente.size / 2) {
                 matchingRecipes.add(recipe)
             }
         }
-        if(matchingRecipes.isEmpty())
-            Log.d("tag","NU S A GASIT RETETA!!")
+
+        matchingRecipes.sortByDescending { it.ingrediente.filter { recipeIngredient ->
+            ingredientList!!.any { ingredient ->
+                ingredient.nume == recipeIngredient.nume &&
+                        ingredient.cantitate != null &&
+                        ingredient.cantitate.toInt() >= (recipeIngredient.cantitate.toInt() - (recipeIngredient.cantitate.toInt() / 2))
+            }
+        }.size }
+
+        if (matchingRecipes.isEmpty())
+            Log.d("tag", "NU S-A GASIT RETETA!!")
 
         return matchingRecipes
     }
+
 
 
     fun transfretete(fileName: String, name: String): List<reteta> {
@@ -75,7 +82,7 @@ class GeneratorFragment2: Fragment() {
                 val ingredienteDetail = ingredienteArray.getJSONObject(j)
                 val ingredient = ingredient(
                     nume = ingredienteDetail.getString("Nume"),
-                    cantitate = 0,
+                    cantitate = ingredienteDetail.getInt("Cantitate"),
                     masura = ingredienteDetail.getString("Masura")
                 )
                 ingrediente.add(ingredient)

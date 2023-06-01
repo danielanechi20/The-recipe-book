@@ -41,7 +41,7 @@ class ReteteAdapter(val retete:List<reteta>) :
                 val bundle = Bundle().apply {
                     putParcelable("reteta", reteta)
                 }
-                it.findNavController().navigate(R.id.action_categoriesFragment_to_reteteFragment, bundle)
+                it.findNavController().navigate(R.id.reteteFragment, bundle)
             }
         }
     }

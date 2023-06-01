@@ -1,0 +1,35 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="intrebare"
+            type="com.example.licentaincercarea1.IntrebariFragment.Intrebare" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textIntrebare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{intrebare.text}"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/raspunsTrueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adevărat" />
+
+        <Button
+            android:id="@+id/raspunsFalseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fals" />
+
+    </LinearLayout>
+</layout>

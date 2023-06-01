@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/reteteFragment"
-        android:name="com.example.licentaincercarea1.ReteteFragment"
+        android:name="com.example.licentaincercarea1.RetetaFragment"
         android:label="reteta"
         tools:layout="@layout/reteta" >
         <action
@@ -54,6 +54,9 @@
         <action
             android:id="@+id/action_advanced_to_generatorFragment"
             app:destination="@id/generatorFragment" />
+        <action
+            android:id="@+id/action_advanced_to_intrebariFragment"
+            app:destination="@id/intrebariFragment" />
     </fragment>
     <fragment
         android:id="@+id/generatorFragment"
@@ -67,4 +70,16 @@
         android:id="@+id/generatorFragment2"
         android:name="com.example.licentaincercarea1.GeneratorFragment2"
         android:label="GeneratorFragment2" />
+    <fragment
+        android:id="@+id/intrebariFragment"
+        android:name="com.example.licentaincercarea1.IntrebariFragment"
+        android:label="IntrebariFragment" >
+        <action
+            android:id="@+id/action_intrebariFragment_to_rezultatFragment"
+            app:destination="@id/rezultatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rezultatFragment"
+        android:name="com.example.licentaincercarea1.RezultatFragment"
+        android:label="RezultatFragment" />
 </navigation>

@@ -27,6 +27,9 @@ class AdvancedSearchFragment :Fragment() {
         binding.casa.setOnClickListener {
             it.findNavController().navigate(R.id.action_advanced_to_generatorFragment)
         }
+        binding.chef.setOnClickListener{
+            it.findNavController().navigate(R.id.action_advanced_to_intrebariFragment)
+        }
         val view=binding.root
         return view
     }

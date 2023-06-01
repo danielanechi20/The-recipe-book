@@ -41,7 +41,7 @@ class GeneratorFragment1: Fragment() {
         }
 
         val view = _binding?.root
-        val searchView = view?.findViewById<androidx.appcompat.widget.SearchView>(R.id.search_view)
+        val searchView = view?.findViewById<androidx.appcompat.widget.SearchView>(R.id.search)
         searchView?.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
                 performSearch(query)
@@ -100,6 +100,7 @@ class GeneratorFragment1: Fragment() {
                     isChecked = false,
                     nume = ingredienteDetail.getString("Nume"),
                     cantitate = 0,
+                    //masura=ingredienteDetail.getString("Masura")
                     masura=""
                 )
                 ingrediente.add(ingredient)

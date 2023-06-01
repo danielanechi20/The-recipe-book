@@ -23,6 +23,7 @@ import kotlinx.android.synthetic.main.categories_fragment.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.InputStream
+import androidx.activity.OnBackPressedCallback
 
 
 class CategoriesFragment : Fragment() {
@@ -41,6 +42,7 @@ class CategoriesFragment : Fragment() {
         binding.toate.setOnClickListener {
             it.findNavController().navigate(R.id.action_categoriesFragment_to_manifesting)
         }
+
         return view
     }
 
@@ -158,14 +160,18 @@ class CategoriesFragment : Fragment() {
                         val mareadapter=ReteteAdapter(mare)
                         setuprvRetete(mareadapter)
                     }
+                    ("Paste")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
+                        val paste=transfretete(PASTE,"paste")
+                        val pasteadapter=ReteteAdapter(paste)
+                        setuprvRetete(pasteadapter)
+                    }
                     else->null
                 }
             }
         })
 
     }
-
-
     companion object {
         const val CATEGORIES = "categories.json"
         const val VITA="vita.json"
@@ -174,5 +180,7 @@ class CategoriesFragment : Fragment() {
         const val OAIE="oaie.json"
         const val PORC="porc.json"
         const val MARE="mare.json"
+        const val PASTE="paste.json"
     }
 }
+

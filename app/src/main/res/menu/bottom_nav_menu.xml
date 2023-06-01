@@ -10,9 +10,5 @@
         android:icon="@drawable/retete"
         android:title="Genereaza retete"
          />
-    <item
-        android:id="@id/generatorFragment2"
-        android:icon="@drawable/fav"
-        android:title="@string/favorie"
-        />
+
 </menu>
