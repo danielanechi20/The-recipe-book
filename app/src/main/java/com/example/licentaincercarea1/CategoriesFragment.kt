@@ -1,18 +1,13 @@
 package com.example.licentaincercarea1
 
-import android.content.Intent
+
 import android.os.Bundle
-import android.text.method.TextKeyListener.clear
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.Navigation.createNavigateOnClickListener
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.licentaincercarea1.data.category
@@ -23,7 +18,6 @@ import kotlinx.android.synthetic.main.categories_fragment.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.InputStream
-import androidx.activity.OnBackPressedCallback
 
 
 class CategoriesFragment : Fragment() {

@@ -1,23 +1,15 @@
 package com.example.licentaincercarea1
 
-import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.licentaincercarea1.data.category
 import com.example.licentaincercarea1.data.ingredient
-import com.example.licentaincercarea1.data.reteta
 import com.example.licentaincercarea1.data.types
-import com.example.licentaincercarea1.databinding.FavouriteFragmentBinding
 import com.example.licentaincercarea1.databinding.GeneratorFragment1Binding
-import kotlinx.android.synthetic.main.reteta.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.InputStream

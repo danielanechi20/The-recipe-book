@@ -41,6 +41,23 @@ class FragmentBase: AppCompatActivity() {
     private fun setupBottomNavMenu(navController: NavController) {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav_view)
         bottomNav?.setupWithNavController(navController)
+        @Suppress("DEPRECATION")
+        bottomNav.setOnNavigationItemReselectedListener { item ->
+            when (item.itemId) {
+                R.id.categoriesFragment -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.my_nav_host_fragment, CategoriesFragment())
+                        .commit()
+                    true
+                }
+                R.id.advanced -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.my_nav_host_fragment, AdvancedSearchFragment())
+                        .commit()
+                    true
+                }
+            }
+        }
     }
 
     private fun setupNavigationMenu(navController: NavController) {

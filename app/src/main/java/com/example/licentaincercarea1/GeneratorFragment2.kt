@@ -26,6 +26,10 @@ class GeneratorFragment2: Fragment() {
         val recipes = mutableListOf<reteta>()
         recipes.addAll(transfretete("dejun.json", "dejun"))
         recipes.addAll(transfretete("pui.json", "pui"))
+        recipes.addAll(transfretete("desert.json","desert"))
+        recipes.addAll(transfretete("oaie.json","oaie"))
+        recipes.addAll(transfretete("porc.json","porc"))
+        recipes.addAll(transfretete("vita.json","vita"))
         val adaptlist=generateMatchingRecipes(selectedIngredients,recipes)
         binding.rvRetete.apply {
             layoutManager = LinearLayoutManager(
@@ -44,8 +48,7 @@ class GeneratorFragment2: Fragment() {
             val matchingIngredients = recipe.ingrediente.filter { recipeIngredient ->
                 ingredientList!!.any { ingredient ->
                     ingredient.nume == recipeIngredient.nume &&
-                            ingredient.cantitate != null &&
-                            ingredient.cantitate.toInt() >= (recipeIngredient.cantitate.toInt() - (recipeIngredient.cantitate.toInt() / 2))
+                            ingredient.cantitate >= (recipeIngredient.cantitate - (recipeIngredient.cantitate / 2))
                 }
             }
 
@@ -57,8 +60,7 @@ class GeneratorFragment2: Fragment() {
         matchingRecipes.sortByDescending { it.ingrediente.filter { recipeIngredient ->
             ingredientList!!.any { ingredient ->
                 ingredient.nume == recipeIngredient.nume &&
-                        ingredient.cantitate != null &&
-                        ingredient.cantitate.toInt() >= (recipeIngredient.cantitate.toInt() - (recipeIngredient.cantitate.toInt() / 2))
+                        ingredient.cantitate >= (recipeIngredient.cantitate - (recipeIngredient.cantitate / 2))
             }
         }.size }
 
