@@ -20,52 +20,50 @@
         android:id="@+id/manifesting"
         android:name="com.example.licentaincercarea1.SearchFragment"
         android:label="manifesting"
-        tools:layout="@layout/search_fragment">
-        <action
-            android:id="@+id/action_manifesting_to_categoriesFragment"
-            app:destination="@id/categoriesFragment" />
-    </fragment>
+        tools:layout="@layout/search_fragment"/>
     <fragment
         android:id="@+id/reteteFragment"
-        android:name="com.example.licentaincercarea1.ReteteFragment"
+        android:name="com.example.licentaincercarea1.RetetaFragment"
         android:label="reteta"
-        tools:layout="@layout/reteta" >
-        <action
-            android:id="@+id/action_reteteFragment_to_categoriesFragment"
-            app:destination="@id/categoriesFragment" >
-            <argument
-                android:name="nume"
-                app:argType="string" />
-            <argument
-                android:name="ingrediente"
-                app:argType="string" />
-            <argument
-                android:name="imagine"
-                app:argType="string" />
-            <argument
-                android:name="pasi"
-                app:argType="string" />
-        </action>
-    </fragment>
+        tools:layout="@layout/reteta" />
     <fragment
         android:id="@+id/advanced"
         android:name="com.example.licentaincercarea1.AdvancedSearchFragment"
-        android:label="advanced" >
+        android:label="advanced"
+        tools:layout="@layout/advanced_search_fragment">
         <action
             android:id="@+id/action_advanced_to_generatorFragment"
             app:destination="@id/generatorFragment" />
+        <action
+            android:id="@+id/action_advanced_to_intrebariFragment"
+            app:destination="@id/intrebariFragment" />
     </fragment>
     <fragment
         android:id="@+id/generatorFragment"
         android:name="com.example.licentaincercarea1.GeneratorFragment1"
-        android:label="GeneratorFragment" >
+        android:label="GeneratorFragment"
+        tools:layout="@layout/generator_fragment1">
         <action
-            android:id="@+id/action_generatorFragment_to_favouriteFragment"
-            app:destination="@id/favouriteFragment" />
+            android:id="@+id/action_generatorFragment_to_generatorFragment2"
+            app:destination="@id/generatorFragment2" />
     </fragment>
     <fragment
-        android:id="@+id/favouriteFragment"
-        android:name="com.example.licentaincercarea1.FavouriteFragment"
-        android:label="favourite_fragment"
-        tools:layout="@layout/favourite_fragment" />
+        android:id="@+id/generatorFragment2"
+        android:name="com.example.licentaincercarea1.GeneratorFragment2"
+        android:label="GeneratorFragment2"
+        tools:layout="@layout/generator_fragment2"/>
+    <fragment
+        android:id="@+id/intrebariFragment"
+        android:name="com.example.licentaincercarea1.IntrebariFragment"
+        android:label="IntrebariFragment"
+        tools:layout="@layout/intrebari_fragment">
+        <action
+            android:id="@+id/action_intrebariFragment_to_rezultatFragment"
+            app:destination="@id/rezultatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rezultatFragment"
+        android:name="com.example.licentaincercarea1.RezultatFragment"
+        android:label="RezultatFragment"
+        tools:layout="@layout/rezultat_fragment"/>
 </navigation>

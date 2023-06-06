@@ -1,6 +1,7 @@
 package com.example.licentaincercarea1
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,52 +9,69 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.licentaincercarea1.data.ingredient
 import com.example.licentaincercarea1.data.reteta
-import com.example.licentaincercarea1.databinding.SearchFragmentBinding
+import com.example.licentaincercarea1.databinding.GeneratorFragment2Binding
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.InputStream
 
-class SearchFragment: Fragment() {
-    private var _binding: SearchFragmentBinding?=null
+class GeneratorFragment2: Fragment() {
+    private var _binding: GeneratorFragment2Binding?=null
     private val binding get()=_binding!!
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        _binding = SearchFragmentBinding.inflate(inflater, container, false)
-        val view = binding.root
-        val searchView = view?.findViewById<androidx.appcompat.widget.SearchView>(R.id.search_view)
-        searchView?.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String): Boolean {
-                performSearch(query)
-                return false
-            }
-            override fun onQueryTextChange(newText: String): Boolean {
-                performSearch(newText)
-                return false
-            }
-        })
-
-        return view
-    }
-    private fun performSearch(query: String) {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val binding= GeneratorFragment2Binding.inflate(inflater, container, false)
+        val bundle = arguments
+        @Suppress("DEPRECATION") val selectedIngredients = bundle?.getParcelableArrayList<ingredient>("ingred")
+        binding.test.text=selectedIngredients!!.size.toString()
         val recipes = mutableListOf<reteta>()
         recipes.addAll(transfretete("dejun.json", "dejun"))
         recipes.addAll(transfretete("pui.json", "pui"))
-        recipes.addAll(transfretete("porc.json", "porc"))
-        val filteredRecipes = recipes.filter { it.Nume.contains(query, true) }
-
-        binding.rvSearch.apply {
+        recipes.addAll(transfretete("desert.json","desert"))
+        recipes.addAll(transfretete("oaie.json","oaie"))
+        recipes.addAll(transfretete("porc.json","porc"))
+        recipes.addAll(transfretete("vita.json","vita"))
+        val adaptlist=generateMatchingRecipes(selectedIngredients,recipes)
+        binding.rvRetete.apply {
             layoutManager = LinearLayoutManager(
                 requireActivity(),
                 LinearLayoutManager.VERTICAL,
                 false
             )
-            adapter = ReteteAdapter(filteredRecipes)
+            adapter = ReteteAdapter(adaptlist)
         }
+        return binding.root
     }
+    fun generateMatchingRecipes(ingredientList: ArrayList<ingredient>?, recipeList: MutableList<reteta>): List<reteta> {
+        val matchingRecipes = mutableListOf<reteta>()
+
+        for (recipe in recipeList) {
+            val matchingIngredients = recipe.ingrediente.filter { recipeIngredient ->
+                ingredientList!!.any { ingredient ->
+                    ingredient.nume == recipeIngredient.nume &&
+                            ingredient.cantitate >= (recipeIngredient.cantitate - (recipeIngredient.cantitate / 2))
+                }
+            }
+
+            if (matchingIngredients.size >= recipe.ingrediente.size / 2) {
+                matchingRecipes.add(recipe)
+            }
+        }
+
+        matchingRecipes.sortByDescending { it.ingrediente.filter { recipeIngredient ->
+            ingredientList!!.any { ingredient ->
+                ingredient.nume == recipeIngredient.nume &&
+                        ingredient.cantitate >= (recipeIngredient.cantitate - (recipeIngredient.cantitate / 2))
+            }
+        }.size }
+
+        if (matchingRecipes.isEmpty())
+            Log.d("tag", "NU S-A GASIT RETETA!!")
+
+        return matchingRecipes
+    }
+
+
+
     fun transfretete(fileName: String, name: String): List<reteta> {
         val retete = arrayListOf<reteta>()
         val obj = JSONObject(loadJSONFromAsset(fileName))
@@ -66,7 +84,7 @@ class SearchFragment: Fragment() {
                 val ingredienteDetail = ingredienteArray.getJSONObject(j)
                 val ingredient = ingredient(
                     nume = ingredienteDetail.getString("Nume"),
-                    cantitate = 0,
+                    cantitate = ingredienteDetail.getInt("Cantitate"),
                     masura = ingredienteDetail.getString("Masura")
                 )
                 ingrediente.add(ingredient)

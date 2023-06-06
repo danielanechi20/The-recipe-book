@@ -13,10 +13,9 @@ import com.example.licentaincercarea1.data.reteta
 import com.example.licentaincercarea1.databinding.RetetaBinding
 import kotlinx.android.synthetic.main.reteta.*
 import kotlinx.android.synthetic.main.reteta.view.*
-import org.json.JSONObject
 import java.io.*
 
-class ReteteFragment: Fragment() {
+class RetetaFragment: Fragment() {
     private var _binding: RetetaBinding?=null
     private val binding get()=_binding!!
     private var numarPortii = 1
@@ -28,6 +27,8 @@ class ReteteFragment: Fragment() {
             val ingrediente = StringBuilder()
             for (ingredient in reteta.ingrediente) {
                 ingrediente.append(ingredient.cantitate)
+                ingrediente.append(" ")
+                ingrediente.append(ingredient.masura)
                 ingrediente.append(" ")
                 ingrediente.append(ingredient.nume)
                 ingrediente.append("\n")
@@ -74,9 +75,11 @@ class ReteteFragment: Fragment() {
 
         val ingrediente = StringBuilder()
         for (ingredient in reteta.ingrediente) {
-            val cantitate = ingredient.cantitate.split(" ")[0].toDoubleOrNull() ?: 0.0
+            val cantitate = ingredient.cantitate
             val nouaCantitate = cantitate * numarPortii
             ingrediente.append(nouaCantitate.toString())
+            ingrediente.append(" ")
+            ingrediente.append(ingredient.masura)
             ingrediente.append(" ")
             ingrediente.append(ingredient.nume)
             ingrediente.append("\n")

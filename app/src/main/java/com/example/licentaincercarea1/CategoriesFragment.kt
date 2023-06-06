@@ -1,18 +1,13 @@
 package com.example.licentaincercarea1
 
-import android.content.Intent
+
 import android.os.Bundle
-import android.text.method.TextKeyListener.clear
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.Navigation.createNavigateOnClickListener
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.licentaincercarea1.data.category
@@ -41,6 +36,7 @@ class CategoriesFragment : Fragment() {
         binding.toate.setOnClickListener {
             it.findNavController().navigate(R.id.action_categoriesFragment_to_manifesting)
         }
+
         return view
     }
 
@@ -74,7 +70,8 @@ class CategoriesFragment : Fragment() {
                 val ingredienteDetail = ingredienteArray.getJSONObject(j)
                 val ingredient = ingredient(
                     nume = ingredienteDetail.getString("Nume"),
-                    cantitate = ingredienteDetail.getString("Cantitate")
+                    cantitate = ingredienteDetail.getInt("Cantitate"),
+                    masura=ingredienteDetail.getString("Masura")
                 )
                 ingrediente.add(ingredient)
             }
@@ -139,18 +136,45 @@ class CategoriesFragment : Fragment() {
                         val dejunadapter=ReteteAdapter(dejun)
                         setuprvRetete(dejunadapter)
                     }
+                    ("Oaie")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
+                        val oaie=transfretete(OAIE,"oaie")
+                        val oaieadapter=ReteteAdapter(oaie)
+                        setuprvRetete(oaieadapter)
+                    }
+                    ("Porc")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
+                        val porc=transfretete(PORC,"porc")
+                        val porcadapter=ReteteAdapter(porc)
+                        setuprvRetete(porcadapter)
+                    }
+                    ("Fructe de mare")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
+                        val mare=transfretete(MARE,"Fructe de mare")
+                        val mareadapter=ReteteAdapter(mare)
+                        setuprvRetete(mareadapter)
+                    }
+                    ("Paste")->{ rv_categories.isVisible=false
+                        toate.isVisible=false
+                        val paste=transfretete(PASTE,"paste")
+                        val pasteadapter=ReteteAdapter(paste)
+                        setuprvRetete(pasteadapter)
+                    }
                     else->null
                 }
             }
         })
 
     }
-
-
     companion object {
         const val CATEGORIES = "categories.json"
         const val VITA="vita.json"
         const val PUI="pui.json"
         const val DEJUN="dejun.json"
+        const val OAIE="oaie.json"
+        const val PORC="porc.json"
+        const val MARE="mare.json"
+        const val PASTE="paste.json"
     }
 }
+

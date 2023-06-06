@@ -11,10 +11,5 @@
             android:icon="@drawable/retete"
             android:title="Genereaza reteta"
             />
-        <item
-            android:id="@id/favouriteFragment"
-            android:icon="@drawable/fav"
-            android:title="@string/favorie"
-            />
     </group>
 </menu>
