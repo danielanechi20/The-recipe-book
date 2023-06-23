@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.licentaincercarea1.data.ingredient
 import com.example.licentaincercarea1.data.reteta
 import com.example.licentaincercarea1.databinding.RezultatFragmentBinding
 

@@ -1,113 +1,572 @@
 {
   "tipuri":[
     {
-      "tip":"carne",
+      "tip":"carne si mezeluri",
       "denumiri":[
         {
-          "Nume":"Rasol de vită"
+          "Nume":"Rasol de vită",
+          "Masura":"gr"
         },
         {
-          "Nume":"Mușchi de vită"
+          "Nume":"Mușchi de vită",
+          "Masura":"buc"
         },
         {
-          "Nume":"Coaste de vită"
+          "Nume":"Coaste de vită",
+          "Masura":"gr"
         },
         {
-          "Nume":"Felie vrăbioară de vită"
+          "Nume":"Felie vrăbioară de vită",
+          "Masura":"buc"
         },
         {
-          "Nume":"Vită"
+          "Nume":"Care de vită",
+          "Masura":"kg "
         },
         {
-          "Nume":"Piept de pui"
+          "Nume":"Piept de pui",
+          "Masura":"buc"
         },
         {
-          "Nume":"Pui întreg"
+          "Nume":"Pui întreg",
+          "Masura":"buc"
         },
-        {"Nume": "Felii subțiri de șuncă"}
+        {
+          "Nume":"Felii subțiri de șuncă",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Șuncă proaspătă de porc",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Bacon",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Cotlete de miel",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Rasol de miel",
+          "Masura":"bucăţi"
+        },
+        {
+          "Nume":"Cotlete de berbecuț",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Vrăbioară de vită maturată",
+          "Masura":"grame"
+        },
+        {
+          "Nume":"Piept de porc fără os",
+          "Masura":"gr "
+        },
+        {
+          "Nume":"Coaste de porc",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Spată de porc",
+          "Masura":"kg"
+        }
       ]
     },
     {
       "tip":"lactate si oua",
       "denumiri":[
         {
-          "Nume":"Smântână de gătit"
+          "Nume":"Smântână",
+          "Masura":"gr"
         },
         {
-          "Nume":"Lapte"
+          "Nume":"Lapte",
+          "Masura":"ml"
         },
         {
-          "Nume":"Unt"
+          "Nume":"Unt",
+          "Masura":"gr"
         },
         {
-          "Nume":"Mozzarella"
+          "Nume":"Mozzarella",
+          "Masura":"gr"
         },
         {
-          "Nume":"Ou"
+          "Nume":"Ou",
+          "Masura":"buc"
         },
         {
-          "Nume":"Kefir"
+          "Nume":"Kefir",
+          "Masura":"ml"
         },
         {
-          "Nume":"Iaurt grecesc"
+          "Nume":"Iaurt grecesc",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Parmezan",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Mascarpone",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Frișcă",
+          "Masura":"gr"
         }
       ]
     },
     {
-      "tip": "fructe si legume",
-      "denumiri": [
-        {"Nume": "Coaja de portocala"},
-        {"Nume": "Kiwi"},
-        {"Nume": "Pepene galben"},
-        {"Nume": "Ciuperci"},
-        {"Nume": "Ceapă roșie"},
-        {"Nume": "Usturoi"},
-        {"Nume": "Cartofi albi"},
-        {"Nume": "Cartofi roșii"},
-        {"Nume": "Ghimbir"},
-        {"Nume": "Lămâie"},
-        {"Nume": "Lime"},
-        { "Nume": "Roșii"},
-        {"Nume": "Ceapă verde"},
-        {"Nume": "Ridiche"},
-        {"Nume": "Spanac baby"},
-        {"Nume": "Morcov"},
-        {"Nume": "Broccoli"},
-        {"Nume": "Conopidă"},
-        {"Nume": "Hrean"},
-        {"Nume": "Sfeclă"},
-        {"Nume": "Țelină"},
-        {"Nume": "Păstârnac"},
-        {"Nume": "Plante aromatice proaspete"},
-        { "Nume": "Leurdă proaspătă"}
-      ]},
-    {
-      "tip":"bacanie",
-      "denumiri": [
-        {"Nume": "Faină"},
-        {"Nume": "Zahăr"},
-        {"Nume": "Praf de copt"},
-        {"Nume": "Bicarbonat de sodiu"},
-        {"Nume": "Ulei de măsline"},
-        {"Nume": "Aluat de foietaj"},
-        {"Nume": "Oțet balsamic"}
+      "tip":"Bauturi",
+      "denumiri":[
+        {
+          "Nume":"Vin alb sec",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Vin roșu sec",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Vin rose",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Bere neagră",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Vinars",
+          "Masura":"ml"
+        }
       ]
     },
     {
-      "tip":"condimente",
-      "denumiri": [
-        {"Nume": "Scorțișoară"},
-        {"Nume": "Cimbru proaspăt"},
-        {"Nume": "Crenguțe de rozmarin" },
-        {"Nume": "Fulgi de chili"},
-        {"Nume": "Susan"},
-        {"Nume": "Frunze de busuioc"},
-        {"Nume": "Sos de chilli"},
-        {"Nume": "Sos teriyaki"},
-        {"Nume": "Condimente"},
-        {"Nume": "Ierburi aromatice uscate"},
-        {"Nume": "Muștar boabe"}
+      "tip":"fructe, legume si nuci",
+      "denumiri":[
+        {
+          "Nume":"Portocală",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Coaja de portocala",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Zeama de portocală",
+          "Masura":"portocală"
+        },
+        {
+          "Nume":"Kiwi",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Pepene galben",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Afine",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Mere",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Ciuperci",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Ghebe",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Usturoi",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Cartofi albi",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Cartofi roșii",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Cartofi dulci",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Cartofi violeţi",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Ghimbir",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Lămâie",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Lime",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Zeama de lămâie",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Roșii",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Pasta de roșii",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Oregano",
+          "Masura":"legatura"
+        },
+        {
+          "Nume":"Pătrunjel",
+          "Masura":"legatura"
+        },
+        {
+          "Nume":"Ardei iuți",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Ceapă verde",
+          "Masura":"legatura"
+        },
+        {
+          "Nume":"Ceapă",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Ceapă roșie",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Usturoi verde",
+          "Masura":"legatura"
+        },
+        {
+          "Nume":"Sparanghel",
+          "Masura":"legatura"
+        },
+        {
+          "Nume":"Măsline",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Ridiche",
+          "Masura":"legătură"
+        },
+        {
+          "Nume":"Spanac baby",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Morcov",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Broccoli",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Conopidă",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Hrean",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Sfeclă",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Țelină",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Păstârnac",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Rădăcină de pătrunjel",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Vânătă",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Dovlecel",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Ardei gras",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Roșii cherry",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Salată",
+          "Masura":"legatura"
+        },
+        {
+          "Nume":"Avocado",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Plante aromatice proaspete",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Fistic",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Nuci",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Sirop de rodie",
+          "Masura":"ml"
+        }
       ]
-    }
-  ]
+    },
+    {
+      "tip":"bacanie",
+      "denumiri":[
+        {
+          "Nume":"Faină",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Zahăr",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Zahăr brun",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Miere",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Ulei",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Praf de copt",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Bicarbonat de sodiu",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Ulei de măsline",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Oțet",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Oțet balsamic",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Apă minerală",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Aluat de foietaj",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Foi de plăcintă",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Spaghete",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Paste (rigatoni)",
+          "Masura":"gr"
+        }
+      ]
+    },
+    {
+      "tip":"Fructe de mare si peste",
+      "denumiri":[
+        {
+          "Nume":"Midii",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Scoici Saint Jacques",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Caracatiță",
+          "Masura":"kg"
+        }
+      ]
+    },
+    {
+      "tip":"condimente si mirodenii",
+      "denumiri":[
+        {
+          "Nume":"Scorțișoară",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Cimbru",
+          "Masura":"legatura"
+        },
+        {
+          "Nume":"Leuștean",
+          "Masura":"legătură"
+        },
+        {
+          "Nume":"Rozmarin",
+          "Masura":"legatura"
+        },
+        {
+          "Nume":"Fulgi de chili",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Boia de ardei",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Susan",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Frunze de busuioc",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Frunze de leurdă",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Foi de dafin",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Mărar",
+          "Masura":"legatura"
+        },
+        {
+          "Nume":"Mentă ",
+          "Masura":"legătură"
+        },
+        {
+          "Nume":"Coriandru proaspăt",
+          "Masura":"legătură"
+        },
+        {
+          "Nume":"Cuişoare",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Seminţe de fenicul",
+          "Masura":"linguriţă"
+        },
+        {
+          "Nume":"Seminţe de chimion",
+          "Masura":"linguriţă"
+        },
+        {
+          "Nume":"Semințe de coriandru",
+          "Masura":"lingură"
+        },
+        {
+          "Nume":"Ierburi aromatice uscate",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Ierburi a la Provence",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Muștar boabe",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Păstaie de vanilie",
+          "Masura":"buc"
+        },
+        {
+          "Nume":"Zahăr vanilat",
+          "Masura":"gr"
+        },
+        {
+          "Nume":"Extract de migdale",
+          "Masura":"ml"
+        },
+        {
+          "Nume":"Extract de vanilie",
+          "Masura":"ml"
+        }
+      ]
+    },
+        {
+          "tip":"Altele",
+          "denumiri":[
+            {
+              "Nume":"Supă de pui",
+              "Masura":"ml"
+            },
+            {
+              "Nume":"Supă de vită",
+              "Masura":"ml"
+            },
+            {
+              "Nume":"Fond de vită",
+              "Masura":"ml"
+            },
+            {
+              "Nume":"Compot de cirese",
+              "Masura":"ml"
+            },
+            {
+              "Nume":"Sos de chilli",
+              "Masura":"ml"
+            },
+            {
+              "Nume":"Sos teriyaki",
+              "Masura":"ml"
+            },
+            {
+              "Nume":"Pesto de trufe",
+              "Masura":"borcan"
+            },
+            {
+              "Nume":"Unt de arahide",
+              "Masura":"lingură"
+            },
+            {
+              "Nume":"Muștar",
+              "Masura":"gr"
+            }
+          ]
+        }
+      ]
 }

@@ -1,7 +1,6 @@
 {
   "desert":[
     {
-      "id": "1",
       "Nume": "Inimă de zahăr ars",
       "Thumb": "https://adihadean.ro/wp-content/uploads/2023/03/Poza_1-550x367.jpg",
       "In": [
@@ -12,44 +11,33 @@
     },
     {
       "Nume": "Zahăr brun",
-      "Cantitate": "150",
+      "Cantitate": "300",
       "Masura": "gr"
     },
     {
-      "Nume": "Zahăr brun pentru caramel",
-      "Cantitate": "150",
-      "Masura": "gr"
+      "Nume": "Lapte",
+      "Cantitate": "1000",
+      "Masura": "ml"
     },
     {
-      "Nume": "Lapte gras",
-      "Cantitate": "1",
-      "Masura": "l"
-    },
-    {
-      "Nume": "Semincțe de vanilie",
+      "Nume": "Păstaie de vanilie",
       "Cantitate": "1",
       "Masura": "buc"
     },
     {
       "Nume": "Zahăr vanilat",
-      "Cantitate": "1",
-      "Masura": "pliculeț"
+      "Cantitate": "10",
+      "Masura": "gr"
     },
     {
-      "Nume": "Alte arome",
-      "Cantitate": "1",
-      "Masura": "a gustului"
-    },
-    {
-      "Nume": "Praf de sare",
-      "Cantitate": "1",
-      "Masura": "praf"
+      "Nume": "Sare",
+      "Cantitate": "5",
+      "Masura": "gr"
     }
   ],
       "P": "Pentru că am vrut să îi dau acestei creme o formă mai deosebită, aceea de inimă şi pentru că vasul este din material termorezistent, yena am preparat caramelul într-un vas metalic.\n\npregătire ingrediente\n\nÎncălzim vasul de yena în cuptor la 150 de grade pentru 10 min, astfel încât în momentul în care vom turna caramelul acesta să nu se spargă.\n\nAm pus zahărul pentru caramel la topit, la foc mic amestecând din când în când pentru a nu se arde. În momentul în care zahărul s-a topit şi a căpătat consistenţă şi o culoare aurie se stinge focul.\n\nzahăr caramelizat\n\nAcum turnăm caramelul în vasul de yena , cu grijă să nu ne ardem, rotim vasul astfel încât pereţii şi fundul vasului să fie îmbrăcaţi în caramelul obţinut.\n\nzahăr ars\n\nLăsăm vasul la răcit la temperatura camerei.\n\nCum am pregătit crema pentru Inima de zahăr ars?\nSe pun ouălele într-un vas, se adaugă restul de zahăr, seminţele de la păstaia de vanilie sau zahărul vanilat, ce avem la îndemână, şi mixăm totul pentru câteva minute, nu mult.Se adaugă şi laptele rece şi se mai mixează încă 1 minut.\n\npregătire cremă pentru inimă de zahăr ars\n\nCum se coace crema?\nCompoziţia cu laptele şi ou se toarnă în forma tapetată cu zahărul caramelizat, pe care apoi o aşezăm într-o altă formă care este umplută până la jumătate cu apă şi coacem crema la bain-marie la 180 de grade timp de 40-50 de minute, în funcţie de cuptor. Pentru a permite coagularea ouălelor şi pentru a evita crema să iasă poroasă, la fiecare 10-15 minute adăugăm apă rece pentru că apa din tavă nu trebuie să fiarbă. Astfel crema va ieşi netedă, fină şi gustoasă.\n\ncoacere cremă\n\nCând crema este gata, se mai lasă în cuptor pentru 5-10 minute, după care se scoate şi se lasă la răcit la temperatura camerei. Când s-a răcit bine se pune la frigider unde o lăsăm până a doua zi.\n\nCrema de zahăr ars este gata atunci când, la înclinare nu curge şi se desprinde puţin de marginile formei.\n\nCum asamblăm crema?\nPentru a aşeza crema de zahăr ars pe un platou, desprindem cu grijă marginile cremei de formă/cratiţă, punem o farfurie mare sau un platou cu marginile adânci deasupra formei, drept capac şi cu o mişcare rapidă se răstoarnă crema pe platou.\n\nOrnăm fiecare dupa inspiraţie. Pe mine m-au inspirat căpşunile."
     },
     {
-      "id": "2",
       "Nume": "Clătite cu portocale",
       "Thumb": "https://adihadean.ro/wp-content/uploads/2023/01/Poza-de-coperta_clatite.jpeg",
       "In": [
@@ -59,9 +47,9 @@
           "Masura": "buc"
         },
         {
-          "Nume": "Făină albă",
+          "Nume": "Făină",
           "Cantitate": "100",
-          "Masura": "g"
+          "Masura": "gr"
         },
         {
           "Nume": "Lapte",
@@ -74,29 +62,29 @@
           "Masura": "ml"
         },
         {
-          "Nume": "Unt topit",
+          "Nume": "Unt",
           "Cantitate": "15",
-          "Masura": "g"
+          "Masura": "gr"
         },
         {
-          "Nume": "Coajă de portocală rasă fin",
+          "Nume": "Coajă de portocală",
           "Cantitate": "1",
-          "Masura": "linguriță"
+          "Masura": "buc"
         },
         {
           "Nume": "Zahăr brun",
-          "Cantitate": "1",
-          "Masura": "linguriță"
+          "Cantitate": "10",
+          "Masura": "gr"
         },
         {
-          "Nume": "Praf de sare",
-          "Cantitate": "1",
-          "Masura": "praf"
+          "Nume": "Sare",
+          "Cantitate": "5",
+          "Masura": "gr"
         },
         {
           "Nume": "Unt",
           "Cantitate": "50",
-          "Masura": "g"
+          "Masura": "gr"
         },
         {
           "Nume": "Zahăr",
@@ -109,27 +97,19 @@
           "Masura": "portocală"
         },
         {
-          "Nume": "Coajă de portocală",
-          "Cantitate": "1",
-          "Masura": "linguriță"
-        },
-        {
           "Nume": "Portocală",
           "Cantitate": "1",
           "Masura": "buc"
-        }
-      ],
-      "Afine pentru servire": [
+        },
         {
           "Nume": "Afine",
-          "Cantitate": "1",
-          "Masura": "opțional"
+          "Cantitate": "10",
+          "Masura": "gr"
         }
       ],
       "P": "Pentru început mi-am adus toate ingredientele la temperatura camerei, inclusiv untul pe care l-am topit în prealabil. \n\nÎntr-un bol am adăugat făina, oul, sarea, zahărul, coaja de portocală și apa minerală, apoi am amestecat bine cu un tel până când toată făina s-a încorporat și am obținut o consistență mai groasă. \n\npregătire ingrediente pentru aluat\naluat pentru clătite\nDin acest moment, am pus untul și treptat laptele, cu grijă ca să nu fac cocoloașe. La final consistența aluatului de clătite este mai lichidă, exact cum trebuie să fie, ca să alunece ușor în tigaia de prăjit clătite. Dacă ieșea mai gros, atunci mai adăugam puțină apă sau lapte, dar nu a fost cazul.  \n\nfinalizare aluat pentru clătite\nAm prăjit clătitele într-o tigaie de clătite, pe care am dat-o cu niște ulei la început și am prăjit clătitele. Mi-am porționat clătitele cu ajutorul unui polonic, în așa fel încât mi-au ieșit 5 clătite, suficiente pentru 2 persoane. \n\nclătite în tigaie\nfinalizare clătite\nSos de portocale\nPentru sos, am luat o tigaie cât mai largă și am pus untul la topit. După ce acesta s-a topit, am pus zahărul (eu am folosit zahăr brun, deoarece de acesta aveam în casă), zahărul are nevoie doar de câteva secunde, maxim un minut, după care începe să se caramelizeze, în acel moment am pus sucul de la o portocală foarte mare (aveți grijă aici, deoarece se creează o reacție prin care sucul de la portocală o să fiarbă foarte tare). \n\npregătire sos de portocale\nfinalizare sos de portocale\nAm amestecat puțin în tigaie cu o spatulă și am lăsat să dea în clocot câteva secunde, după care am luat tigaia de pe foc și am adăugat 1 linguriță din coaja de portocală. \n\nÎn acest moment am așezat strategic clătitele în tigaie, zic strategic, pentru că trebuia să le împătur frumos pe fiecare parte, ca să ajungă sosul pe toate părțile clătitei, am înserat câteva poze. \n\nclătite cu portocale\nclătite cu sos de portocale\nDupă ce am terminat de împăturit toate clătitele, atunci le-am mai lăsat la foc foarte mic, maxim un minut, cât să le pătrundă sosul din tigaie, am adăugat peste acestea și feliile de portocală, după care le-am luat de pe foc. \n\nclătite în sos\nServire clătite cu portocale"
     },
     {
-      "id": "3",
       "Nume": "Tort de mere cu afine și cremă de mascarpone",
       "Thumb": "https://adihadean.ro/wp-content/uploads/2023/02/Poza_1-3.jpg",
       "In": [
@@ -141,7 +121,7 @@
         {
           "Nume": "Afine",
           "Cantitate": "250",
-          "Masura": "g"
+          "Masura": "gr"
         },
         {
           "Nume": "Ouă",
@@ -150,8 +130,8 @@
         },
         {
           "Nume": "Ulei",
-          "Cantitate": "7",
-          "Masura": "linguri"
+          "Cantitate": "70",
+          "Masura": "ml"
         },
         {
           "Nume": "Zeama de lămâie",
@@ -159,34 +139,34 @@
           "Masura": "buc"
         },
         {
-          "Nume": "Coajă de portocală sau lămâie",
+          "Nume": "Coajă de portocală",
           "Cantitate": "1",
           "Masura": "buc"
         },
         {
           "Nume": "Făină",
-          "Cantitate": "10",
-          "Masura": "linguri cu vârf"
+          "Cantitate": "100",
+          "Masura": "gr"
         },
         {
           "Nume": "Zahăr brun",
-          "Cantitate": "6",
-          "Masura": "linguri"
+          "Cantitate": "60",
+          "Masura": "gr"
         },
         {
           "Nume": "Unt",
           "Cantitate": "100",
-          "Masura": "g"
+          "Masura": "gr"
         },
         {
-          "Nume": "Praf de sare",
-          "Cantitate": "1",
-          "Masura": "praf"
+          "Nume": "Sare",
+          "Cantitate": "5",
+          "Masura": "gr"
         },
         {
           "Nume": "Scorțișoară",
-          "Cantitate": "1",
-          "Masura": "praf"
+          "Cantitate": "10",
+          "Masura": "gr"
         },
         {
           "Nume": "Ouă",
@@ -195,56 +175,55 @@
         },
         {
           "Nume": "Zahăr",
-          "Cantitate": "4",
-          "Masura": "linguri"
+          "Cantitate": "40",
+          "Masura": "gr"
         },
         {
           "Nume": "Mascarpone",
           "Cantitate": "500",
-          "Masura": "g"
+          "Masura": "gr"
         },
         {
-          "Nume": "Frișcă lichidă",
+          "Nume": "Frișcă",
           "Cantitate": "250",
-          "Masura": "g"
+          "Masura": "gr"
         }
       ],
       "P": "Am spălat merele, le-am curăţat de coajă, le-am scobit în interior cu un cuţit pentru a scoate sâmburii şi partea lemnoasă, le-am stropit cu zeamă de lămâie pentru a nu se oxida, iar în scobitură am adăugat un praf de scorţişoară, puţin zahăr brun, o bucăţică de unt şi câteva afine.\n\nPunem merele în tavă si le coacem cam 15 min la cuptor la 180 de grade, până se înmoaie un pic şi se topeşte zahărul. Scoatem din cuptor şi lăsăm tava la răcit.\n\nCum pregătim blatul de tort?\nSeparăm gălbenuşurile de albuşuri. Amestecăm gălbenuşurile cu un praf de sare, un pic de zeamă de lămâie, cele 7 linguri de ulei pe care le punem una câte una şi pregătim amestecul ca în cazul maionezei, încet să nu se taie. Nu ar fi o mare problemă dacă se taie dar aceasta poate influenţa procesul de coacere. Adaugăm zeama de lămâie şi coaja de portocală sau lămâie.\n\npregătire blat pentru tort de mere\n\nSeparat batem albuşurile spumă, adăugăm un praf de sare, zahărul brun şi batem cu mixerul în continuare până se topeşte zahărul.\n\nAmestecăm gălbenuşurile pregătite anterior cu albuşurile bătute spumă, de jos în sus pentru aerarea blatului.\n\nAcum adăugăm făina, cernută şi amestecăm totul cu mişcări circulare de jos în sus.\n\npregătire blat \n\nÎn tava în care am pregătit merele adăugăm restul de unt şi amestecul realizat anterior. Untul va asigura însiroparea  și frăgezirea blatului. Coacem la 180°C pentru 45-60 min, în funcţie de cuptor.  Blatul este gata atunci când introducând o scobitoare în blat o scoatem curată(nu are aluat pe ea).\n\nblat pentru tort cu mere\n\nCum pregătim crema?\nAmestecăm cele 3 gălbenuşuri şi cele 4 linguri de zahăr până la completa dizolvare a zahărului, adăugăm mascarpone şi frișcă lichidă şi batem cu mixerul pâna când crema capătă consistenţă.\n\nSe poate face şi varianta fără ou, dar mie mi s-a părut că este mai delicioasă aşa.\n\nMi se pare cea mai uşoară şi rapidă cremă, cu multiple întrebuinţări, la sfârşitul articolului veţi vedea de ce spun asta.\n\ncremă pentru tort de mere\n\nCum asamblăm tortul?\nCând este gata scoatem blatul din cuptor, îl lăsăm să se răcească şi îl ornăm cu cremă şi afine şi cu ce mai doriţi voi, după preferinţele pofticioşilor.\n\nDacă aveţi o altă reţetă de pandişpan o puteţi folosi cu succes. Blatul pe care eu l-am preparat nu necesită praf de copt.\n\nservire tort de mere\n\nŞi pentru că mi-a rămas cremă şi nu vrem să risipim nimic, în pahare pentru desert am pus:\n\nun rând de biscuiţi digestivi pisaţi,\ncrema de mascarpone care mi-a rămas,"
     },
     {
-      "id": "4",
       "Nume": "Plăcintă ciufulită",
       "Thumb": "https://adihadean.ro/wp-content/uploads/2022/08/Poza-de-coperta_placinta.jpeg",
       "In": [
         {
           "Nume": "Foi de plăcintă",
           "Cantitate": "400",
-          "Masura": "g"
+          "Masura": "gr"
         },
         {
-          "Nume": "Unt topit",
+          "Nume": "Unt",
           "Cantitate": "120",
-          "Masura": "g"
+          "Masura": "gr"
         },
         {
           "Nume": "Extract de migdale",
-          "Cantitate": "1",
-          "Masura": "strop"
+          "Cantitate": "50",
+          "Masura": "ml"
         },
         {
           "Nume": "Extract de vanilie",
-          "Cantitate": "1",
-          "Masura": "strop"
+          "Cantitate": "50",
+          "Masura": "ml"
         },
         {
-          "Nume": "Zahăr brun sau alb",
+          "Nume": "Zahăr",
           "Cantitate": "175",
-          "Masura": "g"
+          "Masura": "gr"
         },
         {
-          "Nume": "Praf de sare",
-          "Cantitate": "1",
-          "Masura": "praf"
+          "Nume": "Sare",
+          "Cantitate": "5",
+          "Masura": "gr"
         },
         {
           "Nume": "Mix de fructe",
@@ -262,12 +241,146 @@
           "Masura": "ml"
         },
         {
-          "Nume": "Smântână pentru frișcă",
+          "Nume": "Frișcă",
           "Cantitate": "200",
-          "Masura": "ml"
+          "Masura": "gr"
         }
       ],
       "P": "Pentru început mi-am pregătit tava unde voi face plăcinta, am uns-o bine cu unt și am pus o hârtie de copt înăuntrul tăvii.\n\npregătire foi de plăcintă\nAm luat foile de plăcintă, pe rând, și le-am uns cu untul topit, fiecare foaie față-verso. Prima foaie am așezat-o pe toată suprafața tăvii și a doua la fel, ca să fie de susținere. După care pe celelalte le-am împăturit ca pe un evantai și le-am aranjat cât mai „ciufulit” posibil. \n\nmontare foi de plăcintă\nAceastă plăcintă are nevoie de coacere în două etape, prima etapă este cea în care am copt foile separat și a doua coacere este cea în care am pus foile împreună cu crema, la copt. Dacă nu ar exista prima coacere, atunci foile ar rămâne crude și s-ar înmuia și mai tare de la cremă. \n\nPrima coacere, după ce am terminat de uns toate foile și de aranjat în tavă. Am băgat totul la cuptor, la 175℃, fără ventilație, timp de 20 de minute sau până când toate foile sunt aurii, fără să le ardem. \n\ncoacere foi de plăcintă\nPreparare cremă pentru plăcintă ciufulită\nPentru crema de plăcintă, am amestecat următoarele ingrediente împreună, în această ordine: ouăle întregi, zahărul, smântâna pentru frișcă, laptele, un praf de sare și esențele de migdale și vanilie (după gust), din experiența mea esența de migdale împreună cu aromele fructelor este absolut minunată. Am amestecat totul cu un tel de mână, când am pus conținutul acesta peste foile coapte m-am folosit de o sită de bucătărie, ca să fie crema cât mai fină. \n\npreparare cremă\nDupă ce am pus crema, am așezat deasupra acesteia toate fructele din  bol, precum căpșune, afine și zmeură, bineînțeles, voi puteți să folosiți orice fel de fructe aveți la îndemână.\n\ncoacere plăcintă cu fructe și cremă\nPentru a doua coacere, am pus plăcinta la cuptor, la 175℃ timp de 30 de minute, plus încă 15 minute la 190℃, am verificat la final crema, aceasta trebuie să fie bine închegată. \n\nplăcintă ciufulită\nCum am servit acest desert?\nAm scos plăcinta din cuptor și am lăsat-o la răcit, în opinia mea, această plăcintă ciufulită este mega delicioasă, perfectă pentru un picnic gustos, ușor de tăiat după ce se răcește și se poate servii cu niște nucă deasupra, fistic și zahăr pudră. "
+    },
+    {
+      "Nume": "Tort de ciocolată cu ganache, caramel și pralină de nuci",
+      "Thumb": "https://adihadean.ro/wp-content/uploads/2022/02/1.-Tort-varianta-1-1-1536x1024.jpg",
+      "In": [
+        {
+          "Nume": "Ciocolată",
+          "Cantitate": "900",
+          "Masura": "gr"
+        },
+        {
+          "Nume": "Unt",
+          "Cantitate": "450",
+          "Masura": "gr"
+        },
+        {
+          "Nume": "Ouă",
+          "Cantitate": "6",
+          "Masura": "buc"
+        },
+        {
+          "Nume": "Făină",
+          "Cantitate": "150",
+          "Masura": "gr"
+        },
+        {
+          "Nume": "Zahăr",
+          "Cantitate": "960",
+          "Masura": "gr"
+        },
+        {
+          "Nume": "Cacao",
+          "Cantitate": "2",
+          "Masura": "linguri"
+        },
+        {
+          "Nume": "Ganache de ciocolată amăruie",
+          "Cantitate": "450",
+          "Masura": "ml"
+        },
+        {
+          "Nume": "Smântână pentru frișcă",
+          "Cantitate": "1000",
+          "Masura": "ml"
+        },
+        {
+          "Nume": "Apă",
+          "Cantitate": "250",
+          "Masura": "ml"
+        },
+        {
+          "Nume": "Sare",
+          "Cantitate": "5",
+          "Masura": "gr"
+        },
+        {
+          "Nume": "Praline de nuci",
+          "Cantitate": "100",
+          "Masura": "gr"
+        },
+        {
+          "Nume": "Nuci prăjite",
+          "Cantitate": "100",
+          "Masura": "g"
+        }
+      ],
+      "P":"Mod de preparare:\nBlat\nÎntr-o crăticioară, pe plită, la foc mic, am topit ciocolata și untul, și le-am lăsat să se răcească puțin. Între timp, în robotul de patiserie, am bătut spumă ouăle cu cele două tipuri de zahăr, până când volumul lor s-a triplat, și au devenit foarte aerate. Am redus viteza și am încorporat amestecul de ciocolată, iar la sfârșit, făina și pudra de cacao, cernute. Am împărțit amestecul în două tăvi rotunde, cu diametrul de 20 de cm, în care am așezat hârtie de copt și le-am lăsat să se coacă 30 de minute, la 160 de grade. Le-am lăsat să se răcească complet în tavă, apoi au mai stat o oră la frigider. Am tăiat fiecare blat în două, rezultând patru viitoare etaje pentru tort. \n\nCaramel\nAm pregătit caramelul topind tot zahărul în apă. L-am fiert apoi, fără să amestec, până când și-a schimbat culoarea într-un chihlimbar frumos, intens. Am luat zahărul de pe foc, am adăugat smântâna și la sfârșit sarea de mare. Caramelul are nevoie de cel puțin câteva ore pentru a ajunge la consistența potrivită unui tort; eu l-am pregătit în ziua anterioară, timp în care a devenit dens și cremos. \n\nGanache\nPentru ganache, am încălzit smântâna până aproape de punctul de fierbere și am turnat-o peste cicolata marunțită foarte bine. Am așteptat câteva minute, apoi am omogenizat crema; după ce s-a răcit complet, am aerat-o cu un tel electric, exact așa cum se bate frișca, de obicei. \n\nPralină\nLa pralină am experimentat două tipuri ușor diferite: pentru prima am caramelizat doar zahăr, pe care, odată ajuns la gradul de caramelizare pe care mi l-am dorit, l-am întins pe o hârtie de copt unsă cu ulei, și am presărat pe suprafață nuci tocate si fulgi de sare de mare. Pentru a doua, am caramelizat zahărul cu apă, și am încorporat nuci tocate înainte sa îl întind pe hârtie. Au rezultat două feluri de praline foarte sticloase, prima mult mai transparentă, și ușor mai casantă. \n\npralină cu nuci\nCu toate elementele pregătite și răcite, am pus pe fiecare felie de blat un sfert din ganașul de ciocolată, iar pe trei dintre blaturi am adaugat și un strat generos de caramel; le-am lăsat o jumătate de oră la frigider.\n\nTort de ciocolată cu ganache, caramel și pralină de nuci.\nAceastă etapă a fost foarte importantă pentru ca blaturile dense și mai grele decât cele de pandișpan să nu preseze prea tare crema, și să curgă pe margine. Am așezat blaturile unul peste celălalt, păstrându-l pentru la urmă pe cel fără caramel. Am rupt bucăți de pralină și le-am înfipt dramatic în stratul superior al tortului, pentru un efect spectaculos. \n\nCu rădăcini solide în bucătăria mamelor și bunicilor noastre, acest tort nu va putea fi primit altfel decât ca o adevartă declarație de dragoste, în luna iubirii. \n\nSper să pregătiți rețeta mea de Tort de ciocolată cu ganache, caramel și pralină de nuci, pentru cineva foarte special, iar această combinație deja clasică de arome să devină una la care să vă întoarceți oricând aveți nevoie de o îmbrățișare și puțină ciocolată. "
+    },
+    {
+      "Nume": "Sufleu de ciocolată cu smochine și migdale",
+      "Thumb": "https://adihadean.ro/wp-content/uploads/2022/02/Sufleu_ciocolata_05-1-1024x757.jpg",
+      "In": [
+        {
+          "Nume": "Ciocolată",
+          "Cantitate": "200",
+          "Masura": "g"
+        },
+        {
+          "Nume": "Ouă",
+          "Cantitate": "3",
+          "Masura": "buc"
+        },
+        {
+          "Nume": "Zahăr",
+          "Cantitate": "50",
+          "Masura": "g"
+        },
+        {
+          "Nume": "Cafea",
+          "Cantitate": "50",
+          "Masura": "ml"
+        },
+        {
+          "Nume": "Unt",
+          "Cantitate": "25",
+          "Masura": "g"
+        },
+        {
+          "Nume": "Fulgi de migdale",
+          "Cantitate": "50",
+          "Masura": "g"
+        },
+        {
+          "Nume": "Smochine",
+          "Cantitate": "5",
+          "Masura": "buc"
+        },
+        {
+          "Nume": "Sare",
+          "Cantitate": "5",
+          "Masura": "gr"
+        },
+        {
+          "Nume": "Smântână pentru frișcă",
+          "Cantitate": "100",
+          "Masura": "ml"
+        },
+        {
+          "Nume": "Ciocolată neagră",
+          "Cantitate": "80",
+          "Masura": "gr"
+        },
+        {
+          "Nume": "Unt",
+          "Cantitate": "25",
+          "Masura": "gr"
+        },
+        {
+          "Nume": "Zahăr",
+          "Cantitate": "50",
+          "Masura": "gr"
+        }
+      ],
+      "P":"Am pornit cuptorul la 200 °C, am cântărit ingredientele, am tăiat smochinele deshidratate în 6 bucățele, însă se pot tăia si mai mărunt. Am prăjit ușor fulgii de migdale într-o tigaie și i-am dat deoparte.\n\nCu ajutorul unei pensule am uns formele pentru sufleu cu unt și le-am tapetat cu zahăr tos, dar se poate și cu zahăr pudră.\n\nAm folosit 2 vase ramekin cu diamentru de 10 cm – 180 ml și o cană termorezistentă. \n\nMod de preparare sufleu de ciocolată cu smochine și migdale:\nPeste ciocolată am adăugat untul și cafeaua și le-am puns la bain-marie până s-a topit ciocolata. Am omogenizat bine compoziția și am lăsat-o la răcit. Între timp am separate ouăle și am bătut albușul spumă împreună cu praful de sare. Am adăugat cele 50 grame de zahăr peste albuș si am bătut în continuare până când paletele de la mixer au început să lase urme în albuș (le-am bătut în proporție de 75%).\n\nAm revenit la ciocolata care s-a răcit suficient încât să pot adăuga gălbenușurile, smochinele și jumătate din canditatea de migdale.\n\nPregătire \nPeste compoziția de mai sus am adăugat albușul bătut spumă, pe care l-am încorporat în două tranșe, cu mișcări circulare, de sus în jos.\n\nAm pus compoziția în vase pâna la jumătatea vasului, apoi am adăugat restul din cantitatea de fulgi de migdale. Am continuat sa torn mai departe compoziție în recipiente până le-am umplut, înlăturând excesul cu o racletă. \n\nCoacere \nAm pus formele la cuptor pentru 13 – 14 minute la 200°C. În acest timp am făcut sosul de ciocolată – piesa de rezistență a acestui preparat.\n\nPregătire sos de ciocolată:\nAm încălzit smântâna, am adăugat ciocolata și am amestecat pâna s-a omogenizat. Totuși am avut grija să nu fierb smântâna prea tare ca să nu opăresc ciocolata si să o compromit. \n\nAm scos sufleul de ciocolată cu smochine și migdale din cuptor, am făcut o gaură în mijloc, cu ajutorul unei lingurițe și am turnat sos de ciocolată. \n\nSufleul de ciocolată cu smochine și migdale are textura unei budinci de ciocolată, este moale și umed în interior.\n\nSufleu de ciocolată cu smochine și migdale\nAcest sufleu de ciocolată este o declarație de dragoste prin care îmi doresc să păstrez vie, inspirația. Un desert prin intermediul căruia ne arătăm dragostea, dorința și aprecierea față de persoanele iubite."
     }
   ]
 }

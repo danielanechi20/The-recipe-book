@@ -9,29 +9,42 @@
             type="com.example.licentaincercarea1.IntrebariFragment.Intrebare" />
     </data>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#0C0C0C"
+        android:backgroundTint="#090909"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/textIntrebare"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{intrebare.text}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Button
             android:id="@+id/raspunsTrueButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adevărat" />
+            app:layout_constraintTop_toBottomOf="@id/textIntrebare"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/raspunsFalseButton"
+            android:text="Da" />
 
         <Button
             android:id="@+id/raspunsFalseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fals" />
+            app:layout_constraintTop_toBottomOf="@id/textIntrebare"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/raspunsTrueButton"
+            android:text="Nu" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

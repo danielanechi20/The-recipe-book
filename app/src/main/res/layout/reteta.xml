@@ -22,7 +22,8 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="28sp"
+        android:layout_marginStart="10dp"
         android:text="Ingrediente"
         android:gravity="left"
         app:layout_constraintTop_toBottomOf="@id/progressBar"
@@ -41,7 +42,7 @@
             android:id="@+id/ingrediente"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:gravity="left"
             android:text="Ingrediente"
             android:textColor="@color/white" />
@@ -74,7 +75,8 @@
         app:layout_constraintBottom_toBottomOf="@id/imagine"/>
     <TextView
         android:id="@+id/modprep"
-        android:textSize="20sp"
+        android:textSize="28sp"
+        android:layout_marginEnd="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -84,12 +86,14 @@
         app:layout_constraintEnd_toEndOf="parent"/>
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollView"
+        android:layout_marginEnd="20dp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/modprep"
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
+            android:layout_marginEnd="20dp"
             android:id="@+id/preparare"
             android:textColor="@color/white"
             android:gravity="right"
@@ -105,8 +109,11 @@
         android:onClick="decreaseInteger"
         android:text="-"
         android:textSize="20sp"
+        android:outlineSpotShadowColor="@color/purple_200"
+        android:backgroundTint="#292929"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="p" />
 
     <TextView
         android:id="@+id/portii"
@@ -127,18 +134,23 @@
         android:layout_height="54dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/portii"
-        app:layout_constraintEnd_toStartOf="@id/scrollView"
+        app:layout_constraintEnd_toEndOf="@id/scrollingrediente"
         android:onClick="increaseInteger"
+        android:outlineSpotShadowColor="@color/purple_200"
+        android:backgroundTint="#292929"
         android:text="+"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        tools:targetApi="p" />
 
     <Button
         android:id="@+id/export"
-        android:layout_width="154dp"
-        android:layout_height="53dp"
-        android:drawableRight="@drawable/exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Share"
+        android:outlineSpotShadowColor="@color/purple_200"
+        android:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/imagine"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="p" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

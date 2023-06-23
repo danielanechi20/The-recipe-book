@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="8dp"
     android:layout_gravity="center"
+    android:outlineSpotShadowColor="@color/purple_200"
     app:cardBackgroundColor="@android:color/transparent"
     android:outlineAmbientShadowColor="@color/white">
 
@@ -21,6 +22,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="@id/name"
             app:srcCompat="@drawable/food_icon" />
+        <TextView
+            android:id="@+id/lipsa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/name"

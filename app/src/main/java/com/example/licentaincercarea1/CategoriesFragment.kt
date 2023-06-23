@@ -5,16 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.licentaincercarea1.data.category
 import com.example.licentaincercarea1.data.ingredient
 import com.example.licentaincercarea1.data.reteta
 import com.example.licentaincercarea1.databinding.CategoriesFragmentBinding
-import kotlinx.android.synthetic.main.categories_fragment.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.InputStream
@@ -48,7 +45,6 @@ class CategoriesFragment : Fragment() {
             val userDetail = userArray.getJSONObject(i)
             categoryList.add(
                 category(
-                    id = "$i",
                     Name = userDetail.getString("Name"),
                     Thumb = userDetail.getString("Thumb"),
                     Description = userDetail.getString("Description")
@@ -57,7 +53,6 @@ class CategoriesFragment : Fragment() {
         }
         return categoryList
     }
-
     fun transfretete(fileName: String, name: String): List<reteta> {
         val retete = arrayListOf<reteta>()
         val obj = JSONObject(loadJSONFromAsset(fileName))
@@ -77,7 +72,6 @@ class CategoriesFragment : Fragment() {
             }
             retete.add(
                 reteta(
-                    id = "$i",
                     Nume = userDetail.getString("Nume"),
                     Thumb = userDetail.getString("Thumb"),
                     ingrediente = ingrediente,
@@ -87,8 +81,6 @@ class CategoriesFragment : Fragment() {
         }
         return retete
     }
-
-
     private fun loadJSONFromAsset(fileName: String): String {
         val am = requireActivity().assets
         val inputStream: InputStream = am.open(fileName)
@@ -97,18 +89,6 @@ class CategoriesFragment : Fragment() {
         inputStream.read(buffer)
         return String(buffer)
     }
-
-    private fun setuprvRetete(adapterr: ReteteAdapter){
-        binding.rvRetete.apply {
-            layoutManager = LinearLayoutManager(
-                requireActivity(),
-                LinearLayoutManager.VERTICAL,
-                false
-            )
-            adapter = adapterr
-        }
-
-    }
     private fun setupRv(adapterc: CategoriesAdapter) {
 
         binding.rvCategories.apply {
@@ -116,65 +96,48 @@ class CategoriesFragment : Fragment() {
             adapter = adapterc
         }
 
-        adapterc.setCategoryClickListener(object:CategoriesAdapter.CategoryClickListener{
+        adapterc.setCategoryClickListener(object : CategoriesAdapter.CategoryClickListener {
             override fun onCategoryClick(category: category) {
-                when (category.Name) {
-                    ("Vita")->{ rv_categories.isVisible=false
-                        toate.isVisible=false
-                        val vitaadapter=ReteteAdapter(transfretete(VITA,"vita"))
-                        setuprvRetete(vitaadapter)
-                    }
-                    ("Pui")->{ rv_categories.isVisible=false
-                        toate.isVisible=false
-                        val pui=transfretete(PUI,"pui")
-                        val puiadapter=ReteteAdapter(pui)
-                       setuprvRetete(puiadapter)
-                    }
-                    ("Mic dejun")->{ rv_categories.isVisible=false
-                        toate.isVisible=false
-                        val dejun=transfretete(DEJUN,"dejun")
-                        val dejunadapter=ReteteAdapter(dejun)
-                        setuprvRetete(dejunadapter)
-                    }
-                    ("Oaie")->{ rv_categories.isVisible=false
-                        toate.isVisible=false
-                        val oaie=transfretete(OAIE,"oaie")
-                        val oaieadapter=ReteteAdapter(oaie)
-                        setuprvRetete(oaieadapter)
-                    }
-                    ("Porc")->{ rv_categories.isVisible=false
-                        toate.isVisible=false
-                        val porc=transfretete(PORC,"porc")
-                        val porcadapter=ReteteAdapter(porc)
-                        setuprvRetete(porcadapter)
-                    }
-                    ("Fructe de mare")->{ rv_categories.isVisible=false
-                        toate.isVisible=false
-                        val mare=transfretete(MARE,"Fructe de mare")
-                        val mareadapter=ReteteAdapter(mare)
-                        setuprvRetete(mareadapter)
-                    }
-                    ("Paste")->{ rv_categories.isVisible=false
-                        toate.isVisible=false
-                        val paste=transfretete(PASTE,"paste")
-                        val pasteadapter=ReteteAdapter(paste)
-                        setuprvRetete(pasteadapter)
-                    }
-                    else->null
+                @Suppress("DEPRECATION") val retete = transfretete(getFileNameForCategory(category.Name), category.Name.toLowerCase())
+
+                val bundle = Bundle().apply {
+                    putParcelableArrayList("reteteList", ArrayList(retete))
                 }
+
+                binding.root.findNavController().navigate(
+                    R.id.action_categoriesFragment_to_reteteFragment,
+                    bundle
+                )
             }
         })
 
     }
+    private fun getFileNameForCategory(categoryName: String): String {
+        return when (categoryName) {
+            "Vita" -> VITA
+            "Pui" -> PUI
+            "Mic dejun" -> DEJUN
+            "Oaie" -> OAIE
+            "Porc" -> PORC
+            "Fructe de mare" -> MARE
+            "Paste" -> PASTE
+            "Vegetariene"->VEGAN
+            "Desert"->DESERT
+            else -> ""
+        }
+    }
+
     companion object {
         const val CATEGORIES = "categories.json"
         const val VITA="vita.json"
-        const val PUI="pui.json"
+        const val PUI="Pui.json"
         const val DEJUN="dejun.json"
         const val OAIE="oaie.json"
         const val PORC="porc.json"
         const val MARE="mare.json"
         const val PASTE="paste.json"
+        const val VEGAN="vegan.json"
+        const val DESERT="desert.json"
     }
 }
 

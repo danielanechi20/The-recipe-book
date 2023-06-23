@@ -43,9 +43,12 @@
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/purple_200"
+            android:backgroundTint="@color/black"
             android:text="Pasul urmator"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rv_ingr" />
+            app:layout_constraintTop_toBottomOf="@id/rv_ingr"
+            tools:targetApi="p" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -6,8 +6,6 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class category (
-    @SerializedName(value="id")
-    var id:String="",
     @SerializedName(value="name")
     var Name:String="",
     @SerializedName(value="image")

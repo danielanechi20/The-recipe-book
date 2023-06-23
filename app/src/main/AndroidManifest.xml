@@ -41,9 +41,6 @@
         <activity
             android:name=".FragmentBase"
             android:exported="true" />
-        <activity
-            android:name=".FavouriteFragment"
-            android:exported="true" />
     </application>
 
 </manifest>

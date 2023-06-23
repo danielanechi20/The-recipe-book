@@ -6,7 +6,7 @@
         android:icon="@drawable/categorii"
         android:title="@string/categorii"/>
     <item
-        android:id="@+id/advanced"
+        android:id="@id/advanced"
         android:icon="@drawable/retete"
         android:title="Genereaza retete"
          />

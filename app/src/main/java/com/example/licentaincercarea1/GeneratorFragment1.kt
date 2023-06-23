@@ -1,5 +1,7 @@
 package com.example.licentaincercarea1
 
+import ItemAdapter
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,7 +31,7 @@ class GeneratorFragment1: Fragment() {
                 LinearLayoutManager.VERTICAL,
                 false
             )
-            adapter = ItemAdapter(transf(), selectedIngredients)
+            adapter = ItemAdapter(requireContext(), transf(), selectedIngredients)
         }
 
         val view = _binding?.root
@@ -55,6 +57,16 @@ class GeneratorFragment1: Fragment() {
 
         return view
     }
+    companion object {
+        private var instance: GeneratorFragment1? = null
+
+        fun getInstance(): GeneratorFragment1 {
+            if (instance == null) {
+                instance = GeneratorFragment1()
+            }
+            return instance as GeneratorFragment1
+        }
+    }
 
     private fun performSearch(query: String) {
         val filtered = arrayListOf<types>()
@@ -66,7 +78,6 @@ class GeneratorFragment1: Fragment() {
                 filtered.add(types(type.tip, filteredRecipes))
             }
         }
-
         if (filtered.isNotEmpty()) {
             binding.rvIngr.apply {
                 layoutManager = LinearLayoutManager(
@@ -74,10 +85,20 @@ class GeneratorFragment1: Fragment() {
                     LinearLayoutManager.VERTICAL,
                     false
                 )
-                adapter = ItemAdapter(filtered, selectedIngredients)
+                adapter = ItemAdapter(requireContext(), filtered, selectedIngredients)
             }
         }
     }
+    override fun onDestroy() {
+        super.onDestroy()
+        resetSharedPreferences()
+    }
+
+    private fun resetSharedPreferences() {
+        val sharedPreferences = requireActivity().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        sharedPreferences.edit().clear().apply()
+    }
+
     fun transf(): List<types> {
         val retete = arrayListOf<types>()
         val obj = JSONObject(loadJSONFromAsset())
@@ -92,8 +113,7 @@ class GeneratorFragment1: Fragment() {
                     isChecked = false,
                     nume = ingredienteDetail.getString("Nume"),
                     cantitate = 0,
-                    //masura=ingredienteDetail.getString("Masura")
-                    masura=""
+                    masura=ingredienteDetail.getString("Masura")
                 )
                 ingrediente.add(ingredient)
             }

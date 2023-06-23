@@ -16,6 +16,7 @@ import java.io.InputStream
 class SearchFragment: Fragment() {
     private var _binding: SearchFragmentBinding?=null
     private val binding get()=_binding!!
+    val recipes = mutableListOf<reteta>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,14 +36,29 @@ class SearchFragment: Fragment() {
                 return false
             }
         })
+        recipes.addAll(transfretete("dejun.json", "mic dejun"))
+        recipes.addAll(transfretete("Pui.json", "pui"))
+        recipes.addAll(transfretete("desert.json","desert"))
+        recipes.addAll(transfretete("oaie.json","oaie"))
+        recipes.addAll(transfretete("porc.json","porc"))
+        recipes.addAll(transfretete("vita.json","vita"))
+        recipes.addAll(transfretete("paste.json","paste"))
+        recipes.addAll(transfretete("vegan.json","vegetariene"))
+        recipes.addAll(transfretete("mare.json","fructe de mare"))
 
+        recipes.sortBy { it.Nume}
+        binding.rvSearch.apply {
+            layoutManager = LinearLayoutManager(
+                requireActivity(),
+                LinearLayoutManager.VERTICAL,
+                false
+            )
+            adapter = ReteteAdapter(recipes)
+        }
         return view
     }
     private fun performSearch(query: String) {
-        val recipes = mutableListOf<reteta>()
-        recipes.addAll(transfretete("dejun.json", "dejun"))
-        recipes.addAll(transfretete("pui.json", "pui"))
-        recipes.addAll(transfretete("porc.json", "porc"))
+
         val filteredRecipes = recipes.filter { it.Nume.contains(query, true) }
 
         binding.rvSearch.apply {
@@ -73,7 +89,6 @@ class SearchFragment: Fragment() {
             }
             retete.add(
                 reteta(
-                    id = "$i",
                     Nume = userDetail.getString("Nume"),
                     Thumb = userDetail.getString("Thumb"),
                     ingrediente = ingrediente,
