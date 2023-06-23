@@ -6,8 +6,6 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class reteta (
-    @SerializedName(value="id")
-    var id:String="",
     @SerializedName(value="Nume")
     var Nume:String="",
     @SerializedName(value="Thumb")
@@ -15,6 +13,8 @@ data class reteta (
     @SerializedName(value = "Ingrediente")
     var ingrediente: List<ingredient> = emptyList(),
     @SerializedName(value="P")
-    var P:String=""
+    var P:String="",
+    @SerializedName(value = "Lipsa")
+    var lipsa: List<ingredient> = emptyList(),
         ):Parcelable
 

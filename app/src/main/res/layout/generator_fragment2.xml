@@ -7,11 +7,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".GeneratorFragment2">
     <TextView
-        android:id="@+id/test"
+        android:id="@+id/generate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="test"
+        android:text="Dacă sunteti nemultumit de retele generate, va puteti intoarce sa adaugati ingrediente."
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -20,8 +23,9 @@
         android:id="@+id/rv_retete"
         android:layout_width="wrap_content"
         android:layout_height="668dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,19 +1,18 @@
 {
-  "Fructe de mare":[
+  "fructe de mare":[
     {
-      "id": "1",
       "Nume": "Midii în sos picant de roșii cu bacon",
       "Thumb": "https://adihadean.ro/wp-content/uploads/2022/06/1.-Coperta-1-1536x1027.jpg",
       "In": [
   {
     "Nume": "Midii",
     "Cantitate": "1000",
-    "Masura": "g"
+    "Masura": "gr"
   },
   {
     "Nume": "Bacon",
     "Cantitate": "100",
-    "Masura": "g"
+    "Masura": "gr"
   },
   {
     "Nume": "Ceapă roșie",
@@ -23,20 +22,20 @@
   {
     "Nume": "Usturoi",
     "Cantitate": "4",
-    "Masura": "catei"
+    "Masura": "buc"
   },
   {
-    "Nume": "Passata de roșii",
+    "Nume": "Pasta de roșii",
     "Cantitate": "400",
     "Masura": "ml"
   },
   {
-    "Nume": "Oregano proaspăt",
+    "Nume": "Oregano",
     "Cantitate": "1",
     "Masura": "legatura"
   },
   {
-    "Nume": "Pătrunjel proaspăt",
+    "Nume": "Pătrunjel",
     "Cantitate": "1",
     "Masura": "legatura"
   },
@@ -48,18 +47,17 @@
   {
     "Nume": "Sare",
     "Cantitate": "5",
-    "Masura": "g"
+    "Masura": "gr"
   },
   {
     "Nume": "Piper",
     "Cantitate": "5",
-    "Masura": "g"
+    "Masura": "gr"
   }
 ],
       "P": " Am adaptat aceasta rețetă midii, după gustul meu, cu un sos special cu bacon, roșii și ingrediente pe care probabil toată lumea le are deja acasă\n Cubulețele de bacon au fost rumenite împreună cu ceapă roșie, taiată mărunt, și felii subțiri de artei iute. Nu e nevoie de ulei sau altă grăsime, pentru că bacon-ul are deja suficientă, care se topește frumos, și oferă o notă caramelizată, delicioasă. Am prăjit totul la foc susținut cam cinci minute, până când baconul a devenit ușor crocant, și ceapa s-a înmuiat. \n Am adăugat passata de roșii, am amestecat bine, si am condimentat cu sare, piper si o linguriță de zahăr, pentru a balansa aciditatea roșiilor. Pentru o aromă și mai proaspătă, am adăugat în sos și pătrunjel.  \n Am lăsat sosul la foc mic, să fiarbă încet și să aibă aromele timp să infuzeze passata. Aici nu avem un timp fix – începând de la 5 minute în sus, sosul este fiert, dar cu cât stă mai mult pe plită, cu atât va fi mai savuros.   \n Cum am finalizat și servit midiile în sos picant de roșii?\n Pentru că mâncarea de vacanță ne lasă tot timpul să ne relaxăm, această rețetă e una foarte ușoară și rapidă. Practic, după ce am terminat sosul, tot ce mai avem de făcut este să fierbem scoicile. Le-am adăugat pe toate într-un vas mare, peste sos, am pus un capac, și am fiert la foc mare câteva minute, doar până când midiile s-au deschis (nu mai mult, pentru că o gătire îndelungată ar da o textură cauciucată și neplăcută fructelor de mare). \n Am răsurnat totul într-un vas pentru servit, iar sosul s-a instalat și el, delicios, în cochiliile midiilor, cuibărind în ele și bucățele crocante de bacon. Am adăugat coriandru proaspăt, și felii de lămâie, pentru prospețime, iar pentru scufundat în sos, neapărat câteva felii de focaccia.   \n Vacanțele ne fac viața mai frumoasă și colorată. Iar mâncarea de vacanță ne transpune în locuri minunate și pline de amintiri de vară, până când chiar ajungem acolo. Sper să vă bucurați de gustul meu preferat de mare, când gătiți rețeta asta ca o vedere."
     },
     {
-      "id": "2",
       "Nume": "Midii în stil provensal",
       "Thumb": "https://adihadean.ro/wp-content/uploads/2021/05/poza-finala-1536x1024.jpeg",
       "In": [
@@ -74,34 +72,29 @@
           "Masura": "buc"
         },
         {
-          "Nume": "Fire de usturoi verde",
-          "Cantitate": "3",
-          "Masura": "fire"
+          "Nume": "Usturoi verde",
+          "Cantitate": "1",
+          "Masura": "legatura"
         },
         {
           "Nume": "Ulei de măsline",
-          "Cantitate": "2",
-          "Masura": "linguri"
+          "Cantitate": "20",
+          "Masura": "ml"
         },
         {
-          "Nume": "Pulpă de roșii",
+          "Nume": "Pasta de roșii",
           "Cantitate": "120",
-          "Masura": "g"
+          "Masura": "ml"
         },
         {
-          "Nume": "Cimbrișor",
-          "Cantitate": "2",
-          "Masura": "crenguțe"
+          "Nume": "Cimbru",
+          "Cantitate": "1",
+          "Masura": "legatura"
         },
         {
           "Nume": "Rozmarin",
           "Cantitate": "1",
-          "Masura": "crenguță"
-        },
-        {
-          "Nume": "Cimbru de grădină",
-          "Cantitate": "1",
-          "Masura": "crenguță"
+          "Masura": "legatura"
         },
         {
           "Nume": "Frunze de busuioc",
@@ -109,19 +102,19 @@
           "Masura": "buc"
         },
         {
-          "Nume": "Vin alb sec de calitate",
+          "Nume": "Vin alb sec",
           "Cantitate": "80",
           "Masura": "ml"
         },
         {
-          "Nume": "Ardei iute",
+          "Nume": "Ardei iut1",
           "Cantitate": "1",
           "Masura": "buc"
         },
         {
-          "Nume": "Frunze de pătrunjel",
-          "Cantitate": "4",
-          "Masura": "buc"
+          "Nume": "Pătrunjel",
+          "Cantitate": "1",
+          "Masura": "legatura"
         },
         {
           "Nume": "Piper",
@@ -137,7 +130,6 @@
       "P": "Înainte de toate, m-am asigurat că am cuburi de gheaţă în congelator. Pȃnă am pregătit toate ingredientele şi cratiţa de fontă cu capac, am ţinut midiile într-un castron încăpător, acoperit cu un şervet de bucătărie înmuiat în apă rece, peste care am pus gheaţă.\n\n\n\nAm aruncat scoicile stricate, adică pe cele lovite şi pe cele deschise, şi m-am apucat de curăţat scoicile bune. Muncă laborioasă ce a necesitat timp, cȃnd mă gȃndesc că am răzuit fiecare cochilie de scoică, cu ajutorul unui cuţit.\n\nDupă ce le-am curăţat foarte bine sub jet de apă rece, le-am aşezat într-un castron cu apă cu gheaţă. Am încins uleiul în cratiţă şi am gătit ceapa şi partea albă a usturoiului, tocate mărunt, timp de 3-4 minute, la foc mic spre mediu. Apoi am adăugat pulpa de roşii, ardeiul iute, sarea, piperul şi ierburile aromatice mărunţite, amestecȃnd uşor. Am ţinut cont că scoicile sunt puţin sărate – pentru gătit, un praf de sare este suficient. Imediat, am adăugat midiile scurse de apă, fără gheaţă, şi am stins totul cu vin. Am amestecat bine în cratiţă, am pus capacul şi le-am dat midiilor timp să se dechidă cam 10 minute bune. Înainte cu 2-3 minute de a fi gata, am adăugat pătrunjelul tocat şi o parte din partea verde a firelor de usturoi, mărunţite. \n\n\nAm servit midiile în stil provensal calde, cu cartofi prăjiţi, dar merg foarte bine şi cu orez gătit simplu, ori cu pȃine proaspătă prăjită. Şi, bineînţeles, am potrivit acest fel de mȃncare savuros cu Pinot Gris, un vin alb sec, uşor acidulat.\n\nAceasta este rețeta de midii în stil provensal. S-aveți poftă!"
     },
     {
-      "id": "3",
       "Nume": "Scoici Saint Jacques cu sparanghel și ou fript",
       "Thumb": "https://adihadean.ro/wp-content/uploads/2023/02/cover-1024x568.jpg",
       "In": [
@@ -149,7 +141,7 @@
         {
           "Nume": "Sparanghel",
           "Cantitate": "1",
-          "Masura": "mana"
+          "Masura": "legatura"
         },
         {
           "Nume": "Ouă",
@@ -178,14 +170,13 @@
         },
         {
           "Nume": "Ulei de măsline",
-          "Cantitate": "3",
-          "Masura": "linguri"
+          "Cantitate": "30",
+          "Masura": "ml"
         }
       ],
       "P": "Mai-nainte de toate, iau sparanghelul, îi tai partea lemnoasă, după care îl spăl bine, apoi il pun pe un șervet să se usuce. Am ales un sparanghel tânăr, crud, cu o culoare foarte faină.\n\npremature sparanghel\npregătire sparanghel\nApoi iau scoicile, le crestez pe o parte și pe cealaltă, cu vârful unui cuțit, apoi le prăjesc în tigaia încinsa, în care am pus puțin ulei și puțin unt. \n\npregătire scoici Saint Jacques\nLe frig pe o parte și pe cealaltă câte un minut și jumătate, nu mai mult. Le scot pe o farfurie. \n\nsonic saint jacques fripte\nÎn locul lor arunc sparanghelul, alături de care pun doi căței de usturoi. Gătesc și sparanghelul cam un minut și jumătate, hai poate două minute, il condimentez apoi îl scot din tigaie. Sparanghelul trebuie să rămână crocant, să-și păstreze culoarea frumoasă.\n\nsparanghel la tigaie\n În locul lui sparg un ou pe care-l frig la temperatură mare. Las usturoiul acolo. Sare și piper după gust. Si cam asta e tot. "
     },
     {
-      "id": "4",
       "Nume": "Tocană de caracatiță",
       "Thumb": "https://adihadean.ro/wp-content/uploads/2021/02/A1C7417A-F16E-4175-8199-5132E13F385E-1536x1024.jpeg",
       "In": [
@@ -196,18 +187,18 @@
         },
         {
           "Nume": "Ulei de măsline",
-          "Cantitate": "4 ",
-          "Masura": "linguri"
+          "Cantitate": "40 ",
+          "Masura": "ml"
         },
         {
           "Nume": "Ceapă roșie",
           "Cantitate": "2",
-          "Masura": "uc"
+          "Masura": "buc"
         },
         {
           "Nume": "Usturoi",
           "Cantitate": "3 ",
-          "Masura": "catei"
+          "Masura": "buc"
         },
         {
           "Nume": "Măsline",
@@ -221,8 +212,8 @@
         },
         {
           "Nume": "Oțet balsamic",
-          "Cantitate": "3",
-          "Masura": "linguri"
+          "Cantitate": "30",
+          "Masura": "ml"
         },
         {
           "Nume": "Piper",
@@ -236,11 +227,11 @@
         },
         {
           "Nume": "Miere",
-          "Cantitate": "2 ",
-          "Masura": "linguri"
+          "Cantitate": "20",
+          "Masura": "gr"
         },
         {
-          "Nume": "Pătrunjel proaspăt",
+          "Nume": "Pătrunjel",
           "Cantitate": "1",
           "Masura": "legatura"
         }

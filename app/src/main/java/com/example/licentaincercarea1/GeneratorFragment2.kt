@@ -22,14 +22,20 @@ class GeneratorFragment2: Fragment() {
         val binding= GeneratorFragment2Binding.inflate(inflater, container, false)
         val bundle = arguments
         @Suppress("DEPRECATION") val selectedIngredients = bundle?.getParcelableArrayList<ingredient>("ingred")
-        binding.test.text=selectedIngredients!!.size.toString()
+        selectedIngredients?.add(ingredient(true,"Sare",5,"gr"))
+        selectedIngredients?.add(ingredient(true,"Piper",5,"gr"))
+        selectedIngredients?.add(ingredient(true,"Apa",2000,"ml"))
+
         val recipes = mutableListOf<reteta>()
-        recipes.addAll(transfretete("dejun.json", "dejun"))
-        recipes.addAll(transfretete("pui.json", "pui"))
+        recipes.addAll(transfretete("dejun.json", "mic dejun"))
+        recipes.addAll(transfretete("Pui.json", "pui"))
         recipes.addAll(transfretete("desert.json","desert"))
         recipes.addAll(transfretete("oaie.json","oaie"))
         recipes.addAll(transfretete("porc.json","porc"))
         recipes.addAll(transfretete("vita.json","vita"))
+        recipes.addAll(transfretete("paste.json","paste"))
+        recipes.addAll(transfretete("vegan.json","vegetariene"))
+        recipes.addAll(transfretete("mare.json","fructe de mare"))
         val adaptlist=generateMatchingRecipes(selectedIngredients,recipes)
         binding.rvRetete.apply {
             layoutManager = LinearLayoutManager(
@@ -46,31 +52,35 @@ class GeneratorFragment2: Fragment() {
 
         for (recipe in recipeList) {
             val matchingIngredients = recipe.ingrediente.filter { recipeIngredient ->
-                ingredientList!!.any { ingredient ->
-                    ingredient.nume == recipeIngredient.nume &&
-                            ingredient.cantitate >= (recipeIngredient.cantitate - (recipeIngredient.cantitate / 2))
+                val matchingIngredient = ingredientList!!.find { ingredient ->
+                    ingredient.nume == recipeIngredient.nume && ingredient.cantitate >= recipeIngredient.cantitate / 2
                 }
+                matchingIngredient != null
             }
-
             if (matchingIngredients.size >= recipe.ingrediente.size / 2) {
+                val nonMatchingIngredients = recipe.ingrediente.filter { recipeIngredient ->
+                    val matchingIngredient = ingredientList!!.find { ingredient ->
+                        ingredient.nume == recipeIngredient.nume && ingredient.cantitate >= recipeIngredient.cantitate / 2
+                    }
+                    matchingIngredient == null
+                }
+                recipe.lipsa = nonMatchingIngredients
+
                 matchingRecipes.add(recipe)
             }
         }
 
-        matchingRecipes.sortByDescending { it.ingrediente.filter { recipeIngredient ->
-            ingredientList!!.any { ingredient ->
-                ingredient.nume == recipeIngredient.nume &&
-                        ingredient.cantitate >= (recipeIngredient.cantitate - (recipeIngredient.cantitate / 2))
+        matchingRecipes.sortByDescending {
+            it.ingrediente.count { recipeIngredient ->
+                val matchingIngredient = ingredientList!!.find { ingredient ->
+                    ingredient.nume == recipeIngredient.nume && ingredient.cantitate >= recipeIngredient.cantitate / 2
+                }
+                matchingIngredient != null
             }
-        }.size }
-
-        if (matchingRecipes.isEmpty())
-            Log.d("tag", "NU S-A GASIT RETETA!!")
+        }
 
         return matchingRecipes
     }
-
-
 
     fun transfretete(fileName: String, name: String): List<reteta> {
         val retete = arrayListOf<reteta>()
@@ -91,7 +101,6 @@ class GeneratorFragment2: Fragment() {
             }
             retete.add(
                 reteta(
-                    id = "$i",
                     Nume = userDetail.getString("Nume"),
                     Thumb = userDetail.getString("Thumb"),
                     ingrediente = ingrediente,

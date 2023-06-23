@@ -22,6 +22,4 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity,FragmentBase::class.java))
         }
     }
-
-
 }

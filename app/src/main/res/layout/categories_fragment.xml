@@ -34,12 +34,15 @@
         android:id="@+id/toate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="@color/purple_200"
+        android:backgroundTint="@color/black"
         app:layout_constraintTop_toBottomOf="@id/rv_categories"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Toate retetele"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        tools:targetApi="p" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_retete"

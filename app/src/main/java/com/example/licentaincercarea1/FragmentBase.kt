@@ -25,7 +25,7 @@ class FragmentBase: AppCompatActivity() {
         val host: NavHostFragment = supportFragmentManager
             .findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment? ?: return
         val navController = host.navController
-        setupNavigationMenu(navController)
+        //setupNavigationMenu(navController)
         setupBottomNavMenu(navController)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             val dest: String = try {
@@ -41,29 +41,30 @@ class FragmentBase: AppCompatActivity() {
     private fun setupBottomNavMenu(navController: NavController) {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav_view)
         bottomNav?.setupWithNavController(navController)
-        @Suppress("DEPRECATION")
-        bottomNav.setOnNavigationItemReselectedListener { item ->
+        /*@Suppress("DEPRECATION")
+        bottomNav.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.categoriesFragment -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.my_nav_host_fragment, CategoriesFragment())
-                        .commit()
+                        .commitNow()
                     true
                 }
                 R.id.advanced -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.my_nav_host_fragment, AdvancedSearchFragment())
-                        .commit()
+                        .commitNow()
                     true
                 }
+                else->{false}
             }
-        }
+        }*/
     }
 
-    private fun setupNavigationMenu(navController: NavController) {
+    /*private fun setupNavigationMenu(navController: NavController) {
         val sideNavView = findViewById<NavigationView>(R.id.nav_view)
         sideNavView?.setupWithNavController(navController)
-    }
+    }*/
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return item.onNavDestinationSelected(findNavController(R.id.my_nav_host_fragment))

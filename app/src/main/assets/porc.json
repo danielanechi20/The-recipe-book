@@ -1,14 +1,13 @@
 {
 	"porc":[
 		{
-			"id": "1",
 			"Nume": "Șuncă de porc caramelizată la cuptor",
 			"Thumb": "https://adihadean.ro/wp-content/uploads/2021/12/foto-9-lari-1024x576.jpg",
 			"In": [
   {
     "Nume": "Șuncă proaspătă de porc",
     "Cantitate": "2000",
-    "Masura": "g"
+    "Masura": "gr"
   },
   {
     "Nume": "Morcovi",
@@ -21,9 +20,9 @@
     "Masura": "buc"
   },
   {
-    "Nume": "Piper boabe",
-    "Cantitate": "1",
-    "Masura": "lingură"
+    "Nume": "Piper",
+    "Cantitate": "5",
+    "Masura": "gr"
   },
   {
     "Nume": "Semințe de coriandru",
@@ -31,24 +30,24 @@
     "Masura": "lingură"
   },
   {
-    "Nume": "Batoane de scorțișoară",
-    "Cantitate": "2",
-    "Masura": "buc"
+    "Nume": "Scorțișoară",
+    "Cantitate": "20",
+    "Masura": "gr"
   },
   {
-    "Nume": "Frunze de dafin",
+    "Nume": "Foi de dafin",
     "Cantitate": "2",
     "Masura": "buc"
   },
   {
     "Nume": "Cuișoare",
-    "Cantitate": "1",
-    "Masura": "mână"
+    "Cantitate": "5",
+    "Masura": "buc"
   },
   {
     "Nume": "Zahăr brun",
     "Cantitate": "100",
-    "Masura": "g"
+    "Masura": "gr"
   },
   {
     "Nume": "Vin roșu sec",
@@ -63,19 +62,18 @@
   {
     "Nume": "Miere",
     "Cantitate": "125",
-    "Masura": "g"
+    "Masura": "gr"
   }
 ],
 "P": "Am început cu pregătirea șuncii pentru fierbere. Da, trebuie să fiarbă ceva vreme. Astfel că am început să leg șunca foarte strâns (aici m-a ajutat soțul, că forța mea lasă de dorit), fix ca în imaginea de mai jos. \n Apoi, într-o oala sub presiune am pus șunca rulata, apă cât să o acopere, am curățat morcovii și i-am tăiat rondele, am tăiat ceapa în 4 bucăți și le-am pus în oală. Tot acum am adăugat piperul zdrobit (câteva lovituri de mojar), semințele de coriandru, batoanele de scorțișoară și foile de dafin. Am lăsat totul la fiert aproximativ o oră jumate.\n Pasul următor a fost să înlătur șoriciul, să crestez bucata de șuncă și să înfig cuișoare, din loc în loc.\n \n Modalitate de pregătire sos caramelizat:Am dat drumul la cuptor la 170 de grade și m-am apucat de sosul de zahăr brun. Iată cum am procedat: într-o oală mică, am pus toate ingredientele și le-am lăsat pe foc mediu, pînă zahărul s-a topit, iar sosul a făcut spumă.Toată operațiunea asta a durat maxim 5 minute. Se amestecă ocazional, dar nu trebuie scăpat din ochi, pentru că va ieși din oală. Fierberea îi crește volumul și nu își dorește nimeni să curețe așa ceva de pe plită sau aragaz.\n Următorul pas este să îmbrac șunca în acest sos mi-nu-nat și să o bag la cuptor. Peste 15 minute trebuie scoasă din cuptor și îmbrăcată cu jumătate din sosul de caramel. \n După cele 15 minute o scot din nou din cuptor, o îmbrac cu restul de sos și o mai bag la fript încă 35 de minute.\n Este gata când la suprafață face o crustă aurie și ușor crocantă. După ce am scos-o din cuptor, am lăsat-o la odihnit 15 minute, înainte să o tai.\n Are un gust divin și echilibrat, de scorțișoară și cuișoare. E subtil, nu vă temeți. Merge extrem de bine lângă un pahar de vin roșu bun.\n Sper că v-a atras atenția rețeta mea de șuncă frumos caramelizată, încât să o pregătiți celor dragi vouă și să va bucurați împreună de arome noi, totuși specifice sărbătorilor de iarnă.Eu vă doresc poftă bună și mult spor în bucătărie!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
         },
       {
-        "id": "2",
-        "Nume": "Piept de porc în bere neagră",
+        "Nume": "Piept de porc la cuptor în bere neagră",
         "Thumb": "https://adihadean.ro/wp-content/uploads/2021/08/20210809_001737-01-1536x1152.jpeg",
         "In": [
           {
             "Nume": "Piept de porc fără os",
-            "Cantitate": "1500",
+            "Cantitate": "600",
             "Masura": "g "
           },
           {
@@ -109,37 +107,36 @@
             "Masura": "buc"
           },
           {
-            "Nume": "Boabe de piper",
-            "Cantitate": "1",
-            "Masura": "lingură"
+            "Nume": "Piper",
+            "Cantitate": "5",
+            "Masura": "gr"
           },
           {
-            "Nume": "Ardei iute",
+            "Nume": "Ardei iuti",
             "Cantitate": "1",
             "Masura": "buc"
           },
           {
             "Nume": "Sare",
-            "Cantitate": "5 ",
+            "Cantitate": "5",
             "Masura":"gr"
           },
           {
-            "Nume": "Frunze de cimbru proaspăt",
-            "Cantitate": "4",
-            "Masura": "buc"
+            "Nume": "Cimbru",
+            "Cantitate": "1",
+            "Masura": "legatura"
           }
         ],
       "P": "Carnea de porc iubește berea. Mai ales dacă bucata de carne a stat pe sare, la rece, toată noaptea dinainte. De ce fac asta? Sarea deshidratează și frăgezește, pregătind astfel carnea pentru festinul ce urmează.\n\nAșa că am curățat excesul de sare de pe bucata de piept de porc și am așezat-o într-o cratiță încăpătoare, peste legumele curățate și tăiate în bucăți mari.\n\nPat de legume \nAm turnat berea deasupra. Cei 600 ml ar trebui să fie suficienți să acopere toate legumele, dar nu si carnea. Am pus foile de dafin și boabele de piper. Am pus capacul (musai, altfel berea se evaporă și carnea se usucă) și am dat totul la cuptor, la 150 de grade, vreme de 4 ore și jumătate. Acum, pot fi 4 ore, pot fi 5, depinde cât de mare este pieptul de porc. Am urmărit să obțin o carne atât de fragedă, încât să se poată desface doar cu furculița.\n\nPiept de porc la cuptor\nCând s-a copt suficient, am scos-o pe un grătar pe o tavă de copt. Am crescut temperatura la 220 de grade, și am lăsat-o 10 – 15 minute, cât să prindă o crustă aurie. În timpul acesta m-am ocupat de sosul de bere neagră.\n\nPiept de porc copt\nPreparare sos de bere neagră\nAm strecurat zeama din cratiță într-o ulcică și am pus-o la foc mediu. Am scos cu o lingură grăsimea ridicată la suprafață. Am pasat bine bucățile de morcov, pătrunjel și păstârnac cu un blender și apoi le-am trecut printr-o sită direct peste zeamă. Am lăsat să scadă cam jumătate, vreo 15 minute, și apoi am potrivit de sare. Am stins focul și am presărat cimbrul tocat pe deasupra.\n\nPentru garnitură, am fiert cartofi tăiați sferturi, pe care mai apoi i-am rumenit puțin în tigaie, alături de câteva păstăi de fasole și unt din belșug.\n\nȘi atât. Piept de porc cu o crustă aurie, fraged și aromat, cu sos de bere neagră."
       },
       {
-        "id": "3",
         "Nume": "Cotlet de porc cu sos de unt",
         "Thumb": "https://adihadean.ro/wp-content/uploads/2023/04/Poza-1-2-550x367.jpg",
         "In": [
           {
             "Nume": "Coaste de porc",
             "Cantitate": "600",
-            "Masura": "g"
+            "Masura": "gr"
           },
           {
             "Nume": "Boia de ardei",
@@ -159,10 +156,10 @@
           {
             "Nume": "Usturoi",
             "Cantitate": "3",
-            "Masura": "căţei"
+            "Masura": "buc"
           },
           {
-            "Nume": "Cartof dulce",
+            "Nume": "Cartofi dulci",
             "Cantitate": "1",
             "Masura": "buc"
           },
@@ -174,12 +171,12 @@
           {
             "Nume": "Unt",
             "Cantitate": "50",
-            "Masura": "g"
+            "Masura": "gr"
           },
           {
             "Nume": "Ulei de măsline",
-            "Cantitate": "3",
-            "Masura": "linguri"
+            "Cantitate": "30",
+            "Masura": "ml"
           },
           {
             "Nume": "Piper",
@@ -210,7 +207,6 @@
         "P": "Înainte de orice am crestat stratul fin de grăsime aşa cum puteţi vedea în imagine, cu grijă, pentru a nu tăia carnea şi pentru a evita astfel pierderea sucurilor din carne, contractarea şi uscarea cărnii la cuptor.\n\npregătire cotlet de porc\n\n \n\nCum am realizat marinarea uscată\u00AD?\nAm continuat cu marinarea uscată.\n\nAm condimentat cotletul cu 1 linguriţă de sare, 1 linguriţă de boia, 1 linguriţă de piper cu lămâie, 3 căţei de usturoi, 1 ceapă roşie, 2 crenguţe de cimbru şi 48 de ore l-am lăsat la frigider, timp în care aromele au invadat cotletul.\n\nmarinare cotlet\n\n \n\nCum am realizat marinarea umedă?\nDupă ce carnea a stat 48 de ore la frigider am continuat cu marinarea umedă încă 2-3 ore. Pentru această etapă de marinare eu am folosit 2 linguriţe de ulei de măsline, 1 linguriţă de ierburi a la Provence sau mai pe româneşte cimbrişor, rozmarin, busuioc, măghiran, oregano, tarhon, asmăţui, frunze de leuştean, culmea, şi un fir de piper lung.\n\nŞi am completat marinarea umedă cu un strop de ulei de cocos.\n\nmarinare 2\n\n \n\nCum am pregătit carnea pentru coacere?\nDupă toate aceste marinări, în tava de la cuptor am aşezat grătarul de la cuptorul cu microunde, dacă nu aveţi aşa ceva folosiţi grătarul de la cuptor, am pus apă caldă în tavă , pe grătar am aşezat cotletul condimentat şi am pus în tavă amestecul de ceapă şi usturoi de la marinarea uscată. Din când în când verificaţi şi mai adăugaţi apă caldă în tavă. Am pus tava în cuptor la 170 de grade pentru aproximativ 3 ore, timp în care m-am ocupat şi de alte treburi. În tot acest timp am supravegheat cotletul şi l-am stropit cu zeama din tavă, pe care apoi am folosit-o pentru un minunat sos.\n\npregătire cotlet pentru coacere\n\nDupă 2 ore, şi am să menţionez că totuşi depinde de cuptor, timpul de preparare poate fi mai mic, eu mi-am dorit un cotlet well-done, am mutat carnea într-o altă tavă, fără apă şi am mai lăsat-o cam o oră să se rumenească frumos. La finalul celor 3 ore, şi iarăşi vin şi spun că depinde de cupotor, am uns carnea cu o cremă de unt conţinând 25 gr unt, 1 lingură de pătrunjel, 1 lingură de mărar şi un praf de sare.\n\ncremă de unt\n\nAm acoperit-o cu folie de aluminiu şi am lăsat carnea la odihnă pentru 15-20 minute, timp în care frăgezirea cărnii continuă. Ar fi minunat dacă am putea reda şi mirosurile ce s-au răspândit în bucătărie.\n\ncotlet de porc cu unt aromatizat\n\n \n\nCum am pregătit chips-urile de cartofi?\nChipsurile de cartofi dulci şi violet le-am pregătit în cuptor, după ce am tăiat cartofii rondele si i-am condimentat cu sare şi nucuşoară.\n\nchipsuri de cartofi\nCum am pregătit buchetul de sparanghel?\nPentru buchetul de sparanghel am folosit un pic de sos ce s-a scurs în tavă la pregătirea cotletului, buchet pe care l-am învelit într-o minunată şuncă crud uscată şi l-am călit pentru câteva minute în tigaie. \n\nCum am realizat sosul de unt și cum am servit acest cotlet de porc?\nEu nu am tăiat cotletul pentru prezentare, dar vă las dumneavoastră plăcerea de a o face, doar adăugaţi o parte din sosul pe care l-aţi recuperat din tavă în care vă recomand să puneţi câteva fire de usturoi verde şi vă garantez că nu veţi regreta.\n\nservire cotlet de porc\n\nAm servit alături de chipsurile de cartofi si buchetul de sparanghel.\n\nLa final vă recomand să nu uitaţi de salata verde cu ridichi, ceapă verde, usturoi verde şi un strop de sare şi ulei de măsline sau salata care vă inspiră alaturi de acest minunat cotlet.\n\nDeși tema este „pentru carnivori”, este primăvară, profitați de toate verdețurile din piață, nici nu vă puteți imagina ce puteți crea în bucătărie.\n\nPână la următoarea reţetă vă doresc poftă bună şi vă mulţumesc pentru că mă urmăriţi şi pentru susţinere!"
       },
       {
-        "id": "4",
         "Nume": "Carne de porc gătită domol",
         "Thumb": "https://adihadean.ro/wp-content/uploads/2022/10/Poza-de-coperta_carne-de-porc-1536x1152.jpeg",
         "In": [
@@ -220,7 +216,7 @@
             "Masura": "kg"
           },
           {
-            "Nume": "Vin roșu",
+            "Nume": "Vin sec",
             "Cantitate": "200",
             "Masura": "ml"
           },
@@ -232,7 +228,7 @@
           {
             "Nume": "Usturoi",
             "Cantitate": "10",
-            "Masura": "căței"
+            "Masura": "buc"
           },
           {
             "Nume": "Sare",
@@ -245,12 +241,12 @@
             "Masura": "gr"
           },
           {
-            "Nume": "Boia",
+            "Nume": "Boia de ardei",
             "Cantitate": "15",
-            "Masura": "g"
+            "Masura": "gr"
           },
           {
-            "Nume": "Morcov",
+            "Nume": "Morcovi",
             "Cantitate": "1",
             "Masura": "buc"
           },
@@ -267,7 +263,7 @@
           {
             "Nume": "Rozmarin",
             "Cantitate": "1",
-            "Masura": "crenguță"
+            "Masura": "legatura"
           },
           {
             "Nume": "Apă",
@@ -277,7 +273,7 @@
           {
             "Nume": "Ghebe",
             "Cantitate": "250",
-            "Masura": "g"
+            "Masura": "gr"
           },
           {
             "Nume": "Vin rose",
@@ -287,22 +283,22 @@
           {
             "Nume": "Usturoi",
             "Cantitate": "1",
-            "Masura": "cățel"
+            "Masura": "buc"
           },
           {
             "Nume": "Unt",
             "Cantitate": "20",
-            "Masura": "g"
+            "Masura": "gr"
           },
           {
             "Nume": "Cartofi roșii",
-            "Cantitate": "1",
-            "Masura": "kg"
+            "Cantitate": "15",
+            "Masura": "buc"
           },
           {
             "Nume": "Smântână",
             "Cantitate": "100",
-            "Masura": "g"
+            "Masura": "gr"
           }
         ],
         "P": "Pentru început m-am ocupat de marinarea cărnii, astfel, am condimentat carnea cu sare, piper, boia, am asezonat-o cu ceapă, usturoi, leuștean, rozmarin și am pus-o la frigider timp de 2 ore.\n\nDupă ce timpul s-a scurs, am pus carnea într-o tigaie de 28 de cm și am prăjit-o câte 2 minute pe fiecare parte. Într-o tavă adâncă pentru cuptor, am pus hârtia de copt, apoi rădăcinoasele, ingredientele care au marinat carnea, împreună cu vinul și apa. Deasupra acestora am așezat carnea și am introdus tava acoperită foarte bine cu folie de aluminiu la cuptorul preîncălzit la 160℃, timp de 5 ore. \n\ngătire carne de porc\nLa final carnea este extrem fragedă, efectiv ți se topește în gură iar mirosul nu mai spun, ți se face poftă și dacă ești sătul. \n\ncarne de porc gătită\nPiure\nPentru piure, am curățat cartofii roșii, i-am spălat și tăiat în bucăți mai mici și i-am pus la fiert. După ce cartofii au fiert, am strecurat apa și am păstrat foarte puțină din aceasta. Am zdrobit cartofii, am adăugat smântâna, sarea iar la final pentru cremozitate, am adăugat untul rece.\n\nCiupercile\nAm prăjit ghebele cu un cățel de usturoi într-o tigaie, am adăugat vinul rose, sare și piper după gust iar la final untul și le-am mai lăsat 2 minute la foc mic.\n\ngătire ciuperci\nDovleacul\nAm tăiat o parte din dovleac în formă de semicerc iar restul dovleacului în alte forme. Pentru preparat am avut nevoie de cel în formă de semicerc și l-am lăsat la cuptor timp de 20 de minute la 200℃ într-o tavă pe care am acoperit-o cu folie de aluminiu. După ce dovleacul s-a copt, i-am dat o față pe grătar.\n\npregătire dovleac\ndovleac copt\nCum am servit această carne de porc gătită domol?\nPentru servire, am așezat piureul pe o farfurie plată iar în mijloc, am burdușit carnea fâșiuțe cu puțin sos împreună cu ciupercuțele iar alături am pus dovleacul.\n\nservire carne de porc gătită domol\nSper să vă placă rețeta și să o încercați, veți avea parte de arome deosebite care o să vă încânte papilele gustative."

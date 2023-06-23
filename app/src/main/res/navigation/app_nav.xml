@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/categoriesFragment">
+    app:startDestination="@id/categoriesFragment">
 
     <fragment
         android:id="@+id/categoriesFragment"
@@ -17,16 +17,6 @@
             app:destination="@id/manifesting" />
     </fragment>
     <fragment
-        android:id="@+id/manifesting"
-        android:name="com.example.licentaincercarea1.SearchFragment"
-        android:label="manifesting"
-        tools:layout="@layout/search_fragment"/>
-    <fragment
-        android:id="@+id/reteteFragment"
-        android:name="com.example.licentaincercarea1.RetetaFragment"
-        android:label="reteta"
-        tools:layout="@layout/reteta" />
-    <fragment
         android:id="@+id/advanced"
         android:name="com.example.licentaincercarea1.AdvancedSearchFragment"
         android:label="advanced"
@@ -38,6 +28,17 @@
             android:id="@+id/action_advanced_to_intrebariFragment"
             app:destination="@id/intrebariFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/manifesting"
+        android:name="com.example.licentaincercarea1.SearchFragment"
+        android:label="manifesting"
+        tools:layout="@layout/search_fragment"/>
+    <fragment
+        android:id="@+id/retetaFragment"
+        android:name="com.example.licentaincercarea1.RetetaFragment"
+        android:label="reteta"
+        tools:layout="@layout/reteta" />
+
     <fragment
         android:id="@+id/generatorFragment"
         android:name="com.example.licentaincercarea1.GeneratorFragment1"
@@ -66,4 +67,16 @@
         android:name="com.example.licentaincercarea1.RezultatFragment"
         android:label="RezultatFragment"
         tools:layout="@layout/rezultat_fragment"/>
+    <fragment
+        android:id="@+id/reteteFragment"
+        android:name="com.example.licentaincercarea1.ReteteFragment"
+        android:label="retete_fragment"
+        tools:layout="@layout/retete_fragment" >
+        <action
+            android:id="@+id/action_reteteFragment_to_manifesting"
+            app:destination="@id/manifesting" />
+        <action
+            android:id="@+id/action_reteteFragment_to_retetaFragment"
+            app:destination="@id/retetaFragment" />
+    </fragment>
 </navigation>

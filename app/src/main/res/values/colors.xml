@@ -10,6 +10,6 @@
     <color name="pogress">#47EC57</color>
     <color name="selected_ingredient_background_color">#FF0000</color>
     <color name="default_ingredient_background_color">#00FF00</color>
-    <color name="first">#606060</color>
+    <color name="first">#E0E0E0</color>
     <color name="changed">#FF66B2</color>
 </resources>
