@@ -25,7 +25,6 @@ class FragmentBase: AppCompatActivity() {
         val host: NavHostFragment = supportFragmentManager
             .findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment? ?: return
         val navController = host.navController
-        //setupNavigationMenu(navController)
         setupBottomNavMenu(navController)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             val dest: String = try {
@@ -33,7 +32,6 @@ class FragmentBase: AppCompatActivity() {
             } catch (e: Resources.NotFoundException) {
                 Integer.toString(destination.id)
             }
-
             Log.d("NavigationActivity", "Navigated to $dest")
         }
 
@@ -42,7 +40,7 @@ class FragmentBase: AppCompatActivity() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav_view)
         bottomNav?.setupWithNavController(navController)
         /*@Suppress("DEPRECATION")
-        bottomNav.setOnNavigationItemSelectedListener { item ->
+         bottomNav.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.categoriesFragment -> {
                     supportFragmentManager.beginTransaction()

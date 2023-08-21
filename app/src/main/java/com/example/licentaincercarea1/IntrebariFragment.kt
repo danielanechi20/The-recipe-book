@@ -33,7 +33,7 @@ class IntrebariFragment : Fragment() {
         Intrebare(13,"Ai vrea un preparat cu carne alba?",26,27),
         Intrebare(27,"Ceva pregatit la cuptor?",28,29)
     )
-
+    
     private var intrebareCurenta: Intrebare? = null
     private var _binding: IntrebariFragmentBinding? = null
     private val binding get() = _binding!!
